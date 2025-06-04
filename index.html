@@ -65,13 +65,14 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* prevent horizontal scroll */
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      width: 100%;
       background-color: var(--color-bg);
       color: var(--color-text);
       line-height: 1.6;
@@ -79,6 +80,7 @@
       flex-direction: column;
       min-height: 100vh;
       transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden; /* prevent horizontal scroll */
     }
 
     /* Sticky header with menu and enterprise name */
