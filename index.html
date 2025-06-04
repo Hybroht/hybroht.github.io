@@ -583,11 +583,13 @@
 
       function setTheme(theme) {
         if (theme === 'dark') {
+          body.classList.remove('light-theme');
           body.classList.add('dark-theme');
           themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
           localStorage.setItem('theme', 'dark');
         } else {
           body.classList.remove('dark-theme');
+          body.classList.add('light-theme');
           themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
           localStorage.setItem('theme', 'light');
         }
