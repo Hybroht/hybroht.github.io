@@ -419,27 +419,28 @@
     }
 
     /*circular icon-only buttons with hover effects*/
-    .icon-btn {
-      background-color: transparent; /* No background */
-      border: none;                  /* No border */
+    .social-buttons button.icon-btn {
+      all: unset; /* reset all inherited styles */
       cursor: pointer;
-      color: var(--color-button-bg); /* Use your theme button color */
-      font-size: 1.8rem;            /* Icon size */
+      color: var(--color-button-bg);
+      font-size: 1.8rem;
       width: 3.2rem;
       height: 3.2rem;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border-radius: 50%;           /* Circle shape */
+      border-radius: 50%;
       transition: color 0.3s ease, background-color 0.3s ease;
-      padding: 0;
+      user-select: none;
       margin: 0 0.3rem;
+      padding: 0;
+      box-sizing: border-box;
     }
     
-    .icon-btn:hover,
-    .icon-btn:focus {
-      color: white;                 /* Icon color on hover */
-      background-color: var(--color-button-bg); /* Background on hover */
+    .social-buttons button.icon-btn:hover,
+    .social-buttons button.icon-btn:focus {
+      color: white;
+      background-color: var(--color-button-bg);
       outline: none;
     }
 
@@ -576,15 +577,15 @@
     <!-- Social media and subscription inline -->
     <div class="social-subscription" aria-label="Social media and newsletter subscription">
         <div class="social-buttons" aria-label="Social media links">
-        <button aria-label="Medium" onclick="window.open('https://medium.com/@yourenterprise', '_blank')" class="icon-btn">
+          <button aria-label="Medium" onclick="window.open('https://medium.com/@yourenterprise', '_blank')" class="social-btn icon-btn">
             <i class="fab fa-medium"></i>
-        </button>
-        <button aria-label="WhatsApp" onclick="window.open('https://wa.me/yourwhatsapplink', '_blank')" class="icon-btn">
+          </button>
+          <button aria-label="WhatsApp" onclick="window.open('https://wa.me/yourwhatsapplink', '_blank')" class="social-btn icon-btn">
             <i class="fab fa-whatsapp"></i>
-        </button>
-        <button aria-label="YouTube" onclick="window.open('https://youtube.com/yourchannel', '_blank')" class="icon-btn">
+          </button>
+          <button aria-label="YouTube" onclick="window.open('https://youtube.com/yourchannel', '_blank')" class="social-btn icon-btn">
             <i class="fab fa-youtube"></i>
-        </button>
+          </button>
         </div>
 
         <div class="subscription">
