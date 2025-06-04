@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Enterprise Name</title>
-  <!-- Font Awesome CDN for icons -->
+  <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,54 +12,206 @@
     referrerpolicy="no-referrer"
   />
   <style>
-    /* Reset and base styles */
+    /* CSS Variables for themes */
+    :root {
+      --color-primary: #3a6b3a;       /* softer dark green */
+      --color-primary-light: #5a8f5a; /* lighter soft green */
+      --color-bg: #121212;            /* keep dark background */
+      --color-text: #c0c0c0;          /* silver-ish grey text */
+      --color-card-bg: #222722;       /* very dark greenish background for cards */
+      --color-border: #5a8f5a;        /* soft green border */
+      --color-accent: #5a8f5a;        /* soft green accent */
+      --color-footer-bg: #1a1a1a;     /* dark grey footer */
+      --color-footer-text: #999999;   /* lighter silver footer text */
+      --color-button-bg: #3a6b3a;     /* soft green buttons */
+      --color-button-hover: #5a8f5a;  /* lighter green hover */
+      --color-link: #5a8f5a;          /* soft green links */
+      --color-link-hover: #8bc78b;    /* even lighter green on hover */
+    }
+    .light-theme {
+      --color-primary: #004080; /* Blue */
+      --color-primary-light: #0066cc;
+      --color-bg: #f9f9f9;
+      --color-text: #333;
+      --color-card-bg: #fff;
+      --color-border: #004080;
+      --color-accent: #0066cc;
+      --color-footer-bg: #222;
+      --color-footer-text: #ccc;
+      --color-button-bg: #004080;
+      --color-button-hover: #0066cc;
+      --color-link: #004080;
+      --color-link-hover: #0066cc;
+    }
+    .dark-theme {
+      --color-primary: #3a6b3a;       /* softer dark green */
+      --color-primary-light: #5a8f5a; /* lighter soft green */
+      --color-bg: #121212;            /* keep dark background */
+      --color-text: #c0c0c0;          /* silver-ish grey text */
+      --color-card-bg: #222722;       /* very dark greenish background for cards */
+      --color-border: #5a8f5a;        /* soft green border */
+      --color-accent: #5a8f5a;        /* soft green accent */
+      --color-footer-bg: #1a1a1a;     /* dark grey footer */
+      --color-footer-text: #999999;   /* lighter silver footer text */
+      --color-button-bg: #3a6b3a;     /* soft green buttons */
+      --color-button-hover: #5a8f5a;  /* lighter green hover */
+      --color-link: #5a8f5a;          /* soft green links */
+      --color-link-hover: #8bc78b;    /* even lighter green on hover */
+    }
+
+    /* Reset and base */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: var(--color-bg);
+      color: var(--color-text);
       line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
+
+    /* Sticky header with menu and enterprise name */
     header {
-      background-color: #004080;
+      position: sticky;
+      top: 0;
+      background-color: var(--color-primary);
       color: white;
-      padding: 1rem 2rem;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1.5rem;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      flex-wrap: wrap;
     }
-    header h1 {
-      margin: 0;
+    /* Enterprise name top-left */
+    .enterprise-name {
       font-weight: 700;
+      font-size: 1.5rem;
+      user-select: none;
+      white-space: nowrap;
     }
     nav {
-      margin-top: 0.5rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: 600;
+      font-size: 1.1rem;
       transition: color 0.3s ease;
     }
-    nav a:hover {
-      color: #ffcc00;
+    nav a:hover,
+    nav a:focus {
+      color: var(--color-primary-light);
+      outline: none;
     }
+
+    /* Theme toggle button */
+    .theme-toggle {
+      background-color: var(--color-button-bg);
+      color: white;
+      border: none;
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      margin-left: 1rem;
+      white-space: nowrap;
+    }
+    .theme-toggle:hover,
+    .theme-toggle:focus {
+      background-color: var(--color-button-hover);
+      outline: none;
+    }
+
+    /* Logo below header */
+    .logo-container {
+      text-align: center;
+      margin: 2rem 0 3rem;
+    }
+    .logo-container img.logo {
+      height: 80px;
+      width: auto;
+      object-fit: contain;
+      display: inline-block;
+    }
+
     main {
+      flex-grow: 1;
       max-width: 960px;
-      margin: 2rem auto;
+      margin: 0 auto 2rem;
       padding: 0 1rem;
+      width: 100%;
+      transition: color 0.3s ease;
     }
-    section.services {
+
+    /* Section titles */
+    section > h2 {
+      border-bottom: 3px solid var(--color-primary);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+      font-weight: 700;
+      transition: color 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    section > h2 a.archive-link {
+      font-size: 0.8rem;
+      font-weight: normal;
+      color: var(--color-link);
+      text-decoration: none;
+      border: 1px solid var(--color-link);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    section > h2 a.archive-link:hover,
+    section > h2 a.archive-link:focus {
+      background-color: var(--color-link);
+      color: white;
+      outline: none;
+    }
+
+    /* Service category container */
+    .service-category {
+      margin-bottom: 3rem;
+    }
+    .service-category h3 {
+      margin-bottom: 1rem;
+      color: var(--color-primary-light);
+      border-left: 5px solid var(--color-primary-light);
+      padding-left: 0.5rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    /* Cards grid */
+    .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
+
+    /* Individual card */
     .service-card {
-      background-color: white;
+      background-color: var(--color-card-bg);
       border-radius: 8px;
       padding: 1.5rem;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
     }
     .service-card:hover {
       transform: translateY(-5px);
@@ -67,61 +219,326 @@
     }
     .service-icon {
       font-size: 3rem;
-      color: #004080;
+      color: var(--color-primary);
       margin-bottom: 1rem;
+      transition: color 0.3s ease;
     }
+    .service-card h4 {
+      margin: 0.5rem 0 1rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      transition: color 0.3s ease;
+    }
+    .service-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--color-text);
+      transition: color 0.3s ease;
+    }
+
+    /* News section */
+    #news ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    #news ul li {
+      background: var(--color-card-bg);
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    #news ul li h4 {
+      margin: 0 0 0.5rem;
+      color: var(--color-primary);
+      transition: color 0.3s ease;
+    }
+    #news ul li p {
+      margin: 0;
+      color: var(--color-text);
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    /* Archive button below news */
+    .archive-container {
+      text-align: right;
+      margin-top: 1rem; /* Increased margin to prevent overlap */
+      margin-bottom: 3rem;
+    }
+    .archive-container a.archive-link {
+      font-size: 0.9rem;
+      font-weight: normal;
+      color: var(--color-link);
+      text-decoration: none;
+      border: 1px solid var(--color-link);
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .archive-container a.archive-link:hover,
+    .archive-container a.archive-link:focus {
+      background-color: var(--color-link);
+      color: white;
+      outline: none;
+    }
+
+    /* Social + subscription container */
+    .social-subscription {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: 2rem 0 1rem;
+    }
+    .social-buttons {
+      display: flex;
+      gap: 0.75rem;
+    }
+    .social-buttons button {
+      background-color: var(--color-button-bg);
+      border: none;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+    .social-buttons button:hover {
+      background-color: var(--color-button-hover);
+    }
+
+    /* Subscription form */
+    .subscription {
+      max-width: 320px;
+      min-width: 280px;
+      text-align: center;
+    }
+    .subscription form {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .subscription label {
+      display: none; /* Hidden label for accessibility */
+    }
+    .subscription input[type="email"] {
+      flex-grow: 1;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .subscription input[type="email"]:focus {
+      outline: none;
+      border-color: var(--color-accent);
+      box-shadow: 0 0 5px var(--color-accent);
+    }
+    .subscription button {
+      background-color: var(--color-button-bg);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+    }
+    .subscription button:hover {
+      background-color: var(--color-button-hover);
+    }
+
+    /* Footer */
     footer {
-      background-color: #222;
-      color: #ccc;
+      background-color: var(--color-footer-bg);
+      color: var(--color-footer-text);
       text-align: center;
       padding: 1rem 2rem;
-      margin-top: 3rem;
+      font-size: 0.9rem;
+      margin-top: auto;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
+
+    /* Responsive tweaks */
     @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
+      nav {
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+        order: 2;
+        margin-top: 0.5rem;
+      }
+      .enterprise-name {
+        flex-basis: 100%;
+        text-align: center;
+        order: 1;
+        margin-bottom: 0.5rem;
+      }
+      .theme-toggle {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        order: 3;
+        width: 100%;
+      }
+      .social-subscription {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .subscription {
+        max-width: 100%;
+        min-width: auto;
+        width: 100%;
+      }
+      .subscription form {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .subscription button {
+        width: 100%;
+      }
+      .social-buttons button {
+        width: 100%;
+        justify-content: center;
+      }
+      .archive-container {
+        text-align: center;
+        margin-bottom: 2rem;
       }
     }
   </style>
 </head>
 <body>
+  <!-- Header with menu and enterprise name -->
   <header>
-    <h1>Your Enterprise Name</h1>
-    <nav>
+    <div class="enterprise-name" aria-label="Enterprise Name">Your Enterprise Name</div>
+    <nav aria-label="Primary navigation">
       <a href="#services"><i class="fas fa-cogs"></i> Services</a>
       <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
       <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
+    <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
+      <i class="fas fa-sun"></i> Light Mode
+    </button>
   </header>
 
+  <!-- Logo below header -->
+  <div class="logo-container">
+    <img src="assets/logo.png" alt="Enterprise Logo" class="logo" />
+  </div>
+
   <main>
-    <section id="services" class="services">
-      <article class="service-card">
-        <i class="fas fa-chart-line service-icon" aria-hidden="true"></i>
-        <h2>Consulting</h2>
-        <p>Expert advice to help your business grow and succeed in a competitive market.</p>
-      </article>
-      <article class="service-card">
-        <i class="fas fa-laptop-code service-icon" aria-hidden="true"></i>
-        <h2>Software Development</h2>
-        <p>Custom software solutions tailored to your enterprise needs and goals.</p>
-      </article>
-      <article class="service-card">
-        <i class="fas fa-shield-alt service-icon" aria-hidden="true"></i>
-        <h2>Security Services</h2>
-        <p>Protect your digital assets with our comprehensive security audits and solutions.</p>
-      </article>
-      <!-- Add more service cards as needed -->
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <div class="service-category">
+        <h3>Research Enterprises</h3>
+        <div class="services-grid">
+          <article class="service-card">
+            <i class="fas fa-flask service-icon" aria-hidden="true"></i>
+            <h4>Scientific Studies</h4>
+            <p>Conducting rigorous scientific research to advance knowledge in various fields.</p>
+          </article>
+          <article class="service-card">
+            <i class="fas fa-microscope service-icon" aria-hidden="true"></i>
+            <h4>Lab Analysis</h4>
+            <p>Providing detailed laboratory testing and analysis services.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="service-category">
+        <h3>Technological Enterprises</h3>
+        <div class="services-grid">
+          <article class="service-card">
+            <i class="fas fa-robot service-icon" aria-hidden="true"></i>
+            <h4>Automation Solutions</h4>
+            <p>Designing and implementing automation systems to optimize workflows.</p>
+          </article>
+          <article class="service-card">
+            <i class="fas fa-cloud service-icon" aria-hidden="true"></i>
+            <h4>Cloud Integration</h4>
+            <p>Seamless integration of cloud services to enhance business scalability.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="service-category">
+        <h3>Math Enterprises</h3>
+        <div class="services-grid">
+          <article class="service-card">
+            <i class="fas fa-calculator service-icon" aria-hidden="true"></i>
+            <h4>Mathematical Modeling</h4>
+            <p>Creating mathematical models to simulate real-world systems and problems.</p>
+          </article>
+          <article class="service-card">
+            <i class="fas fa-chart-pie service-icon" aria-hidden="true"></i>
+            <h4>Statistical Analysis</h4>
+            <p>Advanced statistical methods to interpret complex data sets.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="service-category">
+        <h3>Data Science Enterprises</h3>
+        <div class="services-grid">
+          <article class="service-card">
+            <i class="fas fa-database service-icon" aria-hidden="true"></i>
+            <h4>Data Warehousing</h4>
+            <p>Building scalable data warehouses to centralize enterprise data.</p>
+          </article>
+          <article class="service-card">
+            <i class="fas fa-chart-line service-icon" aria-hidden="true"></i>
+            <h4>Predictive Analytics</h4>
+            <p>Leveraging machine learning to forecast trends and business outcomes.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="about" style="margin-top: 3rem;">
+    <!-- Latest News Section -->
+    <section id="news">
+      <h2>Latest News</h2>
+      <ul>
+        <li>
+          <h4>Enterprise Launches New AI Research Lab</h4>
+          <p>We are excited to announce the opening of our new AI research facility dedicated to advancing artificial intelligence technologies.</p>
+        </li>
+        <li>
+          <h4>Partnership with Global Tech Innovators</h4>
+          <p>Our enterprise has partnered with leading tech companies to deliver cutting-edge automation solutions.</p>
+        </li>
+        <li>
+          <h4>Upcoming Webinar on Data Science Trends</h4>
+          <p>Join us for a free webinar where our experts discuss the latest trends and tools in data science.</p>
+        </li>
+      </ul>
+      <div class="archive-container">
+        <a href="#news-archive" class="archive-link" aria-label="View news archive">View News Archive</a>
+      </div>
+    </section>
+
+    <!-- About Us Section (after news) -->
+    <section id="about" style="margin-bottom: 3rem;">
       <h2>About Us</h2>
       <p>
         We are a dedicated enterprise focused on delivering top-quality services to help your business thrive. Our team of professionals brings years of experience and a passion for innovation.
       </p>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" style="margin-top: 3rem;">
       <h2>Contact</h2>
       <p>Reach out to us to discuss how we can support your business.</p>
@@ -129,10 +546,73 @@
       <p><i class="fas fa-envelope"></i> Email: contact@yourenterprise.com</p>
       <p><i class="fas fa-map-marker-alt"></i> Address: 123 Business Rd, Suite 100, Your City</p>
     </section>
+
+    <!-- Social media and subscription inline -->
+    <div class="social-subscription" aria-label="Social media and newsletter subscription">
+      <div class="social-buttons">
+        <button aria-label="Medium" onclick="window.open('https://medium.com/@yourenterprise', '_blank')">
+          <i class="fab fa-medium"></i> Medium
+        </button>
+        <button aria-label="WhatsApp" onclick="window.open('https://wa.me/yourwhatsapplink', '_blank')">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+        <button aria-label="YouTube" onclick="window.open('https://youtube.com/yourchannel', '_blank')">
+          <i class="fab fa-youtube"></i> YouTube
+        </button>
+      </div>
+
+      <div class="subscription">
+        <form action="#" method="post" onsubmit="return subscribe(event)">
+          <label for="email">Subscribe to our newsletter</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
   </main>
 
   <footer>
     &copy; 2025 Your Enterprise Name. All rights reserved.
   </footer>
+
+  <script>
+    // Immediately apply dark theme on page load to prevent flicker
+    (function() {
+      const body = document.body;
+      const themeToggleBtn = document.querySelector('.theme-toggle');
+
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          body.classList.add('dark-theme');
+          themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.remove('dark-theme');
+          themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+          localStorage.setItem('theme', 'light');
+        }
+      }
+
+      // Load saved theme or default to dark
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      setTheme(savedTheme);
+
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      });
+    })();
+
+    // Simple subscription form handler
+    function subscribe(event) {
+      event.preventDefault();
+      const email = event.target.email.value.trim();
+      if (email) {
+        alert(`Thank you for subscribing with ${email}!`);
+        event.target.reset();
+      }
+      return false;
+    }
+  </script>
 </body>
 </html>
