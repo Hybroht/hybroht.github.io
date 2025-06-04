@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Enterprise Name</title>
+  <!-- Font Awesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    /* Reset and base styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section.services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .service-icon {
+      font-size: 3rem;
+      color: #004080;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Enterprise Name</h1>
+    <nav>
+      <a href="#services"><i class="fas fa-cogs"></i> Services</a>
+      <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services" class="services">
+      <article class="service-card">
+        <i class="fas fa-chart-line service-icon" aria-hidden="true"></i>
+        <h2>Consulting</h2>
+        <p>Expert advice to help your business grow and succeed in a competitive market.</p>
+      </article>
+      <article class="service-card">
+        <i class="fas fa-laptop-code service-icon" aria-hidden="true"></i>
+        <h2>Software Development</h2>
+        <p>Custom software solutions tailored to your enterprise needs and goals.</p>
+      </article>
+      <article class="service-card">
+        <i class="fas fa-shield-alt service-icon" aria-hidden="true"></i>
+        <h2>Security Services</h2>
+        <p>Protect your digital assets with our comprehensive security audits and solutions.</p>
+      </article>
+      <!-- Add more service cards as needed -->
+    </section>
+
+    <section id="about" style="margin-top: 3rem;">
+      <h2>About Us</h2>
+      <p>
+        We are a dedicated enterprise focused on delivering top-quality services to help your business thrive. Our team of professionals brings years of experience and a passion for innovation.
+      </p>
+    </section>
+
+    <section id="contact" style="margin-top: 3rem;">
+      <h2>Contact</h2>
+      <p>Reach out to us to discuss how we can support your business.</p>
+      <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+      <p><i class="fas fa-envelope"></i> Email: contact@yourenterprise.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Address: 123 Business Rd, Suite 100, Your City</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Enterprise Name. All rights reserved.
+  </footer>
+</body>
+</html>
