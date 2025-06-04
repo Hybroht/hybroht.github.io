@@ -417,6 +417,32 @@
         margin-bottom: 2rem;
       }
     }
+
+    /*circular icon-only buttons with hover effects*/
+    .icon-btn {
+      background-color: transparent; /* No background */
+      border: none;                  /* No border */
+      cursor: pointer;
+      color: var(--color-button-bg); /* Use your theme button color */
+      font-size: 1.8rem;            /* Icon size */
+      width: 3.2rem;
+      height: 3.2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;           /* Circle shape */
+      transition: color 0.3s ease, background-color 0.3s ease;
+      padding: 0;
+      margin: 0 0.3rem;
+    }
+    
+    .icon-btn:hover,
+    .icon-btn:focus {
+      color: white;                 /* Icon color on hover */
+      background-color: var(--color-button-bg); /* Background on hover */
+      outline: none;
+    }
+
   </style>
 </head>
 <body>
@@ -549,25 +575,25 @@
 
     <!-- Social media and subscription inline -->
     <div class="social-subscription" aria-label="Social media and newsletter subscription">
-      <div class="social-buttons">
-        <button aria-label="Medium" onclick="window.open('https://medium.com/@yourenterprise', '_blank')">
-          <i class="fab fa-medium"></i> Medium
+        <div class="social-buttons" aria-label="Social media links">
+        <button aria-label="Medium" onclick="window.open('https://medium.com/@yourenterprise', '_blank')" class="icon-btn">
+            <i class="fab fa-medium"></i>
         </button>
-        <button aria-label="WhatsApp" onclick="window.open('https://wa.me/yourwhatsapplink', '_blank')">
-          <i class="fab fa-whatsapp"></i> WhatsApp
+        <button aria-label="WhatsApp" onclick="window.open('https://wa.me/yourwhatsapplink', '_blank')" class="icon-btn">
+            <i class="fab fa-whatsapp"></i>
         </button>
-        <button aria-label="YouTube" onclick="window.open('https://youtube.com/yourchannel', '_blank')">
-          <i class="fab fa-youtube"></i> YouTube
+        <button aria-label="YouTube" onclick="window.open('https://youtube.com/yourchannel', '_blank')" class="icon-btn">
+            <i class="fab fa-youtube"></i>
         </button>
-      </div>
+        </div>
 
-      <div class="subscription">
+        <div class="subscription">
         <form action="#" method="post" onsubmit="return subscribe(event)">
-          <label for="email">Subscribe to our newsletter</label>
-          <input type="email" id="email" name="email" placeholder="Your email address" required />
-          <button type="submit">Subscribe</button>
+            <label for="email">Subscribe to our newsletter</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
         </form>
-      </div>
+        </div>
     </div>
   </main>
 
