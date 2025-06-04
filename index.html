@@ -85,7 +85,7 @@
 
     /* Sticky header with menu and enterprise name */
     header {
-      position: fixed;
+      position: sticky;
       top: 0;
       width: 100%; /* Make header full width */
       background-color: var(--color-primary);
@@ -137,6 +137,7 @@
       transition: background-color 0.3s ease;
       margin-left: 1rem;
       white-space: nowrap;
+      flex-shrink: 0; /* Prevent shrinking */
     }
     .theme-toggle:hover,
     .theme-toggle:focus {
@@ -162,6 +163,7 @@
       margin: 0 auto 2rem;
       padding: 0 1rem;
       width: 100%;
+      box-sizing: border-box; /* Add this */
       transition: color 0.3s ease;
     }
 
