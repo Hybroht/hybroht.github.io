@@ -238,9 +238,6 @@ section > h2 a.archive-link:focus {
 #news ul {
     list-style-type: none;
     padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center cards horizontally */
 }
 #news ul li {
     background: var(--color-card-bg);
