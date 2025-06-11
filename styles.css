@@ -238,6 +238,9 @@ section > h2 a.archive-link:focus {
 #news ul {
     list-style-type: none;
     padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards horizontally */
 }
 #news ul li {
     background: var(--color-card-bg);
@@ -258,6 +261,14 @@ section > h2 a.archive-link:focus {
     font-size: 0.95rem;
     transition: color 0.3s ease;
 }
+#news ul li time {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-muted, #666666);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
 
 /* Archive button below news */
 .archive-container {
