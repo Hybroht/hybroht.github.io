@@ -1,2 +1,3 @@
 # hybroht.github.io
-TEST2
+Template for the Hybroht Website.
+Reference for the real website.
