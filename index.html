@@ -13,6 +13,8 @@
     referrerpolicy="no-referrer"
   />
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Adding a Javascript for the Bluesky Embed-->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 </head>
 <body>
   <!-- Header with menu and enterprise name -->
@@ -126,6 +128,7 @@
     <!-- Latest News Section -->
     <section id="news">
       <h2>Latest News</h2>
+      <h3>Highlights</h3>
       <ul>
         <li>
           <h4>Enterprise Launches New AI Research</h4>
@@ -145,6 +148,19 @@
       </ul>
       <div class="archive-container">
         <a href="#news-archive" class="archive-link" aria-label="View news archive">View News Archive</a>
+      </div>
+      <h3>Live Updates</h3>
+      <div class="bsky-embed" >
+        <bsky-embed
+          username="hybroht.com"
+          limit="3"
+          disable-styles="false"
+          custom-styles=".border-slate-300 { border-color: #5a8f5a; padding-left : 0rem;}
+          #img.rounded-full { display: none; }
+          "
+          disable-images="true"
+          disable-videos="true"
+          disable-autoplay="true"></bsky-embed>
       </div>
     </section>
 
@@ -174,8 +190,14 @@
           <button aria-label="WhatsApp" onclick="window.open('https://wa.me/message/C5375ZLSCRAZN1', '_blank')" class="social-btn icon-btn">
             <i class="fab fa-whatsapp"></i>
           </button>
+          <button aria-label="GitHub" onclick="window.open('https://github.com/hybroht', '_blank')" class="social-btn icon-btn">
+            <i class="fab fa-github"></i>
+          </button>
           <button aria-label="YouTube" onclick="window.open('https://www.youtube.com/@Hybroht', '_blank')" class="social-btn icon-btn">
             <i class="fab fa-youtube"></i>
+          </button>
+          <button aria-label="Gumroad" onclick="window.open('https://gumroad.com/hybroht', '_blank')" class="social-btn icon-btn">
+            <i class="fas fa-shopping-cart"></i>
           </button>
         </div>
 
