@@ -57,6 +57,13 @@ html {
 }
 
 body {
+    background-image: url('assets/background-image-opacity-v3.png');
+    background-repeat: repeat;
+    background-size: contain; /* or contain, depending on your needs */
+    background-color: transparent; 
+    background-blend-mode:multiply ; /* or try multiply, screen, overlay, difference */
+    background-position: left center;
+    background-size: 18%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
