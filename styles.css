@@ -52,6 +52,8 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -66,6 +68,13 @@ body {
     min-height: 100vh;
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+/* A lighter, standard blue for hyperlinks */
+a {
+  color: #1a73e8;
 }
 
 /* Sticky header with menu and enterprise name */
