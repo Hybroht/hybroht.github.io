@@ -52,9 +52,18 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
+    background-image: url('assets/background-image-opacity-v3.png');
+    background-repeat: repeat;
+    background-size: contain; /* or contain, depending on your needs */
+    background-color: transparent; 
+    background-blend-mode:multiply ; /* or try multiply, screen, overlay, difference */
+    background-position: left center;
+    background-size: 18%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -66,6 +75,13 @@ body {
     min-height: 100vh;
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+/* A lighter, standard blue for hyperlinks */
+a {
+  color: #1a73e8;
 }
 
 /* Sticky header with menu and enterprise name */
