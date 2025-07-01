@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News Archive - Hybroht Enterprise</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <!-- Header with menu and enterprise name -->
+  <header>
+    <div class="enterprise-name" aria-label="Enterprise Name">HYBROHT</div>
+    <nav aria-label="Primary navigation">
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
+      <i class="fas fa-moon"></i> Dark Mode
+    </button>
+  </header>
+
+  <!-- Logo below header -->
+  <div class="logo-container">
+    <img src="assets/logo.png" alt="Enterprise Logo" class="logo" />
+  </div>
+
+  <main>
+    <section id="news">
+      <h1>News Archive</h1>
+      <p>
+        Welcome to the archive of past news articles and announcements from Hybroht. Here you can browse older updates and milestones.
+      </p>
+
+      <ul>
+        <li>
+          <h4>Hybroht's first published article</h4>
+          <time datetime="2025-06-30T19:30">June 30, 2025, 07:30 PM</time>
+          <p>We've published our first article on Medium, exploring the fascinating relationship between fractals and choices. Learn more <a href="https://medium.com/@hybroht/self-similar-choices-mandelbrots-angel-of-fractals-necessity-5e7256414eb2">here</a>.</p>
+        </li>
+        <li>
+          <h4>Enterprise Launches New AI Research</h4>
+          <time datetime="2025-06-10T09:00">June 10, 2025, 9:00 AM</time>
+          <p>We are excited to announce the opening of our new AI research dedicated to advancing artificial intelligence technologies.</p>
+        </li>
+        <li>
+          <h4>Hilbert's Sixth Problem Solved, Grounding Physics in Rigorous Math and Unlocking the Secrets of Time</h4>
+          <time datetime="2025-06-09T14:30">June 9, 2025, 2:30 PM</time>
+          <p>Breakthroughs in quantum computing, advanced gene editing, and innovative renewable energy technologies shaping the future.</p>
+        </li>
+        <!-- Add more archived news items here -->
+      </ul>
+
+      <nav class="archive-navigation" aria-label="Navigation">
+        <a href="index.html" class="back-to-home">← Back to Latest News</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Hybroht Digital Enterprise Company. All rights reserved.
+  </footer>
+
+
+  <script>
+    // Immediately apply dark theme on page load to prevent flicker
+    (function() {
+      const body = document.body;
+      const themeToggleBtn = document.querySelector('.theme-toggle');
+      if (!themeToggleBtn) return; // Exit if no toggle button on page
+
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          body.classList.remove('light-theme');
+          body.classList.add('dark-theme');
+          themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i> Dark Mode';
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.remove('dark-theme');
+          body.classList.add('light-theme');
+          themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i> Light Mode';
+          localStorage.setItem('theme', 'light');
+        }
+      }
+
+      // Load saved theme or default to dark
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      setTheme(savedTheme);
+
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>

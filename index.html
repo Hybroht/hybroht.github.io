@@ -23,7 +23,9 @@
     <nav aria-label="Primary navigation">
       <a href="#services"><i class="fas fa-cogs"></i> Services</a>
       <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="#news"><i class="fas fa-newspaper"></i> News</a>
       <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="#contact"><i class="fas fa-shopping-cart"></i> Products</a>
     </nav>
     <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
       <i class="fas fa-moon"></i> Dark Mode
@@ -147,7 +149,7 @@
         </li>
       </ul>
       <div class="archive-container">
-        <a href="#news-archive" class="archive-link" aria-label="View news archive">View News Archive</a>
+        <a href="news-archive.html" class="archive-link" aria-label="View news archive">View News Archive</a>
       </div>
       <h3>Live Updates</h3>
       <div class="bsky-embed" >
@@ -230,6 +232,7 @@
     (function() {
       const body = document.body;
       const themeToggleBtn = document.querySelector('.theme-toggle');
+      if (!themeToggleBtn) return; // Exit if no toggle button on page
 
       function setTheme(theme) {
         if (theme === 'dark') {
