@@ -113,6 +113,6 @@ O workflow é fornecido “no estado em que se encontra” (“as is”), sem qu
 - **Boa-fé:**  
   Todas as demandas, solicitações e reivindicações deverão ser feitas de boa-fé, sendo vedado o ajuizamento ou encaminhamento por motivos abusivos, frívolos ou com intuito malicioso.
 
-*Em caso de dúvidas sobre estes termos, entre em contato antes de concluir a aquisição.*
+*Em caso de dúvidas sobre estes termos, entre em contato.*
 
 ---

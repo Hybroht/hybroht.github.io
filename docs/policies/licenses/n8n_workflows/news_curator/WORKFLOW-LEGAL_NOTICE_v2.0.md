@@ -113,6 +113,6 @@ The workflow is provided “as is,” with no warranties and limited support. **
 - **Good Faith Requirement:**  
   All requests and claims must be made in good faith and not for abusive, frivolous, or malicious reasons.
 
-*If you have questions about these terms, contact us before purchasing.*
+*If you have questions about these terms, contact us.*
 
 ---
