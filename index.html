@@ -59,9 +59,9 @@
     <nav aria-label="Primary navigation">
       <a href="#services" aria-label="Learn more about our services"><i class="fas fa-cogs"></i> Services</a>
       <a href="#news" aria-label="Discover our latest news and live updates"><i class="fas fa-newspaper"></i> News</a>
-      <a href="#contact" aria-label="Get in touch with us through email or chat"><i class="fas fa-envelope"></i> Contact</a>
       <a href="#products" aria-label="Explore our range of products and services through the cart icon"><i class="fas fa-shopping-cart"></i> Products</a>
       <a href="#about"  aria-label="Find out more about us and our values"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="#contact" aria-label="Get in touch with us through email or chat"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
     <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
       <i class="fas fa-moon"></i> Dark Mode
@@ -202,11 +202,35 @@
       </div>
     </section>
 
+  
+  
+    <section id="products" style="margin-top: 3rem; margin-bottom: 3rem;">
+      <h2>Products</h2>
+        <div class="products-grid">
+          <p>
+            Hybroht's digital products are available securely and conveniently through Gumroad’s platform.
+          </p>
+          <div class="subscription">
+            <button 
+              type="button" 
+              aria-label="Visit Hybroht's Gumroad Store" 
+              onclick="window.open('https://hybroht.gumroad.com', '_blank')" 
+              class="btn">
+              <i class="fas fa-shopping-cart" aria-hidden="true" style="margin-right: 0.5em;"></i>
+              Visit Our Store
+            </button>
+          </div>
+        </div>
+    </section>
+
     <!-- About Us Section (after news) -->
     <section id="about" style="margin-bottom: 3rem;">
       <h2>About Us</h2>
       <p>
-        We blend cutting-edge and industry-standard technologies to deliver tailored software solutions and intuitive data-driven experiences. Our mission is to equip businesses to confidently navigate and thrive in the complexities of the ever-evolving digital landscape.
+        Hybroht Enterprise delivers tailored software offerings and data-driven experiences grounded in cutting-edge, industry-standard technologies. Our team of computer engineers, data scientists, technology researchers, and AI enthusiasts is dedicated to developing intuitive and effective solutions addressing the evolving needs of our clients.
+      </p>
+      <p>
+        We research and develop scalable solutions, mathematical models, software architectures, and AI-driven workflows that unlock new possibilities. Whether you require advanced automation, data research, or specialized software aligned with your goals, Hybroht offers the capability and agility to help you confidently navigate the digital frontier.
       </p>
     </section>
 
@@ -217,11 +241,6 @@
       <!-- <p><i class="fas fa-phone"></i> Phone: (Business Partners Only)</p> -->
       <p><i class="fas fa-envelope"></i> Email: contact@hybroht.com</p>
       <!-- <p><i class="fas fa-map-marker-alt"></i> Address: (Business Partners Only)</p> -->
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" style="margin-top: 0rem;">
-      <!-- <p>This is only here to serve as an anchor</p> -->
     </section>
 
     <!-- Social media and subscription inline -->
@@ -245,23 +264,12 @@
           <button aria-label="LinkedIn" onclick="window.open('https://www.linkedin.com/company/hybroht', '_blank')" class="social-btn icon-btn">
             <i class="fab fa-linkedin"></i>
           </button>
-          <button aria-label="Gumroad" onclick="window.open('https://gumroad.com/hybroht', '_blank')" class="social-btn icon-btn">
+          <!--button aria-label="Gumroad" onclick="window.open('https://gumroad.com/hybroht', '_blank')" class="social-btn icon-btn">
             <i class="fas fa-shopping-cart"></i>
-          </button>
+          </button-->
         </div>
 
         <div class="subscription">
-        <!-- <form action="#" method="post" onsubmit="return subscribe(event)">
-            <label for="email">Subscribe to our newsletter</label>
-            <input type="email" id="email" name="email" placeholder="Your email address" required />
-            <button type="submit">Subscribe</button>
-        </form> -->
-        <!-- <iframe src="https://hybroht.substack.com/embed" 
-         width="480"
-         height="320"
-         style="border:1px solid #EEE; background:white;"
-         frameborder="0"
-         scrolling="no"></iframe> -->
          <form id="custom-subscribe-form">
           <input type="email" id="email" placeholder="Your email" required />
           <button type="submit">Subscribe</button>
@@ -304,26 +312,6 @@
         setTheme(currentTheme === 'dark' ? 'light' : 'dark');
       });
     })();
-
-    // Simple subscription form handler
-    // function subscribe(event) {
-    //   event.preventDefault();
-    //   const email = event.target.email.value.trim();
-    //   if (email) {
-    //     alert(`Thank you for subscribing with ${email}!`);
-    //     event.target.reset();
-    //   }
-    //   return false;
-    // }
-
-    // Opening a new window/tab for subscription
-    // document.getElementById('custom-subscribe-form').addEventListener('submit', function(e) {
-    // e.preventDefault();
-    // const email = document.getElementById('email').value;
-    // // Open Substack subscribe page in new tab with email prefilled (test if supported)
-    // const url = `https://hybroht.substack.com/subscribe?email=${encodeURIComponent(email)}`;
-    // window.open(url, '_blank');
-    // });
 
     // Opening a popup for subscription, otherwise opening a new window/tab
     function openCenteredPopup(url, title, w, h) {
