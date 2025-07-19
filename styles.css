@@ -108,9 +108,9 @@ header {
 }
 nav {
     display: flex;
-    gap: 2rem;
+    gap: 3.6rem;
     flex-wrap: wrap;
-    align-items: center;
+    align-items:center;
 }
 nav a {
     color: white;
@@ -138,13 +138,12 @@ nav.archive-navigation a {
     background-color: var(--color-button-bg);
     color: white;
     border: none;
-    padding: 0.4rem 5rem;
+    padding: 0.8rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     transition: background-color 0.3s ease;
-    margin-left: 1rem;
     white-space: nowrap;
     flex-shrink: 0; /* Prevent shrinking */
 }
@@ -448,7 +447,7 @@ footer {
     margin-left: 0;
     margin-top: 0.5rem;
     order: 3;
-    width: 100%;
+    width: 12%;
     }
     .social-subscription {
     flex-direction: column;
