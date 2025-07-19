@@ -60,12 +60,14 @@
       <a href="#services" aria-label="Learn more about our services"><i class="fas fa-cogs"></i> Services</a>
       <a href="#news" aria-label="Discover our latest news and live updates"><i class="fas fa-newspaper"></i> News</a>
       <a href="#products" aria-label="Explore our range of products and services through the cart icon"><i class="fas fa-shopping-cart"></i> Products</a>
-      <a href="#about"  aria-label="Find out more about us and our values"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="#about"  aria-label="Find out more about us and our values"><i class="fas fa-info-circle"></i> About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
       <a href="#contact" aria-label="Get in touch with us through email or chat"><i class="fas fa-envelope"></i> Contact</a>
-    </nav>
     <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
-      <i class="fas fa-moon"></i> Dark Mode
+      <i class="fas fa-moon"></i><!-- Dark Mode-->
     </button>
+    <a href="#nothing" aria-label="nothing"></a>
+    </nav>
+    <button class="theme-toggle" aria-label="nothing" title="nothing" style="visibility: hidden; padding: 0rem 0rem;"></button>
   </header>
 
   <!-- Logo below header -->
@@ -293,12 +295,12 @@
         if (theme === 'dark') {
           body.classList.remove('light-theme');
           body.classList.add('dark-theme');
-          themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i> Dark Mode';
+          themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';// Dark Mode
           localStorage.setItem('theme', 'dark');
         } else {
           body.classList.remove('dark-theme');
           body.classList.add('light-theme');
-          themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i> Light Mode';
+          themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';// Light Mode
           localStorage.setItem('theme', 'light');
         }
       }
