@@ -508,3 +508,16 @@ footer {
   gap: 0.5rem;
   align-items: center; /* vertical alignment */
 }
+
+/* YouTube iframe */
+iframe {
+    display: block;      /* makes iframe a block element */
+    margin: 0 auto;      /* centers it horizontally */
+    border: none;        /* optional: removes default border */
+    width: 81%;              /* iframe fills the container width */
+    min-width: 33%;
+    max-width: 81%;
+    min-height: 180;             /* iframe fills the container height */
+    height: 315;             /* iframe fills the container height */
+    max-height: 315;
+}
