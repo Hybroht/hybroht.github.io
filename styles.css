@@ -215,7 +215,7 @@ section > h2 a.archive-link:focus {
     border-left: 5px solid var(--color-primary-light);
     padding-left: 0.5rem;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
@@ -543,6 +543,42 @@ iframe {
 
 .contact-buttons button.icon-btn:hover,
 .contact-buttons button.icon-btn:focus {
+    color: white;
+    background-color: var(--color-button-bg);
+    outline: none;
+}
+
+
+/* For Community Buttons */
+.live-updates-container {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the left and right */
+    align-items: center; /* Vertically centers the items */
+}
+
+.community-buttons {
+    text-align: right;
+    margin-top: 10px; /* Space below buttons */
+}
+
+.community-buttons button.icon-btn {
+    all: unset; /* reset all inherited styles */
+    cursor: pointer;
+    color: var(--color-button-bg);
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: right;
+    justify-content: right;
+    border-radius: 50%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    user-select: none;
+    margin: 0 0.3rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.community-buttons button.icon-btn:hover,
+.community-buttons button.icon-btn:focus {
     color: white;
     background-color: var(--color-button-bg);
     outline: none;
