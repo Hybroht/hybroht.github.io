@@ -47,8 +47,6 @@
     ]
   }
   </script>
-  <!--      "https://www.reddit.com/r/Hybroht/", Removed from JSON-LD, enable again if integration issues are solved-->
-  <!--      "https://www.reddit.com/user/Hybroht/", Removed from JSON-LD, enable again if integration issues are solved-->
   <!-- Adding a Javascript for the Bluesky Embed-->
   <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 
@@ -61,14 +59,22 @@
 </head>
 <body>
   <!-- Header with menu and enterprise name -->
+  <!--div class="banner-container">
+    <img src="assets/banner_v3.png" alt="Enterprise Logo" class="banner" />
+  </div-->
+
   <header>
-    <div class="enterprise-name" aria-label="Enterprise Name">HYBROHT</div>
+  <div class="logo-container">
+    <img src="assets/banner_v3_6.png" alt="Enterprise Logo" class="logo" />
+  </div>
+  <!--div class="enterprise-name" aria-label="Enterprise Name">HYBROHT</div-->
+  <div class='line'></div> <!-- Only for phones -->
     <nav aria-label="Primary navigation">
-      <a href="#services" aria-label="Learn more about our services"><i class="fas fa-cogs"></i> Services</a>
       <a href="#news" aria-label="Discover our latest news and live updates"><i class="fas fa-newspaper"></i> News</a>
+      <a href="#services" aria-label="Learn more about our services"><i class="fas fa-cogs"></i> Services</a>
       <a href="#products" aria-label="Explore our range of products and services through the cart icon"><i class="fas fa-shopping-cart"></i> Products</a>
-      <a href="#about"  aria-label="Find out more about us and our values"><i class="fas fa-info-circle"></i> About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-      <a href="#contact" aria-label="Get in touch with us through email or chat"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="#about"  aria-label="Find out more about us and our values"><i class="fas fa-info-circle"></i> About Us&nbsp;&nbsp;&nbsp;|</a>
+      <!--a href="#contact" aria-label="Get in touch with us through email or chat"><i class="fas fa-envelope"></i> Contact</a-->
     <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
       <i class="fas fa-moon"></i><!-- Dark Mode-->
     </button>
@@ -78,11 +84,81 @@
   </header>
 
   <!-- Logo below header -->
-  <div class="logo-container">
+  <!--div class="logo-container">
     <img src="assets/logo.png" alt="Enterprise Logo" class="logo" />
-  </div>
+  </div-->
 
   <main>
+    <!-- Latest News Section -->
+    <section id="news">
+      <h2>Latest News</h2>
+      <!--br-->
+      <!--p>Explore updates and highlights on our most recent developments and live announcements, providing you with timely and relevant information.
+      </p-->
+      <!--br-->
+      <span style="display: block; height: 0.25em;"></span>
+      <h3>Highlights</h3>
+      <ul>
+        <li>
+          <h4>New Article: Top 9 Fundamental Capabilities Beyond the Reach of AI</h4>
+          <time datetime="2025-08-19T15:00">August 19, 2025, 3:00 PM</time>
+          <p>We've published a new article on Medium, taking a dive into nine fundamental capabilities that AI can never fully reach. Learn more <a href="https://medium.com/@hybroht/top-9-fundamental-capabilities-beyond-the-reach-of-ai-37d9edba4a52">here</a>.</p>
+        </li>
+        <li>
+          <h4>Official Pinterest Channel</h4>
+          <time datetime="2025-08-18T12:00">August 18, 2025, 12:00 PM</time>
+          <p>Announcing the launch of Hybroht's official <a href="https://www.pinterest.com/hybroht/">Pinterest</a> channel. Follow us there to explore content, and stay updated with the latest news from Hybroht.</p>
+        </li>
+        <li>
+          <h4>AI Soundtrack Packages Service Released</h4>
+          <time datetime="2025-08-16T17:30">August 16, 2025, 5:30 PM</time>
+          <p>The last additional service is released: <a href="https://hybroht.gumroad.com/l/ai-soundtrack-package">AI Soundtrack Packages</a>. With this service, you can commission your own customized package of AI-made soundtracks, altered and validated through a hybrid of human and machine methods. See the link for more information.</p>
+        </li>
+      </ul>
+      <div class="archive-container">
+        <a href="news-archive.html" class="archive-link" aria-label="View news archive">View News Archive</a>
+      </div>
+      <div class="live-updates-container">
+      <h3>Live Updates</h3>
+      <div class="community-buttons" aria-label="Community links">
+          <button aria-label="Instagram" onclick="window.open('https://www.instagram.com/hybroht', '_blank')" class="social-btn icon-btn">
+            <i class="fab fa-instagram"></i>
+          </button>
+
+          <button aria-label="Pinterest" onclick="window.open('https://www.pinterest.com/hybroht', '_blank')" class="social-btn icon-btn">
+            <i class="fab fa-pinterest"></i>
+          </button>
+
+          <button aria-label="Telegram" onclick="window.open('https://t.me/hybroht_channel', '_blank')" class="social-btn icon-btn">
+            <i class="fab fa-telegram-plane"></i>
+          </button>
+
+          <button aria-label="TikTok" onclick="window.open('https://www.tiktok.com/@hybroht', '_blank')" class="social-btn icon-btn">
+            <i class="fab fa-tiktok"></i>
+          </button>
+
+      </div>
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <div class="bsky-embed" >
+          <bsky-embed
+            username="hybroht.com"
+            limit="3"
+            disable-styles="false"
+            custom-styles=".border-slate-300 { border-color: #5a8f5a; padding-left : 1rem;}
+            #img.rounded-full { display: none; }
+            "
+            disable-images="true"
+            disable-videos="true"
+            disable-autoplay="true"></bsky-embed>
+        <br>
+        <iframe height="315"
+        src="https://www.youtube.com/embed/m2baCpoJ6io?iv_load_policy=3&modestbranding=1&autoplay=0"
+        frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services">
       <h2>Our Services</h2>
@@ -172,78 +248,6 @@
       </div>
     </section>
 
-    <!-- Latest News Section -->
-    <section id="news">
-      <h2>Latest News</h2>
-      <!--br-->
-      <!--p>Explore updates and highlights on our most recent developments and live announcements, providing you with timely and relevant information.
-      </p-->
-      <!--br-->
-      <span style="display: block; height: 0.25em;"></span>
-      <h3>Highlights</h3>
-      <ul>
-        <li>
-          <h4>New Article: Top 9 Fundamental Capabilities Beyond the Reach of AI</h4>
-          <time datetime="2025-08-19T15:00">August 19, 2025, 3:00 PM</time>
-          <p>We've published a new article on Medium, taking a dive into nine fundamental capabilities that AI can never fully reach. Learn more <a href="https://medium.com/@hybroht/top-9-fundamental-capabilities-beyond-the-reach-of-ai-37d9edba4a52">here</a>.</p>
-        </li>
-        <li>
-          <h4>Official Pinterest Channel</h4>
-          <time datetime="2025-08-18T12:00">August 18, 2025, 12:00 PM</time>
-          <p>Announcing the launch of Hybroht's official <a href="https://www.pinterest.com/hybroht/">Pinterest</a> channel. Follow us there to explore content, and stay updated with the latest news from Hybroht.</p>
-        </li>
-        <li>
-          <h4>AI Soundtrack Packages Service Released</h4>
-          <time datetime="2025-08-16T17:30">August 16, 2025, 5:30 PM</time>
-          <p>The last additional service is released: <a href="https://hybroht.gumroad.com/l/ai-soundtrack-package">AI Soundtrack Packages</a>. With this service, you can commission your own customized package of AI-made soundtracks, altered and validated through a hybrid of human and machine methods. See the link for more information.</p>
-        </li>
-      </ul>
-      <div class="archive-container">
-        <a href="news-archive.html" class="archive-link" aria-label="View news archive">View News Archive</a>
-      </div>
-      <div class="live-updates-container">
-      <h3>Live Updates</h3>
-      <div class="community-buttons" aria-label="Community links">
-          <button aria-label="Instagram" onclick="window.open('https://www.instagram.com/hybroht', '_blank')" class="social-btn icon-btn">
-            <i class="fab fa-instagram"></i>
-          </button>
-
-          <button aria-label="Pinterest" onclick="window.open('https://www.pinterest.com/hybroht', '_blank')" class="social-btn icon-btn">
-            <i class="fab fa-pinterest"></i>
-          </button>
-
-          <button aria-label="Telegram" onclick="window.open('https://t.me/hybroht_channel', '_blank')" class="social-btn icon-btn">
-            <i class="fab fa-telegram-plane"></i>
-          </button>
-
-          <!--button aria-label="Reddit" onclick="window.open('https://www.reddit.com/r/Hybroht', '_blank')" class="social-btn icon-btn">
-            <i class="fab fa-reddit-alien"></i>
-          </button-->
-
-          <button aria-label="TikTok" onclick="window.open('https://www.tiktok.com/@hybroht', '_blank')" class="social-btn icon-btn">
-            <i class="fab fa-tiktok"></i>
-          </button>
-
-      </div>
-      </div>
-      <div class="bsky-embed" >
-        <bsky-embed
-          username="hybroht.com"
-          limit="3"
-          disable-styles="false"
-          custom-styles=".border-slate-300 { border-color: #5a8f5a; padding-left : 0rem;}
-          #img.rounded-full { display: none; }
-          "
-          disable-images="true"
-          disable-videos="true"
-          disable-autoplay="true"></bsky-embed>
-      <br>
-      <iframe height="315"
-      src="https://www.youtube.com/embed/m2baCpoJ6io?iv_load_policy=3&modestbranding=1&autoplay=0"
-      frameborder="0" allowfullscreen></iframe>
-      </div>
-    </section>
-
     <section id="products" style="margin-top: 3rem; margin-bottom: 3rem;">
       <h2>Marketplace Offerings</h2>
         <div class="products-grid">
@@ -263,22 +267,27 @@
         </div>
     </section>
 
-    <!-- About Us Section (after news) -->
+    <!-- About Us Section -->
     <section id="about" style="margin-bottom: 3rem;">
       <h2>About Us</h2>
-      <p>
-        Hybroht Enterprise delivers tailored software offerings and data-driven experiences grounded in cutting-edge, industry-standard technologies. Our team of computer engineers, data scientists, technology researchers, and AI enthusiasts is dedicated to developing intuitive and effective solutions addressing the evolving needs of our clients.
-      </p>
-      <p>
-        We research and develop scalable solutions, mathematical models, software architectures, and AI-driven workflows that unlock new possibilities. Whether you require advanced automation, data research, or specialized software aligned with your goals, Hybroht offers the capability and agility to help you confidently navigate the digital frontier.
-      </p>
+    <h1>Research Drive at The Dimensions of Development</h1>
+    <div class='line'></div>
+    <p>
+      Hybroht researches and delivers optimal software offerings and data-driven experiences grounded in industry-standard technologies. Our team is dedicated to addressing the needs of our clients with intuitive solutions.
+    </p>
+    <p>
+      We develop new mathematical models, softwares, and AI-driven workflows that unlock new possibilities. Whether you require advanced automation, data research, or specialized programs aligned with your goals, Hybroht offers the capability to help you navigate the digital frontier.
+    </p>
+    <p class="about-links"> <!-- (2025-08-24) TO-DO, pages not ready yet -->
+      <a href="integrity-overview.html" class="about-link" aria-label="View our Integrity Overview">Integrity Overview</a>
+      <a href="stack-and-resources.html" class="about-link" aria-label="Our Recommendations">Stack & Resources</a>
+    </p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" style="margin-top: 3rem;">
       <h2>Contact</h2>
       <p>Let's connect to explore how we can help you achieve your business goals.</p>
-      <!-- <p><i class="fas fa-phone"></i> Phone: (Business Partners Only)</p> -->
       <!-- <p><i class="fas fa-map-marker-alt"></i> Address: (Business Partners Only)</p> -->
       <div class="contact-buttons" aria-label="Contact links">
         <p>
@@ -296,6 +305,7 @@
     </section>
 
     <!-- Social media and subscription inline -->
+    <br>
     <div class="social-subscription" aria-label="Social media and newsletter subscription">
         <div class="social-buttons" aria-label="Social media links">
           <button aria-label="Medium" onclick="window.open('https://medium.com/@Hybroht', '_blank')" class="social-btn icon-btn">
@@ -313,9 +323,6 @@
           <button aria-label="LinkedIn" onclick="window.open('https://www.linkedin.com/company/hybroht', '_blank')" class="social-btn icon-btn">
             <i class="fab fa-linkedin"></i>
           </button>
-          <!--button aria-label="Gumroad" onclick="window.open('https://gumroad.com/hybroht', '_blank')" class="social-btn icon-btn">
-            <i class="fas fa-shopping-cart"></i>
-          </button-->
         </div>
 
         <div class="subscription">
@@ -328,7 +335,7 @@
   </main>
 
   <footer>
-    &copy; 2025 Hybroht Digital Enterprise Company. All rights reserved.
+    &copy; 2025 Hybroht. All rights reserved.
   </footer>
 
   <script>

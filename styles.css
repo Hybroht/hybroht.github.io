@@ -1,4 +1,3 @@
-
 /* CSS Variables for themes */
 :root {
     --color-primary: #3a6b3a;       /* softer dark green */
@@ -14,6 +13,7 @@
     --color-button-hover: #5a8f5a;  /* lighter green hover */
     --color-link: #5a8f5a;          /* soft green links */
     --color-link-hover: #8bc78b;    /* even lighter green on hover */
+    --background-image: url('assets/background-image-opacity-v3.png');
 }
 .light-theme {
     --color-primary: #004080; /* Blue */
@@ -29,6 +29,8 @@
     --color-button-hover: #0066cc;
     --color-link: #004080;
     --color-link-hover: #0066cc;
+    --background-image: none;
+
 }
 .dark-theme {
     --color-primary: #3a6b3a;       /* softer dark green */
@@ -44,6 +46,7 @@
     --color-button-hover: #5a8f5a;  /* lighter green hover */
     --color-link: #5a8f5a;          /* soft green links */
     --color-link-hover: #8bc78b;    /* even lighter green on hover */
+    --background-image: url('assets/background-image-opacity-v3.png');
 }
 
 /* Reset and base */
@@ -57,11 +60,11 @@ html {
 }
 
 body {
-    background-image: url('assets/background-image-opacity-v3.png');
+    background-image: var(--background-image);
     background-repeat: repeat;
-    background-size: contain; /* or contain, depending on your needs */
+    background-size: contain; 
     background-color: transparent; 
-    background-blend-mode:multiply ; /* or try multiply, screen, overlay, difference */
+    background-blend-mode:multiply ;
     background-position: left center;
     background-size: 18%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -79,7 +82,7 @@ body {
 }
 
 
-/* A lighter, standard blue for hyperlinks */
+/* lighter, standard blue for hyperlinks */
 a {
   color: #1a73e8;
 }
@@ -88,8 +91,8 @@ a {
 header {
     position: sticky;
     top: 0;
-    width: 100%; /* Make header full width */
-    background-color: var(--color-primary);
+     /* width: 100%; Make header full width */
+    background-color: black;/* var(--color-primary); */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -111,6 +114,7 @@ nav {
     gap: 3.6rem;
     flex-wrap: wrap;
     align-items:center;
+    padding-right: 108px;
 }
 nav a {
     color: white;
@@ -132,6 +136,13 @@ nav.archive-navigation a {
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
+
+header .line{
+    display: none;
+    width: 9%;
+    background-color: white;
+}
+
 
 /* Theme toggle button */
 .theme-toggle {
@@ -155,14 +166,14 @@ nav.archive-navigation a {
 
 /* Logo below header */
 .logo-container {
-    text-align: center;
-    margin: 2rem 0 1rem;
+    text-align: left; /*center;*/
+    margin: 0; /*2rem 0 1rem;*/
 }
 .logo-container img.logo {
-    height: 150px;
+    height: 50px; /*150px*/
     width: auto;
     object-fit: contain;
-    display: inline-block;
+    display: flex;
 }
 
 main {
@@ -171,10 +182,37 @@ main {
     margin: 0 auto 2rem;
     padding: 0 1rem;
     width: 100%;
-    box-sizing: border-box; /* Add this */
+    box-sizing: border-box;
     transition: color 0.3s ease;
 
 }
+
+/* Main Message */
+h1 {
+    padding-top: 10px;
+    padding-bottom: 0.75rem;  /* a bit more padding for larger text */
+    margin-bottom: 1.5rem;    /* increased space below */
+    /*color: white;*/
+    font-weight: 700;
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;        /* much larger font size for main title */
+    /*background-color: var(--color-button-bg);*/
+    font-family: "Montserrat";
+    margin: 0; /* Removing default margin */
+    margin-top: 36px;
+}
+.line {
+    display: block;
+    width: 15%; /* width of the line */
+    height: 1.2px; /* Thickness of the line */
+    background-color: var(--color-primary); 
+    margin: 10px auto 0; /* Centers the line and adds some space above */
+    margin-bottom: 36px;
+}
+
 
 /* Section titles */
 section > h2 {
@@ -299,7 +337,9 @@ section > h2 a.archive-link:focus {
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
-
+#news .archive-adjustment{
+    display: none;
+}
 
 
 /* Archive button below news */
@@ -335,7 +375,7 @@ section > h2 a.archive-link:focus {
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     cursor: default;
     font-size: 0.9rem;
-    padding-left: 0;
+    padding-left: 0.5;
     max-width: 81%;
 }
 
@@ -422,6 +462,8 @@ footer {
     background-color: var(--color-footer-bg);
     color: var(--color-footer-text);
     text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 1rem 1.5rem 1rem;
     font-size: 0.9rem;
     margin-top: auto;
@@ -430,12 +472,42 @@ footer {
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
+    .logo-container {
+        display: inline-flex; 
+        flex-basis: 100%;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-align: center;
+        order: 1;
+        padding-left: 70px;
+        margin-bottom: 1.0rem;
+    }
+    header .line{
+        display: flex;
+        color: white;
+        order: 2;
+        margin-top: 0;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    h1 {
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .line {
+        width: 25%; /* width of the line */
+        margin-bottom: 0px;
+    }
     nav {
     gap: 1rem;
     justify-content: center;
     width: 100%;
     order: 2;
     margin-top: 0.5rem;
+    padding-right: 0px;
     }
     .enterprise-name {
     flex-basis: 100%;
@@ -448,6 +520,17 @@ footer {
     margin-top: 0.5rem;
     order: 3;
     width: 12%;
+    }
+    #news .archive-adjustment{
+        display: inline;
+    }
+    #news .theme-toggle{
+        display: inline;
+        padding-block: 9px;
+        width: 9%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
     }
     .social-subscription {
     flex-direction: column;
@@ -473,11 +556,14 @@ footer {
     text-align: center;
     margin-bottom: 2rem;
     }
+    footer {
+        padding: 1rem 0rem 1rem;
+    }
 }
 
 /*circular icon-only buttons with hover effects*/
 .social-buttons button.icon-btn {
-    all: unset; /* reset all inherited styles */
+    all: unset; /* resets all inherited styles */
     cursor: pointer;
     color: var(--color-button-bg);
     font-size: 1.8rem;
@@ -513,18 +599,18 @@ footer {
 iframe {
     display: block;      /* makes iframe a block element */
     margin: 0 auto;      /* centers it horizontally */
-    border: none;        /* optional: removes default border */
+    border: none;        /* removes default border */
     width: 81%;              /* iframe fills the container width */
     min-width: 33%;
     max-width: 81%;
-    min-height: 180;             /* iframe fills the container height */
+    min-height: 180;         /* iframe fills the container height */
     height: 315;             /* iframe fills the container height */
     max-height: 315;
 }
 
 /*circular icon-only buttons with hover effects*/
 .contact-buttons button.icon-btn {
-    all: unset; /* reset all inherited styles */
+    all: unset; /* resets all inherited styles */
     cursor: pointer;
     color: var(--color-button-bg);
     font-size: 1.5rem;
@@ -583,3 +669,38 @@ iframe {
     background-color: var(--color-button-bg);
     outline: none;
 }
+
+
+/* Banner below header */
+.banner-container {
+    text-align: left;
+    background-color: black;
+}
+.banner-container img.banner {
+    height: 90px;
+    width: auto;
+}
+
+/* About Us */
+#about > p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#about > p.about-links {
+    text-align: center;
+    display: none;
+}
+
+#about > p.about-links > a {
+text-decoration: none;
+}
+
+#about > p.about-links > a + a::before {
+    content: "•";
+    padding-left: 5px;
+    font-size: 1em;
+    line-height: 1;
+    padding-right: 7px;
+}
+
