@@ -97,7 +97,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1.5rem;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     flex-wrap: wrap;
@@ -120,7 +119,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 nav a:hover,
@@ -482,6 +481,9 @@ footer {
         padding-left: 70px;
         margin-bottom: 1.0rem;
     }
+    header {
+        padding: 0.5rem 1.5rem;
+    }
     header .line{
         display: flex;
         color: white;
@@ -508,6 +510,9 @@ footer {
     order: 2;
     margin-top: 0.5rem;
     padding-right: 0px;
+    }
+    nav a{
+        font-size: 1.08rem;
     }
     .enterprise-name {
     flex-basis: 100%;
