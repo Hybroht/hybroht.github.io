@@ -3,8 +3,10 @@ HTML/CSS for the [Hybroht Website](https://hybroht.com).
 
 TO-DO:
 
-- Add an Integrity Overview with more information about our initiative
-- Add language translations
+- [x] Add an Integrity Overview with more information about our initiative
+- [ ] Add a Stack & Resources page
+- [ ] Add a Showcases page
+- [ ] Add language translations
 
 
 ---
