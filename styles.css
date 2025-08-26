@@ -697,7 +697,7 @@ iframe {
 }
 
 #about > p.about-links > a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 #about > p.about-links > a + a::before {
