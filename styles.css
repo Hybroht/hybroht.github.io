@@ -14,6 +14,12 @@
     --color-link: #5a8f5a;          /* soft green links */
     --color-link-hover: #8bc78b;    /* even lighter green on hover */
     --background-image: url('assets/background-image-opacity-v3.png');
+    --color-welcome-title: #1f6e30;
+    --color-brand-command:  #27ae60; /* Brand green */
+    --color-gear: #ccc;
+    --color-gear-menu-border: #666;
+    --gear-icon: url("data:image/svg+xml,%3csvg stroke='%23888' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='3'/%3e%3cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3e%3c/svg%3e");
+
 }
 .light-theme {
     --color-primary: #004080; /* Blue */
@@ -30,7 +36,11 @@
     --color-link: #004080;
     --color-link-hover: #0066cc;
     --background-image: none;
-
+    --color-welcome-title: #00BFFF;
+    --color-brand-command:  #0047AB; /*Cobalt Blue*/
+    --color-gear: #00BFFF;
+    --color-gear-menu-border: #ccc;
+    --gear-icon: url("data:image/svg+xml,%3csvg stroke='%2327ae60' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='3'/%3e%3cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3e%3c/svg%3e");
 }
 .dark-theme {
     --color-primary: #3a6b3a;       /* softer dark green */
@@ -47,6 +57,11 @@
     --color-link: #5a8f5a;          /* soft green links */
     --color-link-hover: #8bc78b;    /* even lighter green on hover */
     --background-image: url('assets/background-image-opacity-v3.png');
+    --color-welcome-title: #1f6e30;
+    --color-brand-command:  #27ae60; /* Brand green */
+    --color-gear: #ccc;
+    --color-gear-menu-border: #666;
+    --gear-icon: url("data:image/svg+xml,%3csvg stroke='%23888' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='3'/%3e%3cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3e%3c/svg%3e");
 }
 
 /* Reset and base */
@@ -378,6 +393,22 @@ section > h2 a.archive-link:focus {
     max-width: 81%;
 }
 
+/* Images inside the Egg for the Offerings section */
+#products .egg-offerings {
+  width: 36%; /* 3x bigger */
+  aspect-ratio: 3 / 4;
+  border-radius: 100% / 125% 125% 80% 80%;
+  margin: 0 auto 1rem; /* center horizontally with margin bottom */
+  background-color: var(--color-primary); /* colored mockup */
+  background-image: url('assets/offerings_thumbnails.jpg'); /* replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.81; /* Optional image opacity */
+  z-index: -1;
+}
+
+
 /* Social + subscription container */
 .social-subscription {
     display: flex;
@@ -524,7 +555,8 @@ footer {
     margin-left: 0;
     margin-top: 0.5rem;
     order: 3;
-    width: 12%;
+    width: 15%;
+    padding: 0.8rem 1rem;
     }
     #news .archive-adjustment{
         display: inline;
@@ -563,6 +595,9 @@ footer {
     }
     footer {
         padding: 1rem 0rem 1rem;
+    }
+    #products .egg-offerings{
+        width: 72%;
     }
 }
 
@@ -737,4 +772,260 @@ section.integrity-overview > h2{
     color: var(--color-muted, #666666);
     margin-bottom: 0.5rem;
     font-style: italic;
+}
+
+
+/*////////////// Main Message ///////////////*/
+#hero {
+  position: relative;
+  padding: 3rem 2rem;
+  /* Semi-transparent dark background for overlay */
+  background-color: rgba(56, 56, 56, 0.7);
+  color: #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: visible;
+  z-index: 1;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.05) 2px,
+    rgba(0,0,0,0.05) 2px,
+    rgba(0,0,0,0.05) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-welcome {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--color-welcome-title);
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-family: Georgia, 'Times New Roman', serif; /* Classic serif font */
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: #d0cec6; /* Warm gray, off-white */
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-command {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  color: var(--color-brand-command);
+  text-align: left;
+  font-family: monospace;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-blink-caret {
+  animation: hero-blink-caret 1s step-end infinite;
+  color: var(--color-brand-command); /* Blink caret color */
+}
+
+@keyframes hero-blink-caret {
+  0%, 100% { color: var(--color-brand-command); }
+  50% { color: transparent; }
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn{
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+
+/* Marble effect only on the two buttons */
+.hero-primary-btn::before,
+.hero-secondary-btn::before {
+  content: none;
+}
+
+/* Remove marble effect from gear container */
+.hero-gear-menu-container::before {
+  content: none;
+}
+
+/* Primary button */
+.hero-primary-btn {
+  background-color: #555; /* Dark gray */
+  color: #eee;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 8px 0 #3a3a3a, 0 10px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero-primary-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #3a3a3a, 0 6px 10px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.hero-primary-btn:hover {
+  box-shadow:
+    0 8px 0 #3a3a3a,
+    0 10px 25px rgba(39, 255, 39, 0.75);
+  color: #a8ffa8;
+}
+
+.hero-primary-btn .hero-arrow {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-left: 0.5rem; /* Arrow moved to right side */
+}
+
+/* Secondary button */
+.hero-secondary-btn {
+  background-color: transparent;
+  color: #aaa;
+  border: 1px solid #aaa;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  border-radius: 3px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  z-index: 1;
+  margin-top: 5px; /* Adjust the value as needed */
+  margin-left: 10px; /* Adjust the value as needed */
+  margin-right: 3px; /* Adjust the value as needed */
+}
+
+.hero-secondary-btn:hover {
+  color: #eee;
+  border-color: #eee;
+  box-shadow:
+    0 0 10px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Make sure the container is positioned relative for absolute menu */
+.hero-gear-menu-container {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+  overflow: visible;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  padding: 0;
+  z-index: 2; */
+}
+
+/* Remove glowing box-shadow from container hover */
+
+
+/* Gear button - keep icon, no background square */
+.hero-gear-btn {
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  background-image: var(--gear-icon);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  transition: filter 0.3s ease;
+}
+
+
+.hero-gear-btn:hover {
+  filter: brightness(1.5);
+  /* Optional: add subtle glow */
+  box-shadow: 0 0 6px rgba(39, 255, 39, 0.6);
+  box-shadow: 0 0 8px 3px rgba(39, 255, 39, 0.75);
+  border-radius: 50%; /* circle glow */
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hide the menu initially */
+.hero-gear-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -36%;
+  background-color: #4a4a4a;
+  border: 1px solid var(--color-gear-menu-border);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  min-width: 160px;
+  z-index: 100;
+}
+
+.hero-gear-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--color-gear);
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-gear-menu a:last-child {
+  border-bottom: none;
+}
+
+.hero-gear-menu a:hover {
+  background-color: #666;
+  color: #eee;
+}
+
+.hero-gear-menu-container,
+.hero-gear-menu {
+  z-index: 1000; /* high to be above other UI elements */
+}
+/* Show menu when hovering over container or menu itself */
+.hero-gear-menu-container:hover .hero-gear-menu,
+.hero-gear-menu:hover {
+  display: block;
+  box-shadow: none !important;
+  /* background: none !important; */
 }
