@@ -58,10 +58,6 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png" />
 </head>
 <body>
-  <!-- Header with menu and enterprise name -->
-  <!--div class="banner-container">
-    <img src="assets/banner_v3.png" alt="Enterprise Logo" class="banner" />
-  </div-->
 
   <header>
   <div class="logo-container">
@@ -83,10 +79,33 @@
     <button class="theme-toggle" aria-label="nothing" title="nothing" style="visibility: hidden; padding: 0rem 0rem;"></button>
   </header>
 
-  <!-- Logo below header -->
-  <!--div class="logo-container">
-    <img src="assets/logo.png" alt="Enterprise Logo" class="logo" />
-  </div-->
+  <section id="hero">
+    <h3 class="hero-welcome">WELCOME TO HYBROHT</h3>
+    <h1 class="hero-title">
+    The Business Synthesis for Your Needs
+    </h1>
+    <p class="hero-command">
+      &gt; <span id="randomSentence">If anything is worth doing, do it with all your heart.</span><span class="hero-blink-caret">█</span>
+    </p>
+    
+    <div class="hero-buttons">
+      <button onclick="location.href='#contact'" class="hero-primary-btn">
+        Contact<span class="hero-arrow">→</span> 
+      </button>
+      <a href="#about" class="hero-secondary-btn">
+        Learn More
+      </a>
+      
+      <div class="hero-gear-menu-container">
+        <a href="#services" aria-label="Settings menu" class="hero-gear-btn"></a>
+        <div id="gearMenu" class="hero-gear-menu">
+          <a href="#">Stack & Resources (Coming Soon)</a>
+          <a href="#">Showcases (Coming Soon)</a>
+          <!--a href="#">Help & Support (TO-DO)</a-->
+        </div>
+      </div>
+    </div>
+  </section>
 
   <main>
     <!-- Latest News Section -->
@@ -250,6 +269,7 @@
 
     <section id="products" style="margin-top: 3rem; margin-bottom: 3rem;">
       <h2>Marketplace Offerings</h2>
+        <div class="egg-offerings"></div>
         <div class="products-grid">
           <p>
             Hybroht's digital products and standard services are available securely and conveniently through Gumroad’s platform.
@@ -289,7 +309,7 @@
     <section id="contact" style="margin-top: 3rem;">
       <h2>Contact</h2>
       <p>Let's connect to explore how we can help you achieve your business goals.</p>
-      <!-- <p><i class="fas fa-map-marker-alt"></i> Address: (Business Partners Only)</p> -->
+      <p><i class="fas fa-map-marker-alt"></i> Address: In progress.</p>
       <div class="contact-buttons" aria-label="Contact links">
         <p>
             <span style="margin-right: 9px;">
@@ -403,6 +423,29 @@
         popup.focus();
       }
     });
+
+    // Show random sentences for the title
+    const sentences = [
+    "Search with Greatest Speed!",
+    "The path is not in the sky. The path is in the heart.",
+    "The best way to predict the future is to create it.",
+    "The man who moves a mountain begins by carrying away small stones.",
+    "A disciplined mind brings happiness.",
+    "To be prepared is half the victory.",
+    "Effort is the key.",
+    "The greater the difficulty, the more glory in surmounting it.",
+    "The struggle itself toward the heights is enough to fill a man's heart."
+    ];
+
+    function displayRandomSentence() {
+    const randomIndex = Math.floor(Math.random() * sentences.length);
+    const sentence = sentences[randomIndex];
+    document.getElementById("randomSentence").innerText = sentence;
+    }
+
+    // Call the function to display a random sentence when the page loads
+    displayRandomSentence();
+
   </script>
 </body>
 </html>
