@@ -8,9 +8,15 @@ TO-DO:
 - [X] Write a new tagline.
 - [ ] Add a Stack & Resources page
 - [ ] Add a Showcases page
-- [ ] Add language translations
-
+- [ ] Add a Research page
+- [ ] Add a Polls page
+- [ ] Add a Partnership Enrollment page
+- [ ] Add a FAQ page
+- [ ] Add a RSS Feed
+- [ ] Add a Privacy Policy
+- [ ] Add Terms of Use
+- [ ] Add language translations options
 
 ---
 
-Last README Update: 2025-08-24 
+Last README Update: 2025-08-29
