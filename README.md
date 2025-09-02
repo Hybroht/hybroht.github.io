@@ -6,7 +6,7 @@ TO-DO:
 - [X] Add an Integrity Overview with more information about our initiative
 - [X] Finish Website Revamping
 - [X] Write a new tagline.
-- [ ] Add a Stack & Resources page
+- [X] Add a Stack & Resources page
 - [ ] Add a Showcases page
 - [ ] Add a Research page
 - [ ] Add a Polls page
