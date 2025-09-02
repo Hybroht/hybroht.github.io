@@ -11,7 +11,7 @@ TO-DO:
 - [ ] Add a Research page
 - [ ] Add a Polls page
 - [ ] Add a Partnership Enrollment page
-- [ ] Add a FAQ page
+- [X] Add a FAQ page
 - [ ] Add a RSS Feed
 - [ ] Add a Privacy Policy
 - [ ] Add Terms of Use
