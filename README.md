@@ -1,6 +1,8 @@
 # hybroht.github.io
 HTML/CSS for the [Hybroht Website](https://hybroht.com).
 
+Last README Update: 2025-09-05
+
 TO-DO:
 
 - [X] Add an Integrity Overview with more information about our initiative
@@ -21,4 +23,3 @@ TO-DO:
 
 ---
 
-Last README Update: 2025-08-29
