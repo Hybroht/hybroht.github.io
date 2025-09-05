@@ -7,6 +7,7 @@ TO-DO:
 - [X] Finish Website Revamping
 - [X] Write a new tagline.
 - [X] Add a Stack & Resources page
+- [ ] Add a Website License
 - [ ] Add a Showcases page
 - [ ] Add a Research page
 - [ ] Add a Polls page
@@ -16,6 +17,7 @@ TO-DO:
 - [ ] Add a Privacy Policy
 - [ ] Add Terms of Use
 - [ ] Add language translations options
+- [ ] Add a System Status page
 
 ---
 
