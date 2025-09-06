@@ -599,6 +599,9 @@ footer {
     #products .egg-offerings{
         width: 72%;
     }
+    .desktop-only-decorator {
+    display: none;
+}
 }
 
 /*circular icon-only buttons with hover effects*/
@@ -743,7 +746,7 @@ iframe {
     padding-right: 7px;
 }
 
-#about > span.about-links > a {
+span.legal-notices > a {
     text-decoration: none;
     color: var(--color-welcome-title);
 }
