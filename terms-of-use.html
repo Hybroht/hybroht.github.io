@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Use</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <!-- Header with menu and enterprise name -->
+  <header>
+  <div class="logo-container">
+    <img src="assets/banner_v3_6.png" alt="Enterprise Logo" class="logo" />
+  </div>
+    <!--div class="enterprise-name" aria-label="Enterprise Name">HYBROHT</div-->
+    <!--nav aria-label="archive-navigation">
+      <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
+        <i class="fas fa-moon"></i> Dark Mode
+      </button>
+    </nav-->
+  </header>
+
+
+  <main>
+    <section id="intro">
+      <h1>
+      <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      Terms of Use&nbsp;&nbsp;&nbsp;
+      <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
+        <i class="fas fa-moon"></i> Dark Mode
+      </button></h1>
+      <time class="update-date" datetime="2025-09-05T20:00">September 05, 2025, 8:00 PM</time>
+      <br>
+      <p>
+        Welcome to Hybroht's official website. By accessing or using this site, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.
+      </p>
+      <br>
+    </section>
+    <section id="the-terms" class="terms-of-use">
+      <h2></h2>
+      <br>
+      <ol>
+        <li><b>Permitted Use</b> <br>You may view, browse, and download content from this website for your personal, non-commercial use only unless otherwise authorized by Hybroht. Any unauthorized use, reproduction, distribution, or modification of content is strictly prohibited.</li><br>
+        <li><b>Intellectual Property</b> <br>All content on this website, including text, graphics, logos, images, software, and other materials, is the property of Hybroht or its licensors and is protected by applicable intellectual property laws. You may not use, copy, reproduce, distribute, publish, display, perform, modify, create derivative works from, transmit, or sell any content without prior written permission.</li><br>
+        <li><b>User Obligations and Conduct</b> <br>You agree to use this website lawfully and ethically. You must not engage in any conduct that disrupts or interferes with the site's operation or security. Prohibited activities include, but are not limited to, hacking, transmitting harmful code, impersonation, harassment, or using the site to promote illegal activities.</li><br>
+        <li><b>Third-Party Links and Services</b> <br>This website may contain links to third-party websites or services that are not owned or controlled by Hybroht. We do not endorse or assume responsibility for any third-party content, privacy policies, or practices.</li><br>
+        <li><b>Privacy and Data Protection</b> <br>Your use of the Hybroht website is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. Please review it carefully.</li><br>
+        <li><b>Limitation of Liability and Disclaimer of Warranties</b> <br>This website and its content are provided on an “as is” and “as available” basis without warranties of any kind, express or implied. Hybroht disclaims all warranties including, without limitation, those of merchantability, fitness for a particular purpose, and non-infringement.<br><br>To the maximum extent permitted by law, Hybroht shall not be liable for any direct, indirect, incidental, consequential, special, punitive, or exemplary damages arising from your use of or inability to use our site.</li><br>
+        <li><b>Changes to the Site and Terms</b> <br>We may modify, suspend, or discontinue any aspect of the website at any time without prior notice. We also reserve the right to update or amend these Terms of Use. Continued use of the site constitutes your acceptance of any such changes.</li><br>
+        <li><b>Dispute Resolution and Governing Law</b> <br>These Terms and your use of the website shall be governed by the laws of the jurisdiction in which Hybroht is incorporated, without regard to conflict of law principles.<br><br>Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts located in that jurisdiction. Alternative dispute resolution mechanisms such as arbitration may be considered.</li><br>
+        <li><b>Accessibility</b> <br>Hybroht strives to make its website accessible to everyone. If you encounter accessibility barriers, please contact us.</li><br>
+        <li><b>Use of Brand Assets</b> <br>The trademarks, logos, and branding displayed on this website are the property of Hybroht. You may not use these brand assets without prior written permission. Unauthorized use is strictly prohibited.</li><br>
+      </ol>
+    </section>
+
+    <section id="end" class="terms-of-use">
+      <h2></h2>
+      <br>
+      <br>
+      <nav class="archive-navigation" aria-label="Navigation">
+        <a href="index.html" class="back-to-home">← Back to Home</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Hybroht. All rights reserved.
+  </footer>
+
+
+  <script>
+    // Immediately apply dark theme on page load to prevent flicker
+    (function() {
+      const body = document.body;
+      const themeToggleBtn = document.querySelector('.theme-toggle');
+      if (!themeToggleBtn) return; // Exit if no toggle button on page
+
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          body.classList.remove('light-theme');
+          body.classList.add('dark-theme');
+          themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';// Dark Mode
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.remove('dark-theme');
+          body.classList.add('light-theme');
+          themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';// Light Mode
+          localStorage.setItem('theme', 'light');
+        }
+      }
+
+      // Load saved theme or default to dark
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      setTheme(savedTheme);
+
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>

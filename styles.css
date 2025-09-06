@@ -743,6 +743,11 @@ iframe {
     padding-right: 7px;
 }
 
+#about > span.about-links > a {
+    text-decoration: none;
+    color: var(--color-welcome-title);
+}
+
 /* Integrity Overview */
 .update-date {
     display: block;
