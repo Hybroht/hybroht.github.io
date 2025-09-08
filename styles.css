@@ -746,7 +746,7 @@ iframe {
     padding-right: 7px;
 }
 
-span.legal-notices > a {
+span.legal-notices a {
     text-decoration: none;
     color: var(--color-welcome-title);
 }

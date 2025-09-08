@@ -21,6 +21,7 @@ TO-DO:
 - [X] Add Terms of Use
 - [ ] Add language translations options
 - [ ] Add a System Status page
+- [X] Add links to Software Licenses
 - [ ] Add a 404 Page
 
 
