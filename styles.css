@@ -601,7 +601,13 @@ footer {
     }
     .desktop-only-decorator {
     display: none;
-}
+    }
+    section.showcases-section img {
+        min-width: 75%;
+    }
+    section.showcases-section img.partnership {
+        min-width: 15%;
+    }
 }
 
 /*circular icon-only buttons with hover effects*/
@@ -1094,4 +1100,55 @@ section.faq-section > h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+section.showcases-section > h2{
+    border-bottom: 3px solid var(--color-text);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-button-hover);
+    font-weight: 700;
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.showcases-section > p{
+    padding-top: 10px;
+}
+
+section.showcases-section a{
+    text-decoration: none;
+}
+
+section.showcases-section img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+section.showcases-section figcaption {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-muted, #666666);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.partnership-link {
+  text-decoration: none;  /* Removes underline */
+  color: inherit;         /* Makes link text color inherit */
+  display: inline-flex;   /* Behaves like the image container */
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  font-size: 0;           /* Prevents extra spacing for text */
 }
