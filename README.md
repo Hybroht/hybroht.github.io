@@ -11,9 +11,9 @@ TO-DO:
 - [X] Add a Stack & Resources page
 - [X] Add a Website License for the Code
 - [X] Add a NOTICE and TRADEMARKS.md to complement the License
-- [ ] Add a Showcases page
+- [X] Add a Showcases page
 - [ ] Add a Research page
-- [ ] Add a Polls page
+- [X] Add a Polls page
 - [ ] Add a Partnership Enrollment page
 - [X] Add a FAQ page
 - [ ] Add a RSS Feed
