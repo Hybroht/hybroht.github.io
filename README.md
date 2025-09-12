@@ -18,7 +18,7 @@ TO-DO:
 - [X] Add a Privacy Policy
 - [X] Add Terms of Use
 - [X] Add links to Software Licenses
-- [ ] Add a 404 Page
+- [X] Add a 404 Page
 - [ ] Add a RSS Feed
 - [ ] Add a Partnership Enrollment page
 - [ ] Add a System Status page
