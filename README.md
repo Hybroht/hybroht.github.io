@@ -12,17 +12,17 @@ TO-DO:
 - [X] Add a Website License for the Code
 - [X] Add a NOTICE and TRADEMARKS.md to complement the License
 - [X] Add a Showcases page
-- [ ] Add a Research page
+- [X] Add a Research page
 - [X] Add a Polls page
-- [ ] Add a Partnership Enrollment page
 - [X] Add a FAQ page
-- [ ] Add a RSS Feed
 - [X] Add a Privacy Policy
 - [X] Add Terms of Use
-- [ ] Add language translations options
-- [ ] Add a System Status page
 - [X] Add links to Software Licenses
 - [ ] Add a 404 Page
+- [ ] Add a RSS Feed
+- [ ] Add a Partnership Enrollment page
+- [ ] Add a System Status page
+- [ ] Add language translations options
 
 
 ## Software License
