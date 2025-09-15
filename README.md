@@ -19,9 +19,6 @@ TO-DO:
 - [X] Add Terms of Use
 - [X] Add links to Software Licenses
 - [X] Add a 404 Page
-- [ ] Add a RSS Feed
-- [ ] Add a Partnership Enrollment page
-- [ ] Add a System Status page
 - [ ] Add language translations options
 
 
