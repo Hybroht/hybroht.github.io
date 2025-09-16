@@ -1,2 +1,5 @@
-# OK
+# Test Assets that shouldn't be accessible
 assets/dev/*
+
+# Python Folder
+__pycache__/*
