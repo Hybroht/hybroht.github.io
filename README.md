@@ -1,7 +1,7 @@
 # hybroht.github.io
 HTML/CSS for the [Hybroht Website](https://hybroht.com).
 
-Last README Update: 2025-09-06
+Last README Update: 2025-09-16
 
 TO-DO:
 
@@ -19,7 +19,7 @@ TO-DO:
 - [X] Add Terms of Use
 - [X] Add links to Software Licenses
 - [X] Add a 404 Page
-- [ ] Reorganize the Repository
+- [X] Reorganize the Repository
 - [ ] Add language translations options
 
 
