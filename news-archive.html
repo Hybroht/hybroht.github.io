@@ -20,12 +20,6 @@
   <div class="logo-container">
     <img src="assets/banner_v3_6.png" alt="Enterprise Logo" class="logo" />
   </div>
-    <!--div class="enterprise-name" aria-label="Enterprise Name">HYBROHT</div-->
-    <!--nav aria-label="archive-navigation">
-      <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
-        <i class="fas fa-moon"></i> Dark Mode
-      </button>
-    </nav-->
   </header>
 
 
@@ -45,17 +39,17 @@
         <li>
           <h4>Launch of the Research Fields Page</h4>
           <time datetime="2025-09-12T16:00">September 12, 2025, 4:00 PM</time>
-          <p>We have published our <a href="research-fields.html">Research Fields Page</a>, presenting a comprehensive overview of Hybroht's core research domains. Explore how we learn, build knowledge, and grow through multidisciplinary study.</p>
+          <p>We have published our <a href="/research-fields">Research Fields Page</a>, presenting a comprehensive overview of Hybroht's core research domains. Explore how we learn, build knowledge, and grow through multidisciplinary study.</p>
         </li>
         <li>
           <h4>Release of Hybroht Polls</h4>
           <time datetime="2025-09-11T19:00">September 11, 2025, 7:00 PM</time>
-          <p>A new <a href="polls.html">Polls Page</a> has been added to facilitate feedback collection. This page serves as a direct channel for gathering insights in a structured manner, supporting our future directions.</p>
+          <p>A new <a href="/polls">Polls Page</a> has been added to facilitate feedback collection. This page serves as a direct channel for gathering insights in a structured manner, supporting our future directions.</p>
         </li>
         <li>
           <h4>Release of our Showcases Page with Partnerships</h4>
           <time datetime="2025-09-10T16:00">September 10, 2025, 4:00 PM</time>
-          <p>We have launched our new <a href="showcases.html">Showcases Page</a> highlighting some of our key offerings and featuring partnerships, including collaborations with <a href="https://drinfinitto.com.br/">Dr. Infinitto</a> and <a href="https://agenciaelara.com.br/">Elara</a>. Explore our work and affiliations on the page.</p>
+          <p>We have launched our new <a href="/showcases">Showcases Page</a> highlighting some of our key offerings and featuring partnerships, including collaborations with <a href="https://drinfinitto.com.br/">Dr. Infinitto</a> and <a href="https://agenciaelara.com.br/">Elara</a>. Explore our work and affiliations on the page.</p>
         </li>
         <li>
           <h4>Hybroht Fair Duality License (HFDL) released</h4>
@@ -70,17 +64,17 @@
         <li>
           <h4>New Stack & Resources page</h4>
           <time datetime="2025-09-02T19:30">September 02, 2025, 7:30 PM</time>
-          <p>To share some of the tools and platforms we use, we have added a new page: <a href="https://hybroht.com/stack-and-resources.html">Stack & Resources</a>. <i>Please note this is not an exhaustive list, nor a list of affiliated entities.</i></p>
+          <p>To share some of the tools and platforms we use, we have added a new page: <a href="https://hybroht.com/stack-and-resources">Stack & Resources</a>. <i>Please note this is not an exhaustive list, nor a list of affiliated entities.</i></p>
         </li>
         <li>
           <h4>Addition of an Frequently Asked Questions page</h4>
           <time datetime="2025-09-02T17:30">September 02, 2025, 5:30 PM</time>
-          <p>After revamping our website, we are adding new pages. Today, we added an <a href="https://hybroht.com/faq.html">FAQ</a> to help with common questions regarding us.</p>
+          <p>After revamping our website, we are adding new pages. Today, we added an <a href="https://hybroht.com/faq">FAQ</a> to help with common questions regarding us.</p>
         </li>
         <li>
           <h4>Changes to our main site and Gumroad page</h4>
           <time datetime="2025-08-26T15:30">August 26, 2025, 3:30 PM</time>
-          <p>Following new developments, we have revamped our website and added an <a href="https://hybroht.com/integrity-overview.html">Integrity Overview</a> for better transparency. We have also altered our offerings on Gumroad for more clarity and alignment with our current capacities.</p>
+          <p>Following new developments, we have revamped our website and added an <a href="https://hybroht.com/integrity-overview">Integrity Overview</a> for better transparency. We have also altered our offerings on Gumroad for more clarity and alignment with our current capacities.</p>
         </li>
         <li>
           <h4>New Article: Top 9 Fundamental Capabilities Beyond the Reach of AI</h4>
@@ -236,7 +230,7 @@
       </ul>
 
       <nav class="archive-navigation" aria-label="Navigation">
-        <a href="index.html" class="back-to-home">← Back to Home</a>
+        <a href="/" class="back-to-home">← Back to Home</a>
       </nav>
     </section>
   </main>
@@ -246,36 +240,6 @@
   </footer>
 
 
-  <script>
-    // Immediately apply dark theme on page load to prevent flicker
-    (function() {
-      const body = document.body;
-      const themeToggleBtn = document.querySelector('.theme-toggle');
-      if (!themeToggleBtn) return; // Exit if no toggle button on page
-
-      function setTheme(theme) {
-        if (theme === 'dark') {
-          body.classList.remove('light-theme');
-          body.classList.add('dark-theme');
-          themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';// Dark Mode
-          localStorage.setItem('theme', 'dark');
-        } else {
-          body.classList.remove('dark-theme');
-          body.classList.add('light-theme');
-          themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';// Light Mode
-          localStorage.setItem('theme', 'light');
-        }
-      }
-
-      // Load saved theme or default to dark
-      const savedTheme = localStorage.getItem('theme') || 'dark';
-      setTheme(savedTheme);
-
-      themeToggleBtn.addEventListener('click', () => {
-        const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-      });
-    })();
-  </script>
+  <script src="/js/theme-toggle.js"></script>
 </body>
 </html>
