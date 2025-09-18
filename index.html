@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hybroht Enterprise | Research, Tech, Math, and Data</title>
-  <meta name="description" content="Unlocking possibilities at the intersection of Tech, Data, Logic, Math & Science. Intelligent R&D, Services & Solutions for forward-thinking businesses." />
+  <title data-i18n="title">Hybroht Enterprise | Research, Tech, Math, and Data</title>
+  <meta name="description" data-i18n="description" content="Unlocking possibilities at the intersection of Tech, Data, Logic, Math & Science. Intelligent R&D, Services & Solutions for forward-thinking businesses." />
   <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
   <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
@@ -20,8 +24,6 @@
   <meta property="og:description" content="Unlocking possibilities at the intersection of Tech, Data, Logic, Math & Science. Intelligent R&D, Services & Solutions for forward-thinking businesses." />
   <meta property="og:image" content="https://hybroht.com/assets/Full_Logo.png" />
   <meta property="og:url" content="https://hybroht.com" />
-  <!-- Redirect to Browser Language Equivalent, if Available-->
-  <!-- script src="/js/lang-redirect.js"></script-->
   <!-- JSON-LD structured data -->
   <script type="application/ld+json">
   {
@@ -68,10 +70,10 @@
   <!--div class="enterprise-name" aria-label="Enterprise Name">HYBROHT</div-->
   <div class='line'></div> <!-- Only for phones -->
     <nav aria-label="Primary navigation">
-      <a href="#news" aria-label="Discover our latest news and live updates"><i class="fas fa-newspaper"></i> News</a>
-      <a href="#services" aria-label="Learn more about our services"><i class="fas fa-cogs"></i> Services</a>
-      <a href="#products" aria-label="Explore our range of products and services through the cart icon"><i class="fas fa-shopping-cart"></i> Products</a>
-      <a href="#about"  aria-label="Find out more about us and our values"><i class="fas fa-info-circle"></i> About Us&nbsp;&nbsp;&nbsp;|</a>
+      <a href="#news" aria-label="Discover our latest news and live updates" data-i18n="news-nav"><i class="fas fa-newspaper"></i> News</a>
+      <a href="#services" aria-label="Learn more about our services" data-i18n="services-nav"><i class="fas fa-cogs"></i> Services</a>
+      <a href="#products" aria-label="Explore our range of products and services through the cart icon" data-i18n="products-nav"><i class="fas fa-shopping-cart"></i> Products</a>
+      <a href="#about"  aria-label="Find out more about us and our values" data-i18n="about-nav"><i class="fas fa-info-circle"></i> About Us&nbsp;&nbsp;&nbsp;|</a>
       <!--a href="#contact" aria-label="Get in touch with us through email or chat"><i class="fas fa-envelope"></i> Contact</a-->
     <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
       <i class="fas fa-moon"></i><!-- Dark Mode-->
@@ -82,8 +84,8 @@
   </header>
 
   <section id="hero">
-    <h3 class="hero-welcome">WELCOME TO HYBROHT</h3>
-    <h1 class="hero-title">
+    <h3 data-i18n="hero-welcome" class="hero-welcome">WELCOME TO HYBROHT</h3>
+    <h1 data-i18n="hero-description" class="hero-title">
     The Business Synthesis for Your Needs
     </h1>
     <p class="hero-command">
@@ -92,57 +94,72 @@
     
     <div class="hero-buttons">
       <button onclick="location.href='#contact'" class="hero-primary-btn">
-        Contact<span class="hero-arrow">→</span> 
+        <text data-i18n="hero-contact">Contact</text><span class="hero-arrow">→</span> 
       </button>
       <a href="#about" class="hero-secondary-btn">
-        Learn More
+        <text data-i18n="hero-learn-more">Learn More</text>
       </a>
       
+      <!-- Language selector in your HTML -->
+      <div id="language-menu" class="language-menu">
+        <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+          <i class="fas fa-globe" aria-hidden="true"></i>
+          <span id="language-current">en</span>
+          <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+        </button>
+        <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+          <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+          <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+        </ul>
+      </div>
+
+
       <div class="hero-gear-menu-container">
         <a href="#services" aria-label="Settings menu" class="hero-gear-btn"></a>
         <div id="gearMenu" class="hero-gear-menu">
           <p style="text-align: center; font-family: Georgia, 'Times New Roman', serif; font-size: 0.75em;">HOME</p>
-          <a href="/faq">FAQ</a>
-          <a href="/stack-and-resources">Stack & Resources</a>
-          <a href="/polls">Polls</a>
-          <a href="/showcases">Showcases</a>
+          <a href="/faq" data-i18n="about-links-faq">FAQ</a>
+          <a href="/stack-and-resources" data-i18n="about-links-stack">Stack & Resources</a>
+          <a href="/polls" data-i18n="about-links-polls">Polls</a>
+          <a href="/showcases" data-i18n="about-links-showcases">Showcases</a>
         </div>
       </div>
     </div>
   </section>
 
+
   <main>
     <!-- Latest News Section -->
     <section id="news">
-      <h2>Latest News</h2>
+      <h2 data-i18n="news-latest-news">Latest News</h2>
       <!--br-->
       <!--p>Explore updates and highlights on our most recent developments and live announcements, providing you with timely and relevant information.
       </p-->
       <!--br-->
       <span style="display: block; height: 0.25em;"></span>
-      <h3>Highlights</h3>
+      <h3 data-i18n="news-highlights">Highlights</h3>
       <ul>
         <li>
-          <h4>Launch of the Research Fields Page</h4>
+          <h4 data-i18n="news-1">Launch of the Research Fields Page</h4>
           <time datetime="2025-09-12T16:00">September 12, 2025, 4:00 PM</time>
-          <p>We have published our <a href="/research-fields">Research Fields Page</a>, presenting a comprehensive overview of Hybroht's core research domains. Explore how we learn, build knowledge, and grow through multidisciplinary study.</p>
+          <p data-i18n="news-1-desc">We have published our <a href="/research-fields">Research Fields Page</a>, presenting a comprehensive overview of Hybroht's core research domains. Explore how we learn, build knowledge, and grow through multidisciplinary study.</p>
         </li>
         <li>
-          <h4>Release of Hybroht Polls</h4>
+          <h4 data-i18n="news-2">Release of Hybroht Polls</h4>
           <time datetime="2025-09-11T19:00">September 11, 2025, 7:00 PM</time>
-          <p>A new <a href="/polls">Polls Page</a> has been added to facilitate feedback collection. This page serves as a direct channel for gathering insights in a structured manner, supporting our future directions.</p>
+          <p data-i18n="news-2-desc">A new <a href="/polls">Polls Page</a> has been added to facilitate feedback collection. This page serves as a direct channel for gathering insights in a structured manner, supporting our future directions.</p>
         </li>
         <li>
-          <h4>Release of our Showcases Page with Partnerships</h4>
+          <h4 data-i18n="news-3">Release of our Showcases Page with Partnerships</h4>
           <time datetime="2025-09-10T16:00">September 10, 2025, 4:00 PM</time>
-          <p>We have launched our new <a href="/showcases">Showcases Page</a> highlighting some of our key offerings and featuring partnerships, including collaborations with <a href="https://drinfinitto.com.br/">Dr. Infinitto</a> and <a href="https://agenciaelara.com.br/">Elara</a>. Explore our work and affiliations on the page.</p>
+          <p data-i18n="news-3-desc">We have launched our new <a href="/showcases">Showcases Page</a> highlighting some of our key offerings and featuring partnerships, including collaborations with <a href="https://drinfinitto.com.br/">Dr. Infinitto</a> and <a href="https://agenciaelara.com.br/">Elara</a>. Explore our work and affiliations on the page.</p>
         </li>
       </ul>
       <div class="archive-container">
-        <a href="/news-archive" class="archive-link" aria-label="View news archive">View News Archive</a>
+        <a data-i18n="news-view-archive" href="/news-archive" class="archive-link" aria-label="View news archive">View News Archive</a>
       </div>
       <div class="live-updates-container">
-      <h3>Live Updates</h3>
+      <h3 data-i18n="news-live-updates">Live Updates</h3>
       <div class="community-buttons" aria-label="Community links">
           <button aria-label="Instagram" onclick="window.open('https://www.instagram.com/hybroht', '_blank')" class="social-btn icon-btn">
             <i class="fab fa-instagram"></i>
@@ -184,88 +201,88 @@
 
     <!-- Services Section -->
     <section id="services">
-      <h2>Our Services</h2>
+      <h2 data-i18n="services-our-services">Our Services</h2>
       <span style="display: block; height: 0.25em;"></span>
       <div class="service-category">
-        <h3>Research</h3>
+        <h3 data-i18n="services-research">Research</h3>
         <div class="services-grid">
           <article class="service-card">
             <i class="fas fa-flask service-icon" aria-hidden="true"></i>
-            <h4>Scientific Studies</h4>
-            <p>Conducting rigorous scientific research to advance knowledge in various fields.</p>
+            <h4 data-i18n="services-scientific-studies">Scientific Studies</h4>
+            <p data-i18n="services-scientific-studies-desc">Conducting rigorous scientific research to advance knowledge in various fields.</p>
           </article>
           <article class="service-card">
             <i class="fas fa-robot service-icon" aria-hidden="true"></i>
-            <h4>Artificial Intelligence</h4>
-            <p>Exploring foundational theories, architectures, algorithms, learning methods, and intelligent systems.</p>
+            <h4 data-i18n="services-information-systems">Artificial Intelligence</h4>
+            <p data-i18n="services-information-systems-desc">Exploring foundational theories, architectures, algorithms, learning methods, and intelligent systems.</p>
           </article>
           <article class="service-card">
             <i class="fas fa-microchip service-icon" aria-hidden="true"></i>
-            <h4>Technology</h4>
-            <p>Exploring emerging technologies to drive innovation.</p>
+            <h4 data-i18n="services-technology">Technology</h4>
+            <p data-i18n="services-technology-desc">Exploring emerging technologies to drive innovation.</p>
           </article>
         </div>
       </div>
 
       <div class="service-category">
-        <h3>Technological Solutions</h3>
+        <h3 data-i18n="services-tech-solutions">Technological Solutions</h3>
         <div class="services-grid">
           <article class="service-card">
             <i class="fas fa-cogs service-icon" aria-hidden="true"></i>
-            <h4>Automation</h4>
-            <p>Designing and implementing automation systems to optimize workflows.</p>
+            <h4 data-i18n="services-automation">Automation</h4>
+            <p data-i18n="services-automation-desc">Designing and implementing automation systems to optimize workflows.</p>
           </article>
           <article class="service-card">
             <i class="fas fa-handshake service-icon" aria-hidden="true"></i>
-            <h4>Consulting</h4>
-            <p>Offering support on hardware, software, processes, proposal assessments, project design, and digital transformation.</p>
+            <h4 data-i18n="services-consulting">Consulting</h4>
+            <p data-i18n="services-consulting-desc">Offering support on hardware, software, processes, proposal assessments, project design, and digital transformation.</p>
           </article>
           <article class="service-card">
             <i class="fas fa-check-circle service-icon" aria-hidden="true"></i>
-            <h4>IT Management</h4>
-            <p>Providing technical assistance and ensuring quality control.</p>
+            <h4 data-i18n="services-it-management">IT Management</h4>
+            <p data-i18n="services-it-management-desc">Providing technical assistance and ensuring quality control.</p>
           </article>
           <article class="service-card">
             <i class="fas fa-code service-icon" aria-hidden="true"></i>
-            <h4>Software & Platform</h4>
-            <p>Designing and creating programs and platforms, from modular components to interactive applications.</p>
+            <h4 data-i18n="services-software-platform">Software & Platform</h4>
+            <p data-i18n="services-software-platform-desc">Designing and creating programs and platforms, from modular components to interactive applications.</p>
           </article>
         </div>
       </div>
 
       <div class="service-category">
-        <h3>Math</h3>
+        <h3 data-i18n="services-math">Math</h3>
         <div class="services-grid">
           <article class="service-card">
             <i class="fas fa-calculator service-icon" aria-hidden="true"></i>
-            <h4>Mathematical Modeling</h4>
-            <p>Creating mathematical models to simulate real-world systems and problems.</p>
+            <h4 data-i18n="services-mathematical-modeling">Mathematical Modeling</h4>
+            <p data-i18n="services-mathematical-modeling-desc">Creating mathematical models to simulate real-world systems and problems.</p>
           </article>
           <article class="service-card">
             <i class="fas fa-chart-pie service-icon" aria-hidden="true"></i>
-            <h4>Statistical Analysis</h4>
-            <p>Advanced statistical methods to interpret complex data sets.</p>
+            <h4 data-i18n="services-statistical-analysis">Statistical Analysis</h4>
+            <p data-i18n="services-statistical-analysis-desc">Advanced statistical methods to interpret complex data sets.</p>
           </article>
         </div>
       </div>
 
       <div class="service-category">
-        <h3>Data Science</h3>
+        <h3 data-i18n="services-data-science">Data Science</h3>
         <div class="services-grid">
           <article class="service-card">
             <i class="fas fa-brain service-icon" aria-hidden="true"></i>
-            <h4>Data Analysis</h4>
-            <p>Conducting detailed data examination to extract meaningful insights.</p>
+            <h4 data-i18n="services-data-analysis">Data Analysis</h4>
+            <p data-i18n="services-data-analysis-desc">Conducting detailed data examination to extract meaningful insights.</p>
           </article>
           <article class="service-card">
             <i class="fas fa-database service-icon" aria-hidden="true"></i>
-            <h4>Data Engineering</h4>
-            <p>Handling data processing, recovery, and treatment.</p>
+            <h4 data-i18n="services-data-engineering">Data Engineering</h4>
+            <p data-i18n="services-data-engineering-desc">Handling data processing, recovery, and treatment.</p>
           </article>
           <article class="service-card">
             <i class="fas fa-chart-line service-icon" aria-hidden="true"></i>
-            <h4>Predictive Analytics</h4>
-            <p>Leveraging machine learning to forecast trends and business outcomes.</p>
+            <h4 data-i18n="services-predictive-analytics">Predictive Analytics</h4>
+            <p data-i18n="services-predictive-analytics-desc">Leveraging machine learning to forecast trends and business outcomes.</p>
           </article>
         </div>
       </div>
@@ -273,10 +290,10 @@
     </section>
 
     <section id="products" style="margin-top: 3rem; margin-bottom: 3rem;">
-      <h2>Marketplace Offerings</h2>
+      <h2 data-i18n="products-marketplace-offerings">Marketplace Offerings</h2>
         <div class="egg-offerings"></div>
         <div class="products-grid">
-          <p>
+          <p data-i18n="products-description">
             Hybroht's digital products and standard services are available securely and conveniently through Gumroad’s platform.
           </p>
           <div class="subscription">
@@ -286,7 +303,7 @@
               onclick="window.open('https://hybroht.gumroad.com', '_blank')" 
               class="btn">
               <i class="fas fa-shopping-cart" aria-hidden="true" style="margin-right: 0.5em;"></i>
-              Visit Our Store
+              <text data-i18n="products-visit-store"> Visit Our Store</text>
             </button>
           </div>
         </div>
@@ -294,31 +311,31 @@
 
     <!-- About Us Section -->
     <section id="about" style="margin-bottom: 3rem;">
-      <h2>About Us</h2>
-    <h1>Research Drive at The Dimensions of Development</h1>
+      <h2 data-i18n="about-us">About Us</h2>
+    <h1 data-i18n="about-title">Research Drive at The Dimensions of Development</h1>
     <div class='line'></div>
-    <p>
+    <p data-i18n="about-desc1">
       Hybroht researches and delivers optimal software offerings and data-driven experiences grounded in industry-standard technologies. Our team is dedicated to addressing the needs of our clients with intuitive solutions.
     </p>
-    <p>
+    <p data-i18n="about-desc2">
       We develop new mathematical models, softwares, and AI-driven workflows that unlock new possibilities. Whether you require advanced automation, data research, or specialized programs aligned with your goals, Hybroht offers the capability to help you navigate the digital frontier.
     </p>
     <p class="about-links"> <!-- (2025-08-24) TO-DO, pages not ready yet -->
-      <a href="/integrity-overview" class="about-link" aria-label="View our Integrity Overview">Integrity Overview</a>
-      <a href="/stack-and-resources" class="about-link" aria-label="Our inventory of the tech stack and resources">Stack & Resources</a>
-      <a href="/research-fields" class="about-link" aria-label="Research Fields">Research Fields</a>
-      <a href="/polls" class="about-link" aria-label="Open Polls for Feedback">Polls</a>
-      <a href="/showcases" class="about-link" aria-label="Highlighting Products, Services, or Achievements.">Showcases</a>
-      <a href="/faq" class="about-link" aria-label="Help Center & Frequently Asked Questions">FAQ</a>
+      <a href="/integrity-overview" class="about-link" aria-label="View our Integrity Overview" data-i18n="about-links-integrity">Integrity Overview</a>
+      <a href="/stack-and-resources" class="about-link" aria-label="Our inventory of the tech stack and resources" data-i18n="about-links-stack">Stack & Resources</a>
+      <a href="/research-fields" class="about-link" aria-label="Research Fields" data-i18n="about-links-research-fields">Research Fields</a>
+      <a href="/polls" class="about-link" aria-label="Open Polls for Feedback" data-i18n="about-links-polls">Polls</a>
+      <a href="/showcases" class="about-link" aria-label="Highlighting Products, Services, or Achievements." data-i18n="about-links-showcases">Showcases</a>
+      <a href="/faq" class="about-link" aria-label="Help Center & Frequently Asked Questions" data-i18n="about-links-faq">FAQ</a>
     </p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" style="margin-top: 3rem;">
-      <h2>Contact</h2>
-      <p>Let's connect to explore how we can help you achieve your business goals.</p>
+      <h2 data-i18n="contact">Contact</h2>
+      <p data-i18n="contact-message">Let's connect to explore how we can help you achieve your business goals.</p>
       <!--p>To Add: Partnership Enrollment Page</p-->
-      <p><i class="fas fa-map-marker-alt"></i> Address: In progress.</p>
+      <p><i class="fas fa-map-marker-alt"></i> <text data-i18n="contact-address">Address: In progress.</text></p>
       <div class="contact-buttons" aria-label="Contact links">
         <p>
             <span style="margin-right: 9px;">
@@ -358,27 +375,27 @@
 
         <div class="subscription">
          <form id="custom-subscribe-form">
-          <input type="email" id="email" placeholder="Your email" required />
-          <button type="submit">Subscribe</button>
+          <input type="email" id="email" placeholder="Email"  required/>
+          <button type="submit" data-i18n="subscription-button">Subscribe</button>
         </form>
         </div>
     </div>
     <span class="legal-notices" style="display: block; margin-top: 30px; font-size: 12px; text-align: center;">
-      <a href="/privacy-policy" class="about-link" aria-label="Privacy Policy">Privacy Policy</a>
+      <a href="/privacy-policy" class="about-link" aria-label="Privacy Policy" data-i18n="privacy-policy">Privacy Policy</a>
       <a>|</a> 
-      <a href="/terms-of-use" class="about-link" aria-label="Terms of Use">Terms of Use</a>
+      <a href="/terms-of-use" class="about-link" aria-label="Terms of Use" data-i18n="terms-of-use">Terms of Use</a>
       <span class="desktop-only-decorator" style="margin-right:12px"></span>
     </span>
   </main>
       
   <footer>
-    &copy; 2025 Hybroht. All rights reserved.
-    <span class="desktop-only-decorator" style="margin-right:42px"></span>
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
+    <span class="desktop-only-decorator" style="margin-right:54px"></span>
   </footer>
 
   <script src="/js/theme-toggle.js"></script>
   <script src="/js/newsletter-subscribe.js"></script>
   <script src="/js/initial-sentences.js"></script>
-  
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
 </body>
 </html>

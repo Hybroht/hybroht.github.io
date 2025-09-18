@@ -19,7 +19,7 @@
     --color-gear: #ccc;
     --color-gear-menu-border: #666;
     --gear-icon: url("data:image/svg+xml,%3csvg stroke='%23888' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='3'/%3e%3cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3e%3c/svg%3e");
-
+    --language-menu-color: #333;
 }
 .light-theme {
     --color-primary: #004080; /* Blue */
@@ -40,7 +40,8 @@
     --color-brand-command:  #0047AB; /*Cobalt Blue*/
     --color-gear: #00BFFF;
     --color-gear-menu-border: #ccc;
-    --gear-icon: url("data:image/svg+xml,%3csvg stroke='%2327ae60' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='3'/%3e%3cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3e%3c/svg%3e");
+    --gear-icon: url("data:image/svg+xml,%3csvg stroke='%23333333' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='3'/%3e%3cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3e%3c/svg%3e");
+    --language-menu-color: #ccc;
 }
 .dark-theme {
     --color-primary: #3a6b3a;       /* softer dark green */
@@ -62,6 +63,7 @@
     --color-gear: #ccc;
     --color-gear-menu-border: #666;
     --gear-icon: url("data:image/svg+xml,%3csvg stroke='%23888' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='12' cy='12' r='3'/%3e%3cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3e%3c/svg%3e");
+    --language-menu-color: #333;
 }
 
 /* Reset and base */
@@ -951,7 +953,7 @@ section.integrity-overview > h2{
 /* Make sure the container is positioned relative for absolute menu */
 .hero-gear-menu-container {
   position: relative;
-  margin-left: auto;
+  /* margin-left: auto; */
   display: flex;
   border-radius: 6px;
   cursor: pointer;
@@ -1184,4 +1186,82 @@ section.research-section > h2{
   height: 100%;
   max-width: 100%;
   border: 0;
+}
+
+/* Language menu container */
+#language-menu {
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid var(--color-border);
+  border-radius: 18px;
+  background-color: var(--color-border);
+  transition: box-shadow 0.3s ease;
+  /* Optional padding to make it comfy */
+  padding: 0.34em 0.5em;
+  margin-top: 0.05em;
+}
+
+/* Hover "shine" effect */
+#language-menu:hover {
+  box-shadow:
+    0 0 8px 2px rgba(39, 255, 39, 0.6),
+    0 0 12px 4px rgba(0, 123, 255, 0.4);
+  color: #a8ffa8;
+}
+
+/* Language button styling */
+#language-button {
+  background: none;
+  border: none;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  color: var(--language-menu-color);
+  padding: 1;
+}
+
+/* Icon spacing */
+#language-button i.fas.fa-globe {
+  margin-right: 0.5em;
+}
+
+/* Caret spacing */
+#language-button i.fas.fa-caret-down {
+  margin-left: 0.5em;
+}
+
+/* Dropdown menu styling */
+#language-dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 0;
+  box-shadow: 0 0 4px rgba(0,0,0,.2);
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 6em;
+  border-radius: 6px;
+  z-index: 10;
+  border: 1px solid #ccc;
+}
+
+/* Dropdown list items */
+#language-dropdown li {
+  padding: 0.3em 1em;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.2s, color 0.2s;
+  border-radius: 4px;
+}
+
+/* Hover and focus states for dropdown items */
+#language-dropdown li:hover,
+#language-dropdown li:focus {
+  background-color: var(--color-link);
+  color: white;
+  outline: none;
 }
