@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Showcases - Hybroht Enterprise</title>
+  <title data-i18n="title">Showcases - Hybroht Enterprise</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
   <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
@@ -28,74 +32,88 @@
     <section id="intro">
       <h1>
       <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      Showcases&nbsp;&nbsp;&nbsp;
+      <text data-i18n="intro-title">Showcases</text>&nbsp;&nbsp;&nbsp;
       <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
         <i class="fas fa-moon"></i> Dark Mode
       </button></h1>
-      <time class="update-date" datetime="2025-09-10T11:30">September 10, 2025, 11:30 AM</time>
+      <time class="update-date" datetime="2025-09-19T10:30">
+          <!-- Language selector in your HTML -->
+          <div id="language-menu" class="language-menu">
+            <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span id="language-current">en</span>
+              <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+            </button>
+            <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+              <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+              <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+            </ul>
+          </div>
+           &nbsp; September 19, 2025, 10:30 AM
+      </time>
       <br>
-      <p>
+      <p data-i18n="intro-description-1">
       Here we present a portfolio of current and concluded projects, ranging from products to partnerships. Each showcase offers a clear view of the work we have done, illustrating practical applications of our knowledge repertoire.
       </p>
-      <p>This page serves to understand the scope and variety of our engagements, providing insight into how we approach objectives and deliver solutions.
+      <p data-i18n="intro-description-2">This page serves to understand the scope and variety of our engagements, providing insight into how we approach objectives and deliver solutions.
       </p>
       <p>
-        <strong>Please note this is not an exhaustive list.</strong>
+        <strong data-i18n="intro-note">Please note this is not an exhaustive list.</strong>
       </p>
       <br>
     </section>
 
     <section class="showcases-section" aria-labelledby="workflow-heading">
-      <h2 id="workflow-heading">Workflow Orchestration</h2>
-      <p>
+      <h2 id="workflow-heading" data-i18n="workflow-heading">Workflow Orchestration</h2>
+      <p data-i18n="workflow-desc-1">
         We develop and implement workflow solutions that uncomplicate the integration of diverse AI and automation tools, streamlining business processes. Orchestrated workflows allow straightforward maintenance and updates, optimizing task management and improving efficiency.
       </p>
       <img src="assets/showcases/workflow.png" alt="Workflow Example" />
-      <p>Available examples of our public workflow releases can be found in our official <a href="https://n8n.io/creators/hybroht/">n8n creator page</a>.</p>
-      <p>Our automations range from <a href="https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/">data processing</a> to the use of <a href="https://n8n.io/workflows/5682-simulate-debates-between-ai-agents-using-mistral-to-optimize-answers/">multi-agent collaboration</a>.</p>
+      <p data-i18n="workflow-examples">Available examples of our public workflow releases can be found in our official <a href="https://n8n.io/creators/hybroht/">n8n creator page</a>.</p>
+      <p data-i18n="workflow-automation">Our automations range from <a href="https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/">data processing</a> to the use of <a href="https://n8n.io/workflows/5682-simulate-debates-between-ai-agents-using-mistral-to-optimize-answers/">multi-agent collaboration</a>.</p>
     </section>
 
     <section class="showcases-section" aria-labelledby="asset-generation-heading">
-      <h2 id="asset-generation-heading">Digital Asset Generation</h2>
-      <p>
+      <h2 id="asset-generation-heading" data-i18n="digital-asset-heading">Digital Asset Generation</h2>
+      <p data-i18n="digital-asset-desc-1">
         At Hybroht, we are capable of creating a diverse range of digital assets, spanning from realistic to stylistically unique videos, as well as audio content, including voices and music.
       </p>
       <iframe height="415"
         src="https://www.youtube.com/embed/m2baCpoJ6io?iv_load_policy=3&modestbranding=1&autoplay=0"
         frameborder="0" allowfullscreen></iframe>
-      <p>
+      <p data-i18n="digital-asset-desc-2">
         This skill allows us to deliver customizable multimedia content, supporting clients and partners in enhancing their communication and engagement strategies.
       </p>
     </section>
 
     <section class="showcases-section" aria-labelledby="technical-contract-heading">
-      <h2 id="technical-contract-heading">Technical Contract Drafting</h2>
-      <p>
+      <h2 id="technical-contract-heading" data-i18n="contract-heading">Technical Contract Drafting</h2>
+      <p data-i18n="contract-desc-1">
         Aiming to accelerate bureaucracy while maintaining alignment with our strategic goals, we standardize our regulations and ensure compliance through the careful crafting of legal documents.
       </p>
       <img src="assets/showcases/regulations.png" alt="Hybroht Licenses" />
-      <figcaption>See our <a href="/stack-and-resources">Stack & Resources</a> page for more information on our licenses</figcaption>
-      <p>
+      <figcaption data-i18n="contract-licenses-link">See our <a href="/stack-and-resources">Stack & Resources</a> page for more information on our licenses</figcaption>
+      <p data-i18n="contract-note">
         Our offerings are coupled with the most appropriate license, depending on their nature and role within our business operations. 
       </p>
     </section>
 
     <section class="showcases-section" aria-labelledby="software-heading">
-      <h2 id="software-heading">Software</h2>
-      <p>
+      <h2 id="software-heading" data-i18n="software-heading">Software</h2>
+      <p data-i18n="software-desc-1">
         Our development of software projects is currently underway, designed to address specific business needs, from clients to our own, and focusing on usability and purpose fitness.
       </p>
       <img src="assets/showcases/softwares.png" alt="Softwares" />
-      <figcaption>Our software in development</figcaption>
-      <p>
+      <figcaption data-i18n="software-note">Our software in development</figcaption>
+      <p data-i18n="software-desc-2">
         While we cannot share more details until their final release, we are showcasing the pictures above to provide better insights into our capabilities.
       </p>
     </section>
 
     <section class="showcases-section" aria-labelledby="Assessment Services">
-      <h2 id="assessments-heading">Assessment Services</h2>
+      <h2 id="assessments-heading" data-i18n="assessment-heading">Assessment Services</h2>
 
-      <p>
+      <p data-i18n="assessment-desc-1">
         We offer specialized assessments designed to utilize adaptive, data-driven methodologies, ranging from technology investigations to mathematical approaches, providing clear information and actions for complex problems across various fields.
       </p>
       <img src="assets/showcases/assessments.jpg"
@@ -105,47 +123,47 @@
       display:flex;
       margin:auto;
       align-items: center;"/>
-      <figcaption>Thumbnails from some of our Assessment Services</figcaption>
-      <p>Hybroht continuously adjusts to novel conditions, ensuring we provide relevant insights that support decision-making.</p>
+      <figcaption data-i18n="assessment-note">Thumbnails from some of our Assessment Services</figcaption>
+      <p data-i18n="assessment-desc-2">Hybroht continuously adjusts to novel conditions, ensuring we provide relevant insights that support decision-making.</p>
 
     </section>
 
     <section class="showcases-section" aria-labelledby="simulations-heading">
-      <h2 id="simulations-heading">Simulations</h2>
-      <p>
+      <h2 id="simulations-heading" data-i18n="simulations-heading">Simulations</h2>
+      <p data-i18n="simulations-desc-1">
         Our simulations will assist in testing hypotheses, training personnel, and predicting outcomes with high accuracy.
       </p>
-      <i>(Updates will be shared as development progresses)</i>
-      <p>
+      <i data-i18n="simulations-updates-note">(Updates will be shared as development progresses)</i>
+      <p data-i18n="simulations-desc-2">
         Through advanced modeling and data-driven scenarios, we will enable our clients to make well-informed decisions and optimize operational strategies.
       </p>
     </section>
 
     <section class="showcases-section" aria-labelledby="online-platform-heading">
-      <h2 id="online-platform-heading">Online Platforms</h2>
-      <p>
+      <h2 id="online-platform-heading" data-i18n="online-platforms-heading">Online Platforms</h2>
+      <p data-i18n="online-platforms-desc-1">
         We are currently designing and building robust online platforms that will serve as comprehensive hubs for our partners.
       </p>
-      <i>(Updates will be shared as development progresses)</i>
-      <p>
+      <i data-i18n="online-platforms-updates-note">(Updates will be shared as development progresses)</i>
+      <p data-i18n="online-platforms-desc-2">
         These platforms aim to provide seamless user experiences, scalable architectures, and integration capabilities to connect diverse tools and services.
       </p>
     </section>
 
     <section class="showcases-section" aria-labelledby="data-science-heading">
-      <h2 id="data-science-heading">Data Science</h2>
-      <p>
+      <h2 id="data-science-heading" data-i18n="data-science-heading">Data Science</h2>
+      <p data-i18n="data-science-desc-1">
         Our data science initiatives harness the power of statistical analysis, machine learning, and big data technologies to extract insights from complex datasets.
       </p>
-      <i>(Updates will be shared as development progresses)</i>
-      <p>
+      <i data-i18n="data-science-updates-note">(Updates will be shared as development progresses)</i>
+      <p data-i18n="data-science-desc-2">
         Hybroht is actively building a comprehensive research database designed to aggregate and organize valuable and informative studies, supporting evidence-based decisions.
       </p>
     </section>
 
     <section class="showcases-section" aria-labelledby="partnerships-heading">
-      <h2 id="partnerships-heading">Partnerships</h2>
-      <p>
+      <h2 id="partnerships-heading" data-i18n="partnerships-heading">Partnerships</h2>
+      <p data-i18n="partnerships-desc-1">
         Here are some of the organizations where we closely collaborate by co-developing solutions, sharing knowledge, or extending service offerings to broader markets.
       </p>
       <div style="display: flex; justify-content: center; align-items: center;">
@@ -172,7 +190,7 @@
           onclick="window.open('https://agenciaelara.com.br/', '_blank');"
           />
       </div>
-      <p>
+      <p data-i18n="partnerships-desc-2">
         We, Hybroht and its partners, combine our knowledge and resources to foster innovation and enhance efficiency, expanding our collective impact in the industries we serve.
       </p>
     </section>
@@ -182,16 +200,17 @@
       <br>
       <br>
       <nav class="archive-navigation" aria-label="Navigation">
-        <a href="/" class="back-to-home">← Back to Home</a>
+        <a href="/" class="back-to-home" data-i18n="back-to-home">← Back to Home</a>
       </nav>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Hybroht. All rights reserved.
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
   </footer>
 
 
   <script src="/js/theme-toggle.js"></script>
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
 </body>
 </html>

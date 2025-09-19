@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy</title>
+  <title data-i18n="title">Privacy Policy</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
   <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
@@ -22,18 +26,31 @@
   </div>
   </header>
 
-
   <main>
     <section id="intro">
       <h1>
       <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      Privacy Policy&nbsp;&nbsp;&nbsp;
+      <text data-i18n="intro-title">Privacy Policy</text>&nbsp;&nbsp;&nbsp;
       <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
         <i class="fas fa-moon"></i> Dark Mode
       </button></h1>
-      <time class="update-date" datetime="2025-09-05T20:00">September 05, 2025, 8:00 PM</time>
+      <time class="update-date" datetime="2025-09-19T10:30">
+          <!-- Language selector in your HTML -->
+          <div id="language-menu" class="language-menu">
+            <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span id="language-current">en</span>
+              <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+            </button>
+            <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+              <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+              <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+            </ul>
+          </div>
+           &nbsp; September 19, 2025, 10:30 AM
+      </time>
       <br>
-      <p>
+      <p data-i18n="intro-description">
         Hybroht respects your privacy. We are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website. Please read this policy carefully.
       </p>
       <br>
@@ -42,58 +59,94 @@
       <h2></h2>
       <br>
       <ol>
-        <li><b>Information We Collect</b>
+        <li><b data-i18n="terms-1-title">Information We Collect</b>
             <br><br>
               <p>
-                Personal Information:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We may collect personal information that you voluntarily provide to us when you contact us, sign up for newsletters, or interact with the Site. This may include your name, email address, phone number, and other contact details.
+              <text data-i18n="terms-1-personal-info">Personal Information:</text>
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <text data-i18n="terms-1-personal-info-desc">
+                We may collect personal information that you voluntarily provide to us when you contact us, sign up for newsletters, or interact with the Site. This may include your name, email address, phone number, and other contact details.
+                </text>
               </p>
+              <br>
               <p>
-                Usage Data:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We may automatically collect certain technical data about your device and how you access and use the Site, such as your IP address, browser type, operating system, referring URLs, pages visited, and duration of visits.
+                <text data-i18n="terms-1-usage-data">Usage Data:</text>
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <text data-i18n="terms-1-usage-data-desc">
+                We may automatically collect certain technical data about your device and how you access and use the Site, such as your IP address, browser type, operating system, referring URLs, pages visited, and duration of visits.
+                </text>
               </p>
             </li><br>
 
-            <li><b>How We Use Your Information</b>
-            <br><ul><br>We may use the collected information for business purposes including:<br><br>
-              <li>
-                To provide, maintain, and improve the Site and our services.
-              </li>
-              <li>
-                To communicate with you, respond to inquiries, and send updates or marketing materials (only if you consent).
-              </li>
-              <li>
-                To analyze Site usage and enhance user experience.
-              </li>
-              <li>
-                To comply with legal obligations.
-              </li>
-            <br>We do not sell or rent your personal information to third parties. We may share your information when required by law or to protect rights, property, or safety of Hybroht, our users, or others.<br><br>
-            </ul></li>
+            <li><b data-i18n="terms-2-title">How We Use Your Information</b>
+              <br><br>
+              <text data-i18n="terms-2-intro">We may use the collected information for business purposes including:</text>
+              <br><br>
+              <ul>
+                <li data-i18n="terms-2-desc-1">
+                  To provide, maintain, and improve the Site and our services.
+                </li>
+                <li data-i18n="terms-2-desc-2">
+                  To communicate with you, respond to inquiries, and send updates or marketing materials (only if you consent).
+                </li>
+                <li data-i18n="terms-2-desc-3">
+                  To analyze Site usage and enhance user experience.
+                </li>
+                <li data-i18n="terms-2-desc-4">
+                  To comply with legal obligations.
+                </li>
+              </ul>
+              <br>
+              <text data-i18n="terms-2-note">
+              We do not sell or rent your personal information to third parties. We may share your information when required by law or to protect rights, property, or safety of Hybroht, our users, or others.
+              </text>
+              <br><br>
+            </li>
 
-            <li><b>Your Rights and Choices</b>
-            <br><ul><br>Depending on your jurisdiction, you may have rights including:<br><br>
-              <li>
-                Accessing and correcting your personal information.
-              </li>
-              <li>
-                Requesting deletion or restriction of processing.
-              </li>
-              <li>
-                Withdrawing consent at any time (without affecting the lawfulness of prior processing).
-              </li>
-              <li>
-                Exercising your data portability rights.
-              </li>
-              <br>To exercise any rights, please contact us at contact@hybroht.com. You may also unsubscribe from communications at any time.
-            </ul></li><br>
+            <li><b data-i18n="terms-3-title">Your Rights and Choices</b>
+              <br><br>
+              <text data-i18n="terms-3-intro">Depending on your jurisdiction, you may have rights including:</text>
+              <br><br>
+              <ul>
+                <li data-i18n="terms-3-desc-1">
+                  Accessing and correcting your personal information.
+                </li>
+                <li data-i18n="terms-3-desc-2">
+                  Requesting deletion or restriction of processing.
+                </li>
+                <li data-i18n="terms-3-desc-3">
+                  Withdrawing consent at any time (without affecting the lawfulness of prior processing).
+                </li>
+                <li data-i18n="terms-3-desc-4">
+                  Exercising your data portability rights.
+                </li>
+              </ul>
+              <br>
+              <text data-i18n="terms-3-contact">
+              To exercise any rights, please contact us at contact@hybroht.com. You may also unsubscribe from communications at any time.</text>
+            </li><br>
 
-            <li><b>Data Security</b>
-            <br><br>We prioritize the protection of your personal information and implement security measures to safeguard it from unauthorized access, alteration, disclosure, or destruction. While no system is completely infallible, we continuously work to enhance our security to keep your data safe.<br><br>
+            <li><b data-i18n="terms-4-title">Data Security</b>
+            <br><br>
+            <text data-i18n="terms-4-desc">We prioritize the protection of your personal information and implement security measures to safeguard it from unauthorized access, alteration, disclosure, or destruction. While no system is completely infallible, we continuously work to enhance our security to keep your data safe.
+            </text>
+            <br><br>
 
-            <li><b>International Users and Data Transfers</b>
-            <br><br>If you access our Site from outside the jurisdiction where Hybroht operates, your information may be transferred and processed in other countries with different data protection laws. By using the Site, you consent to such transfers.<br><br>
+            <li><b data-i18n="terms-5-title">International Users and Data Transfers</b>
+            <br><br>
+            <text data-i18n="terms-5-desc">
+            If you access our Site from outside the jurisdiction where Hybroht operates, your information may be transferred and processed in other countries with different data protection laws. By using the Site, you consent to such transfers.
+            </text>
+            <br><br>
 
-            <li><b>Updates to This Policy</b>
-            <br><br>We may update this Privacy Policy from time to time. We will post the updated policy on this page with a revised date.<br><br>
+            <li><b data-i18n="terms-6-title">Updates to This Policy</b>
+            <br><br>
+            <text data-i18n="terms-6-desc">
+            We may update this Privacy Policy from time to time. We will post the updated policy on this page with a revised date.
+            </text>
+            <br><br>
 
             </ul></li><br>
       </ol>
@@ -104,16 +157,17 @@
       <br>
       <br>
       <nav class="archive-navigation" aria-label="Navigation">
-        <a href="/" class="back-to-home">← Back to Home</a>
+        <a href="/" class="back-to-home" data-i18n="back-to-home">← Back to Home</a>
       </nav>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Hybroht. All rights reserved.
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
   </footer>
 
 
   <script src="/js/theme-toggle.js"></script>
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
 </body>
 </html>

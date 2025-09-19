@@ -1,0 +1,56 @@
+{
+  "title": "Showcases - Hybroht Enterprise",
+
+  "intro-title": "Showcases",
+
+  "intro-description-1": "Aqui apresentamos um portfólio de projetos atuais e concluídos, que vão desde produtos a parcerias. Cada showcase oferece uma visão clara do trabalho realizado, ilustrando aplicações práticas do nosso repertório de conhecimentos.",
+  "intro-description-2": "Esta página serve para compreender o escopo e a variedade dos nossos compromissos, oferecendo insights sobre como abordamos objetivos e entregamos soluções.",
+  "intro-note": "Esta não é uma lista exaustiva.",
+
+  "workflow-heading": "Orquestração de Fluxos de Trabalho",
+  "workflow-desc-1": "Desenvolvemos e implementamos soluções de fluxo de trabalho que descomplicam a integração de diversas ferramentas de IA e automação, racionalizando processos de negócios. Fluxos orquestrados facilitam a manutenção e atualização, otimizando a gestão de tarefas e melhorando a eficiência.",
+  "workflow-examples": "Exemplos disponíveis das nossas liberações públicas de fluxo podem ser encontrados em nossa página oficial de <a href=\"https://n8n.io/creators/hybroht/\">n8n Creator</a>.",
+  "workflow-automation": "Nossas automações variam desde  <a href=\"https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/\">processamento de dados</a> até o uso de <a href=\"https://n8n.io/workflows/5682-simulate-debates-between-ai-agents-using-mistral-to-optimize-answers/\">colaboração entre múltiplos agentes</a>.",
+
+  "digital-asset-heading": "Criação de Recursos Digitais",
+  "digital-asset-desc-1": "Na Hybroht, somos capazes de criar uma gama diversificada de recursos digitais, que vão de vídeos realistas a estilisticamente únicos, bem como conteúdos de áudio, incluindo vozes e músicas.",
+  "digital-asset-desc-2": "Essa habilidade nos permite entregar conteúdos multimídia personalizáveis, apoiando clientes e parceiros no aprimoramento de suas estratégias de comunicação e engajamento.",
+
+  "contract-heading": "Elaboração de Contratos Técnicos",
+  "contract-desc-1": "Com o objetivo de acelerar a burocracia mantendo o alinhamento com nossas metas estratégicas, padronizamos nossos regulamentos e garantimos conformidade através da elaboração cuidadosa de documentos legais.",
+  "contract-note": "Nossos produtos e serviços são oferecidos acompanhados por licenças apropriadas, dependendo da natureza e papel deles em nossas operações.",
+  "contract-licenses-link": "Veja nossa página <a href=\"/stack-and-resources\">Stack & Recursoss</a> para mais informações sobre nossas licenças",
+
+  "software-heading": "Software",
+  "software-desc-1": "O desenvolvimento dos nossos projetos de software está em andamento, projetado para atender necessidades comerciais específicas, desde clientes até as nossas próprias, focando em usabilidade e adequação ao propósito.",
+  "software-desc-2": "Embora não possamos compartilhar mais detalhes até o lançamento final, exibimos as imagens acima para fornecer melhores insights sobre nossas capacidades.",
+  "software-note": "Nossos projetos de software em desenvolvimento",
+
+  "assessment-heading": "Serviços de Análise",
+  "assessment-desc-1": "Oferecemos avaliações especializadas projetadas para utilizar metodologias adaptativas e orientadas por dados, que vão desde investigações tecnológicas até abordagens matemáticas, fornecendo informações e ações claras para problemas complexos em vários campos.",
+  "assessment-desc-2": "A Hybroht se ajusta continuamente a novas condições, garantindo que fornecemos insights relevantes que apoiam a tomada de decisões.",
+  "assessment-note": "Thumbnails de alguns dos nossos Serviços de Análise",
+
+  "simulations-heading": "Simulações",
+  "simulations-desc-1": "Nossas simulações auxiliam no teste de hipóteses, treinamento de pessoal e previsão de resultados com alta precisão.",
+  "simulations-updates-note": "(Atualizações serão compartilhadas conforme o desenvolvimento avance)",
+  "simulations-desc-2": "Por meio de modelagens avançadas e cenários orientados por dados, capacitamos nossos clientes a tomar decisões bem informadas e otimizar estratégias operacionais.",
+
+  "online-platforms-heading": "Plataformas Online",
+  "online-platforms-desc-1": "Estamos atualmente projetando e construindo plataformas online robustas que servirão como hubs abrangentes para nossos parceiros.",
+  "online-platforms-updates-note": "(Atualizações serão compartilhadas conforme o desenvolvimento avance)",
+  "online-platforms-desc-2": "Essas plataformas têm como objetivo fornecer experiências de usuário contínuas, arquiteturas escaláveis e capacidades de integração para conectar diversas ferramentas e serviços.",
+
+  "data-science-heading": "Ciência de Dados",
+  "data-science-desc-1": "Nossas iniciativas de ciência de dados utilizam o poder da análise estatística, aprendizado de máquina e tecnologias de big data para extrair insights de conjuntos de dados complexos.",
+  "data-science-updates-note": "(Atualizações serão compartilhadas conforme o desenvolvimento avance)",
+  "data-science-desc-2": "A Hybroht está construindo ativamente um banco de dados de pesquisa abrangente projetado para agregar e organizar estudos valiosos e informativos, apoiando decisões baseadas em evidências.",
+
+  "partnerships-heading": "Parcerias",
+  "partnerships-desc-1": "Aqui estão algumas das organizações com as quais colaboramos estreitamente, co-desenvolvendo soluções, compartilhando conhecimento ou ampliando ofertas de serviço para mercados mais amplos.",
+  "partnerships-desc-2": "Nós, Hybroht e parceiros, combinamos nosso conhecimento e recursos para fomentar avanços e aprimorar nossa eficiência, ampliando nosso impacto nas indústrias que atendemos.",
+
+  "back-to-home": "← Voltar para Home",
+
+  "footer": "2025 Hybroht. Todos Direitos Reservados."
+}

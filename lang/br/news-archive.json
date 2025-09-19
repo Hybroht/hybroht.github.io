@@ -1,0 +1,128 @@
+{
+  "title": "Arquivo de Notícias - Hybroht Enterprise",
+
+  "intro-title": "Arquivo de Notícias",
+
+  "intro-description": "Bem-vindo ao arquivo de artigos e anúncios antigos da Hybroht. Aqui você pode navegar por atualizações e marcos anteriores.",
+
+  "news-title-2025_09_19-1": "Primeira Tradução Completa do nosso Site Disponível",
+  "news-desc-2025_09_19-1": "Temos o prazer de anunciar a adição da primeira tradução completa do nosso site Hybroht. Esta iniciativa marca um importante passo para ampliar nosso alcance e facilitar o acesso às nossas informações e serviços para a comunidade lusófona. Explore agora as páginas traduzidas e compartilhe seu feedback conosco.",
+
+  "news-title-2025_09_12-1": "Lançamento da Página de Áreas de Pesquisa",
+  "news-desc-2025_09_12-1": "Publicamos nossa <a href=\"/research-fields\">Página de Áreas de Pesquisa</a>, que apresenta uma visão abrangente dos principais domínios de pesquisa da Hybroht. Explore como aprendemos, construímos conhecimento e crescemos por meio do estudo multidisciplinar.",
+
+  "news-title-2025_09_11-1": "Lançamento das Enquetes da Hybroht",
+  "news-desc-2025_09_11-1": "Uma nova <a href=\"/polls\">Página de Enquetes</a> foi adicionada para facilitar a coleta de feedback. Esta página serve como um canal direto para reunir insights de forma estruturada, apoiando nossas direções futuras.",
+
+  "news-title-2025_09_10-1": "Lançamento da Página de Showcases com Parcerias",
+  "news-desc-2025_09_10-1": "Lançamos nossa nova <a href=\"/showcases\">Página de Showcases</a>, destacando algumas de nossas principais ofertas e parcerias, incluindo colaborações com <a href=\"https://drinfinitto.com.br/\">Dr. Infinitto</a> e <a href=\"https://agenciaelara.com.br/\">Elara</a>. Explore nosso trabalho e afiliações na página.",
+
+  "news-title-2025_09_08-1": "Lançamento da Hybroht Fair Duality License (HFDL)",
+  "news-desc-2025_09_08-1": "Criamos uma licença Source-Available para alta eficácia em modelos de negócios de dupla licença ao lado de licenças FOSS robustas. Ela sustentará algumas de nossas ofertas futuras, equilibrando direitos dos usuários com justiça comercial. Leia o documento completo da HFDL <a href=\"docs/policies/licenses/LICENSE-HFDL.txt\">aqui</a>.",
+
+  "news-title-2025_09_05-1": "Lançamento do URL Officer",
+  "news-desc-2025_09_05-1": "Nosso mais novo fluxo de trabalho n8n foi lançado: <a href=\"https://n8n.io/workflows/8138-filter-urls-with-ai-powered-robotstxt-compliance-and-source-verification/\">URL Officer</a>. Ele facilita o filtro de URLs verificando regras de robots.txt e fontes proibidas, apoiando automação web legal e validação de fontes. Clique no link para saber mais.",
+
+  "news-title-2025_09_02-2": "Nova página Stack & Recursos",
+  "news-desc-2025_09_02-2": "Para compartilhar algumas das ferramentas e plataformas que usamos, adicionamos uma nova página: <a href=\"https://hybroht.com/stack-and-resources\">Stack & Recursos</a>. <i>Observe que esta não é uma lista exaustiva nem uma lista de entidades afiliadas.</i>",
+
+  "news-title-2025_09_02-1": "Adição da página de Perguntas Frequentes",
+  "news-desc-2025_09_02-1": "Após reformular nosso site, estamos adicionando novas páginas. Hoje, adicionamos uma <a href=\"https://hybroht.com/faq\">FAQ</a> para ajudar com perguntas comuns sobre nós.",
+
+  "news-title-2025_08_26-1": "Alterações na página principal e na página Gumroad",
+  "news-desc-2025_08_26-1": "Após novos desenvolvimentos, reformulamos nosso site e adicionamos um <a href=\"https://hybroht.com/integrity-overview\">Quadro Geral de Integridade</a> para maior transparência. Também alteramos nossas ofertas no Gumroad para maior clareza e alinhamento com nossas capacidades atuais.",
+
+  "news-title-2025_08_19-1": "Novo artigo: 9 Capacidades Fundamentais Além do Alcance da IA",
+  "news-desc-2025_08_19-1": "Publicamos um novo artigo no Medium, explorando nove capacidades fundamentais que a IA nunca alcançará totalmente. Saiba mais <a href=\"https://medium.com/@hybroht/top-9-fundamental-capabilities-beyond-the-reach-of-ai-37d9edba4a52\">aqui</a>.",
+
+  "news-title-2025_08_18-1": "Canal oficial no Pinterest",
+  "news-desc-2025_08_18-1": "Anunciamos o lançamento do canal oficial da Hybroht no <a href=\"https://www.pinterest.com/hybroht/\">Pinterest</a>. Siga-nos lá para explorar conteúdos e ficar atualizado com as últimas notícias da Hybroht.",
+
+  "news-title-2025_08_16-1": "Serviço de Pacotes de Trilha Sonora de IA lançado",
+  "news-desc-2025_08_16-1": "O último serviço adicional foi lançado: <a href=\"https://hybroht.gumroad.com/l/ai-soundtrack-package\">Pacotes de Trilha Sonora de IA</a>. Com este serviço, você pode encomendar seu próprio pacote personalizado de trilhas sonoras feitas por IA, alteradas e validadas por métodos híbridos humanos e mecânicos. Veja o link para mais informações.",
+
+  "news-title-2025_08_15-1": "Serviço de Reforço de TI profissional lançado",
+  "news-desc-2025_08_15-1": "Lançamos um de nossos serviços adicionais: <a href=\"https://hybroht.gumroad.com/l/it-consultation\">Ajuda para Reforço de TI</a>. Este serviço oferece suporte a profissionais de TI, auxiliando na resolução de problemas onde a participação de contratados independentes pode ser benéfica. Clique no link para saber mais.",
+
+  "news-title-2025_08_14-1": "Briefings personalizados de IA lançados",
+  "news-desc-2025_08_14-1": "Como anunciado anteriormente, lançamos um de nossos mais recentes serviços: <a href=\"https://hybroht.gumroad.com/l/custom-ai-briefings\">Briefings personalizados de IA</a>, suportados por nossos fluxos de trabalho <a href=\"https://n8n.io/workflows/7074-multi-platform-source-discovery-with-serpapi-duckduckgo-github-reddit-and-bluesky/\">Multi-Source Discovery</a> e <a href=\"https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/\">News Curator</a>. É um serviço de assinatura que entrega notícias e fontes selecionadas, adaptadas às suas necessidades. Clique para saber mais.",
+
+  "news-title-2025_08_12-1": "Outros Serviços a serem lançados",
+  "news-desc-2025_08_12-1": "Estamos anunciando preventivamente o lançamento de três serviços fora de nossas ofertas principais: <a href=\"https://hybroht.gumroad.com/l/custom-ai-briefings\">Briefings personalizados de IA</a>, <a href=\"https://hybroht.gumroad.com/l/it-reinforcement-help\">Ajuda para Reforço de TI</a>, e <a href=\"https://hybroht.gumroad.com/l/ai-soundtrack-package\">Pacotes de Trilha Sonora de IA</a>. Mais informações nos links incluídos na descrição.",
+
+  "news-title-2025_08_08-2": "Serviço lançado: Experiências Holográficas 3D em VR",
+  "news-desc-2025_08_08-2": "Lançamos o serviço de comissão de Experiências Holográficas 3D (VR), oferecendo módulos personalizados de realidade virtual para treinamentos atraentes, replicação de eventos e narrativa de marca. Saiba mais <a href=\"https://hybroht.gumroad.com/l/3d-holographic-experiences-vr\">aqui</a>.",
+
+  "news-title-2025_08_08-1": "Lançamento do MD²-SEED: Consultoria Guiada por Metalógica",
+  "news-desc-2025_08_08-1": "Apresentamos o MD²-SEED, um serviço de consultoria que aproveita princípios de metalógica para aprimorar metodologias de desenvolvimento. Destinado a pequenas e médias empresas, oferece recomendações para melhoria de decisões e processos. Saiba mais <a href=\"https://hybroht.gumroad.com/l/metalogic-md2-seed\">aqui</a>.",
+
+  "news-title-2025_08_07-2": "Canais Oficiais do Telegram",
+  "news-desc-2025_08_07-2": "Anunciamos o lançamento do nosso <a href=\"https://t.me/hybroht\">chat oficial do Telegram</a> e um canal de notícias, onde você pode receber atualizações diretamente. Fique conectado conosco para nunca perder notícias ao vivo e principais atualizações da Hybroht. Junte-se a nós hoje <a href=\"https://t.me/hybroht_channel\">aqui</a>.",
+
+  "news-title-2025_08_07-1": "Apresentando o Serviço de Pesquisa n-ACT",
+  "news-desc-2025_08_07-1": "Este serviço combina Teoria das Categorias Aplicada e Teoria das Categorias Superiores para fornecer raciocínio estruturado, metodologias e soluções para problemas complexos em diversos domínios. Saiba mais <a href=\"https://hybroht.gumroad.com/l/n-act-research-category-theory\">aqui</a>.",
+
+  "news-title-2025_08_06-1": "Nosso Novo Serviço: Catálise de Dados Híbridos, SynOptics e Navigance",
+  "news-desc-2025_08_06-1": "Lançamos um serviço de Ciência de Dados projetado para ajudar empresas a desbloquear todo o potencial de seus dados, transformando informações brutas em insights através de modelos inteligentes, técnicas e avaliações personalizadas. Saiba mais <a href=\"https://hybroht.gumroad.com/l/data-catalysis-synoptics-navigance\">aqui</a>.",
+
+  "news-title-2025_08_05-1": "Novo Serviço: Protocolos de Ontologia Polimihoerodal",
+  "news-desc-2025_08_05-1": "Apresentamos comissões para POV-MP: Um protocolo que permite interoperabilidade entre ontologias diversas sem fusão, possibilitando integração independente dos sistemas. Saiba mais <a href=\"https://hybroht.gumroad.com/l/polymhioerodal-ontology-protocol\">aqui</a>.",
+
+  "news-title-2025_08_04-1": "Novo Serviço: Interpretação de Texto por Anticausalidade",
+  "news-desc-2025_08_04-1": "O serviço lançado hoje é nosso novo método para interpretar textos por avaliação anticausal. Saiba mais <a href=\"https://hybroht.gumroad.com/l/anticausal-text-interpretation\">aqui</a>.",
+
+  "news-title-2025_08_01-1": "Novo Serviço: Avaliações com Matemática Inconsistente",
+  "news-desc-2025_08_01-1": "A Hybroht lançou um novo serviço de avaliação dedicado a investigar desafios e dados sob a ótica da matemática inconsistente. Saiba mais <a href=\"https://hybroht.gumroad.com/l/assessments-inconsistent-math-approach\">aqui</a>.",
+
+  "news-title-2025_07_31-1": "Novo Serviço: Frameworks Fractais",
+  "news-desc-2025_07_31-1": "Comunicamos nosso novo serviço que oferece frameworks fractais para finanças, marketing e logística. Utilizamos totalmente a teoria dos fractais para otimizar seu negócio. Saiba mais <a href=\"https://hybroht.gumroad.com/l/fractal-frameworks\">aqui</a>.",
+
+  "news-title-2025_07_30-1": "Guia em Vídeo: Walkthrough do Multi-Source News Curator",
+  "news-desc-2025_07_30-1": "Lançamos um vídeo explicando como funciona o Multi-Source News Curator para nossos clientes. Adicionamos nas páginas do <a href=\"https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/\">n8n</a> e <a href=\"https://hybroht.gumroad.com/l/flexible-news-curator-ai_automation\">Gumroad</a>, mas você pode assisti-lo <a href=\"https://www.youtube.com/watch?v=ajtmTstc6Lo\">aqui</a>.",
+
+  "news-title-2025_07_29-1": "Serviço de Comissões de Fluxos n8n Disponível",
+  "news-desc-2025_07_29-1": "Lançamos recentemente um serviço que permite comissões padrão de fluxos n8n para nossos clientes, variando desde automações simples até avançadas com capacidades de swarm intelligence. Confira <a href=\"https://hybroht.gumroad.com/l/custom-workflow-n8n-opt-swarm-intelligence\">aqui</a> para saber se é elegível para algum dos níveis.",
+
+  "news-title-2025_07_26-1": "Resumo em Vídeo: Top 9 Áreas Além da IA & Quântica",
+  "news-desc-2025_07_26-1": "Criamos um vídeo conciso resumindo nosso último <a href=\"https://medium.com/@hybroht/top-9-fields-for-future-breakthroughs-beyond-ai-and-quantum-2025-and-onwards-fabe90c80307\">artigo</a>, que explora as 9 principais áreas apontadas para avanços além da IA e das tecnologias quânticas. Assista ao <a href=\"https://youtu.be/m2baCpoJ6io\">vídeo</a> para obter uma visão rápida destes campos empolgantes.",
+
+  "news-title-2025_07_22-1": "Novo Artigo: Top 9 Áreas para Avanços Além da IA e Quântica",
+  "news-desc-2025_07_22-1": "Publicamos um novo artigo no Medium, explorando as 9 principais áreas para avanços futuros além da IA e tecnologias quânticas. Saiba mais <a href=\"https://medium.com/@hybroht/top-9-fields-for-future-breakthroughs-beyond-ai-and-quantum-2025-and-onwards-fabe90c80307\">aqui</a>.",
+
+  "news-title-2025_07_21-1": "Multi-Source News Curator lançado",
+  "news-desc-2025_07_21-1": "Na semana passada, Hybroht tornou-se um criador verificado no n8n! Também lançamos nosso primeiro fluxo n8n pago, uma ferramenta para automatizar a curadoria das suas múltiplas fontes de notícias preferidas por meio de agentes de IA. Saiba mais <a href=\"https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/\">aqui</a>.",
+
+  "news-title-2025_07_17-1": "Hybroht aprovado como criador verificado n8n",
+  "news-desc-2025_07_17-1": "Temos o prazer de anunciar que fomos aceitos como criadores verificados <a href=\"https://n8n.io/creators/hybroht/\">n8n</a>! É uma ferramenta open-source que possibilita a automação fácil de fluxos de trabalho. Saiba mais <a href=\"https://n8n.io/features/\">aqui</a>.",
+
+  "news-title-2025_07_15-1": "Fluxo Dinâmico de Saída JSON lançado",
+  "news-desc-2025_07_15-1": "O JSON Architect Workflow instrui agentes de IA sobre estrutura JSON e cria um formato de saída validado. Saiba mais <a href=\"https://n8n.io/workflows/5829-generate-dynamic-json-output-formats-for-ai-agents-with-mistral/\">aqui</a>.",
+
+  "news-title-2025_07_10-1": "AI Arena Workflow lançado",
+  "news-desc-2025_07_10-1": "Nosso fluxo AI Arena Workflow gratuito foi publicado e aprovado no n8n. Ele simula debates entre qualquer número de agentes de IA configuráveis. Saiba mais <a href=\"https://n8n.io/workflows/5682-simulate-debates-between-ai-agents-using-mistral-to-optimize-answers/\">aqui</a>.",
+
+  "news-title-2025_07_04-1": "Códigos Fractais disponíveis",
+  "news-desc-2025_07_04-1": "Lançamos o código usado em nosso último artigo no Medium: 'Endless Growing Decision Tree Animation' e 'Rule-Based Fractal Maker'. Saiba mais <a href=\"https://hybroht.gumroad.com/\">aqui</a>.",
+
+  "news-title-2025_06_30-1": "Primeiro artigo publicado da Hybroht",
+  "news-desc-2025_06_30-1": "Publicamos nosso primeiro artigo no Medium, explorando a fascinante relação entre fractais e escolhas. Saiba mais <a href=\"https://medium.com/@hybroht/self-similar-choices-mandelbrots-angel-of-fractals-necessity-5e7256414eb2\">aqui</a>.",
+
+  "news-title-2025_06_27-1": "News Curator: Nosso primeiro produto de fluxo de IA",
+  "news-desc-2025_06_27-1": "Temos o prazer de anunciar o lançamento do nosso primeiro fluxo n8n de IA: 'News Curator', um produto que analisa notícias diárias e envia destaques por email. Disponível <a href=\"https://hybroht.gumroad.com/l/news-curator-ai-automation\">aqui</a>.",
+
+  "news-title-2025_06_26-1": "Feed de Atualizações ao Vivo Online",
+  "news-desc-2025_06_26-1": "Lançamos um feed de atualizações ao vivo no Bluesky, oferecendo atualizações diárias sobre notícias tecnológicas e científicas importantes de várias fontes confiáveis.",
+
+  "news-title-2025_06_16-1": "Canal do WhatsApp agora disponível",
+  "news-desc-2025_06_16-1": "Lançamos um canal no WhatsApp, possibilitando que potenciais clientes se comuniquem conosco durante o horário comercial.",
+
+  "news-title-2025_06_09-2": "Problema de Hilbert número seis resolvido, fundamentando a física em matemática rigorosa e desvendando os segredos do tempo",
+  "news-desc-2025_06_09-2": "Avanços em computação quântica, edição avançada de genes e tecnologias inovadoras de energia renovável que moldam o futuro.",
+
+  "news-title-2025_06_09-1": "Abrindo Novas Possibilidades",
+  "news-desc-2025_06_09-1": "Temos o prazer de anunciar nosso lançamento online, oferecendo uma gama de serviços que inclui pesquisa, soluções tecnológicas, ciência de dados e mais.",
+
+  "back-to-home": "← Voltar para Home",
+
+  "footer": "2025 Hybroht. Todos Direitos Reservados."
+}

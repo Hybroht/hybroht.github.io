@@ -20,7 +20,7 @@ TO-DO:
 - [X] Add links to Software Licenses
 - [X] Add a 404 Page
 - [X] Reorganize the Repository
-- [ ] Add language translations options
+- [X] Add language translations options
 
 
 ## Software License

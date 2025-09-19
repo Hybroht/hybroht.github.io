@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>News Archive - Hybroht Enterprise</title>
+  <title data-i18n="title">News Archive - Hybroht Enterprise</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
   <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
@@ -24,222 +28,244 @@
 
 
   <main>
-    <section id="news">
+    <section id="intro">
       <h1>
-      <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      News Archive&nbsp;&nbsp;&nbsp;
+      <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;</span>
+      <text data-i18n="intro-title">News Archive</text>&nbsp;&nbsp;&nbsp;
       <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
         <i class="fas fa-moon"></i> Dark Mode
       </button></h1>
-      <p>
+      <time class="update-date" datetime="2025-09-19T10:30">
+          <!-- Language selector in your HTML -->
+          <div id="language-menu" class="language-menu">
+            <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span id="language-current">en</span>
+              <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+            </button>
+            <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+              <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+              <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+            </ul>
+          </div>
+      </time>
+      <br>
+      <p data-i18n="intro-description">
         Welcome to the archive of past news articles and announcements from Hybroht. Here you can browse older updates and milestones.
       </p>
-
+    </section>
+    <section id="news">
       <ul>
         <li>
-          <h4>Launch of the Research Fields Page</h4>
+          <h4 data-i18n="news-title-2025_09_19-1">First Complete Translation of our Website is Available</h4>
+          <time datetime="2025-09-19T18:30">September 19, 2025, 6:30 PM</time>
+          <p data-i18n="news-desc-2025_09_19-1">We are pleased to announce the addition of the first complete translation of our Hybroht website. This initiative marks an important step in expanding our reach and making our information and services more accessible to the Portuguese-speaking community. Explore the translated pages now and share your feedback with us.</p>
+        </li>
+        <li>
+          <h4 data-i18n="news-title-2025_09_12-1">Launch of the Research Fields Page</h4>
           <time datetime="2025-09-12T16:00">September 12, 2025, 4:00 PM</time>
-          <p>We have published our <a href="/research-fields">Research Fields Page</a>, presenting a comprehensive overview of Hybroht's core research domains. Explore how we learn, build knowledge, and grow through multidisciplinary study.</p>
+          <p data-i18n="news-desc-2025_09_12-1">We have published our <a href="/research-fields">Research Fields Page</a>, presenting a comprehensive overview of Hybroht's core research domains. Explore how we learn, build knowledge, and grow through multidisciplinary study.</p>
         </li>
         <li>
-          <h4>Release of Hybroht Polls</h4>
+          <h4 data-i18n="news-title-2025_09_11-1">Release of Hybroht Polls</h4>
           <time datetime="2025-09-11T19:00">September 11, 2025, 7:00 PM</time>
-          <p>A new <a href="/polls">Polls Page</a> has been added to facilitate feedback collection. This page serves as a direct channel for gathering insights in a structured manner, supporting our future directions.</p>
+          <p data-i18n="news-desc-2025_09_11-1">A new <a href="/polls">Polls Page</a> has been added to facilitate feedback collection. This page serves as a direct channel for gathering insights in a structured manner, supporting our future directions.</p>
         </li>
         <li>
-          <h4>Release of our Showcases Page with Partnerships</h4>
+          <h4 data-i18n="news-title-2025_09_10-1">Release of our Showcases Page with Partnerships</h4>
           <time datetime="2025-09-10T16:00">September 10, 2025, 4:00 PM</time>
-          <p>We have launched our new <a href="/showcases">Showcases Page</a> highlighting some of our key offerings and featuring partnerships, including collaborations with <a href="https://drinfinitto.com.br/">Dr. Infinitto</a> and <a href="https://agenciaelara.com.br/">Elara</a>. Explore our work and affiliations on the page.</p>
+          <p data-i18n="news-desc-2025_09_10-1">We have launched our new <a href="/showcases">Showcases Page</a> highlighting some of our key offerings and featuring partnerships, including collaborations with <a href="https://drinfinitto.com.br/">Dr. Infinitto</a> and <a href="https://agenciaelara.com.br/">Elara</a>. Explore our work and affiliations on the page.</p>
         </li>
         <li>
-          <h4>Hybroht Fair Duality License (HFDL) released</h4>
+          <h4 data-i18n="news-title-2025_09_08-1">Hybroht Fair Duality License (HFDL) released</h4>
           <time datetime="2025-09-08T11:30">September 08, 2025, 11:30 AM</time>
-          <p>We have crafted a Source-Available license for high effectiveness in dual-licensing business models alongside strong FOSS licenses. It will underpin some of our future offerings, balancing user rights with commercial fairness. Read the full HFDL document <a href="docs/policies/licenses/LICENSE-HFDL.txt">here</a>.</p>
+          <p data-i18n="news-desc-2025_09_08-1">We have crafted a Source-Available license for high effectiveness in dual-licensing business models alongside strong FOSS licenses. It will underpin some of our future offerings, balancing user rights with commercial fairness. Read the full HFDL document <a href="docs/policies/licenses/LICENSE-HFDL.txt">here</a>.</p>
         </li>
         <li>
-          <h4>URL Officer released</h4>
+          <h4 data-i18n="news-title-2025_09_05-1">URL Officer released</h4>
           <time datetime="2025-09-05T10:00">September 05, 2025, 10:00 AM</time>
-          <p>Our newest n8n workflow has been released: <a href="https://n8n.io/workflows/8138-filter-urls-with-ai-powered-robotstxt-compliance-and-source-verification/">URL Officer</a>. It facilitates URL filtering by checking against robots.txt rules and forbidden sources, supporting lawful web automation and source validation in automations. Click the link to learn more.</p>
+          <p data-i18n="news-desc-2025_09_05-1">Our newest n8n workflow has been released: <a href="https://n8n.io/workflows/8138-filter-urls-with-ai-powered-robotstxt-compliance-and-source-verification/">URL Officer</a>. It facilitates URL filtering by checking against robots.txt rules and forbidden sources, supporting lawful web automation and source validation in automations. Click the link to learn more.</p>
         </li>
         <li>
-          <h4>New Stack & Resources page</h4>
+          <h4 data-i18n="news-title-2025_09_02-2">New Stack & Resources page</h4>
           <time datetime="2025-09-02T19:30">September 02, 2025, 7:30 PM</time>
-          <p>To share some of the tools and platforms we use, we have added a new page: <a href="https://hybroht.com/stack-and-resources">Stack & Resources</a>. <i>Please note this is not an exhaustive list, nor a list of affiliated entities.</i></p>
+          <p data-i18n="news-desc-2025_09_02-2">To share some of the tools and platforms we use, we have added a new page: <a href="https://hybroht.com/stack-and-resources">Stack & Resources</a>. <i>Please note this is not an exhaustive list, nor a list of affiliated entities.</i></p>
         </li>
         <li>
-          <h4>Addition of an Frequently Asked Questions page</h4>
+          <h4 data-i18n="news-title-2025_09_02-1">Addition of an Frequently Asked Questions page</h4>
           <time datetime="2025-09-02T17:30">September 02, 2025, 5:30 PM</time>
-          <p>After revamping our website, we are adding new pages. Today, we added an <a href="https://hybroht.com/faq">FAQ</a> to help with common questions regarding us.</p>
+          <p data-i18n="news-desc-2025_09_02-1">After revamping our website, we are adding new pages. Today, we added an <a href="https://hybroht.com/faq">FAQ</a> to help with common questions regarding us.</p>
         </li>
         <li>
-          <h4>Changes to our main site and Gumroad page</h4>
+          <h4 data-i18n="news-title-2025_08_26-1">Changes to our main site and Gumroad page</h4>
           <time datetime="2025-08-26T15:30">August 26, 2025, 3:30 PM</time>
-          <p>Following new developments, we have revamped our website and added an <a href="https://hybroht.com/integrity-overview">Integrity Overview</a> for better transparency. We have also altered our offerings on Gumroad for more clarity and alignment with our current capacities.</p>
+          <p data-i18n="news-desc-2025_08_26-1">Following new developments, we have revamped our website and added an <a href="https://hybroht.com/integrity-overview">Integrity Overview</a> for better transparency. We have also altered our offerings on Gumroad for more clarity and alignment with our current capacities.</p>
         </li>
         <li>
-          <h4>New Article: Top 9 Fundamental Capabilities Beyond the Reach of AI</h4>
+          <h4 data-i18n="news-title-2025_08_19-1">New Article: Top 9 Fundamental Capabilities Beyond the Reach of AI</h4>
           <time datetime="2025-08-19T15:00">August 19, 2025, 3:00 PM</time>
-          <p>We've published a new article on Medium, taking a dive into nine fundamental capabilities that AI can never fully reach. Learn more <a href="https://medium.com/@hybroht/top-9-fundamental-capabilities-beyond-the-reach-of-ai-37d9edba4a52">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_19-1">We've published a new article on Medium, taking a dive into nine fundamental capabilities that AI can never fully reach. Learn more <a href="https://medium.com/@hybroht/top-9-fundamental-capabilities-beyond-the-reach-of-ai-37d9edba4a52">here</a>.</p>
         </li>
         <li>
-          <h4>Official Pinterest Channel</h4>
+          <h4 data-i18n="news-title-2025_08_18-1">Official Pinterest Channel</h4>
           <time datetime="2025-08-18T12:00">August 18, 2025, 12:00 PM</time>
-          <p>Announcing the launch of Hybroht's official <a href="https://www.pinterest.com/hybroht/">Pinterest</a> channel. Follow us there to explore content, and stay updated with the latest news from Hybroht.</p>
+          <p data-i18n="news-desc-2025_08_18-1">Announcing the launch of Hybroht's official <a href="https://www.pinterest.com/hybroht/">Pinterest</a> channel. Follow us there to explore content, and stay updated with the latest news from Hybroht.</p>
         </li>
         <li>
-          <h4>AI Soundtrack Packages Service Released</h4>
+          <h4 data-i18n="news-title-2025_08_16-1">AI Soundtrack Packages Service Released</h4>
           <time datetime="2025-08-16T17:30">August 16, 2025, 5:30 PM</time>
-          <p>The last additional service is released: <a href="https://hybroht.gumroad.com/l/ai-soundtrack-package">AI Soundtrack Packages</a>. With this service, you can commission your own customized package of AI-made soundtracks, altered and validated through a hybrid of human and machine methods. See the link for more information.</p>
+          <p data-i18n="news-desc-2025_08_16-1">The last additional service is released: <a href="https://hybroht.gumroad.com/l/ai-soundtrack-package">AI Soundtrack Packages</a>. With this service, you can commission your own customized package of AI-made soundtracks, altered and validated through a hybrid of human and machine methods. See the link for more information.</p>
         </li>
         <li>
-          <h4>Professional IT Reinforcement Released</h4>
+          <h4 data-i18n="news-title-2025_08_15-1">Professional IT Reinforcement Released</h4>
           <time datetime="2025-08-15T20:00">August 15, 2025, 8:00 PM</time>
-          <p>We have released one of our additional services: <a href="https://hybroht.gumroad.com/l/it-consultation">IT Reinforcement Help</a>. This service provides assistance for IT professionals, offering support in troubleshooting where the involvement of independent contractors could be beneficial. Click the link to learn more.</p>
+          <p data-i18n="news-desc-2025_08_15-1">We have released one of our additional services: <a href="https://hybroht.gumroad.com/l/it-consultation">IT Reinforcement Help</a>. This service provides assistance for IT professionals, offering support in troubleshooting where the involvement of independent contractors could be beneficial. Click the link to learn more.</p>
         </li>
         <li>
-          <h4>Custom AI Briefings Released</h4>
+          <h4 data-i18n="news-title-2025_08_14-1">Custom AI Briefings Released</h4>
           <time datetime="2025-08-14T16:00">August 14, 2025, 4:00 PM</time>
-          <p>As previously announced, we have released one of our newest services: <a href="https://hybroht.gumroad.com/l/custom-ai-briefings">Custom AI Briefings</a>, supported by our <a href="https://n8n.io/workflows/7074-multi-platform-source-discovery-with-serpapi-duckduckgo-github-reddit-and-bluesky/">Multi-Source Discovery</a> and <a href="https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/">News Curator</a> workflows. It is a subscription service that delivers top news and sources tailored to your needs. Click to learn more.</p>
+          <p data-i18n="news-desc-2025_08_14-1">As previously announced, we have released one of our newest services: <a href="https://hybroht.gumroad.com/l/custom-ai-briefings">Custom AI Briefings</a>, supported by our <a href="https://n8n.io/workflows/7074-multi-platform-source-discovery-with-serpapi-duckduckgo-github-reddit-and-bluesky/">Multi-Source Discovery</a> and <a href="https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/">News Curator</a> workflows. It is a subscription service that delivers top news and sources tailored to your needs. Click to learn more.</p>
         </li>
         <li>
-          <h4>Other Services to be Released</h4>
+          <h4 data-i18n="news-title-2025_08_12-1">Other Services to be Released</h4>
           <time datetime="2025-08-12T16:00">August 12, 2025, 4:00 PM</time>
-          <p>We are preemptively announcing the release of three services outside of our main offerings: <a href="https://hybroht.gumroad.com/l/custom-ai-briefings">Custom AI Briefings</a>, <a href="https://hybroht.gumroad.com/l/it-reinforcement-help">IT Reinforcement Help</a>, and <a href="https://hybroht.gumroad.com/l/ai-soundtrack-package">AI Soundtrack Packages</a>. You can find more information about them by clicking on the hyperlinks in this description.</p>
+          <p data-i18n="news-desc-2025_08_12-1">We are preemptively announcing the release of three services outside of our main offerings: <a href="https://hybroht.gumroad.com/l/custom-ai-briefings">Custom AI Briefings</a>, <a href="https://hybroht.gumroad.com/l/it-reinforcement-help">IT Reinforcement Help</a>, and <a href="https://hybroht.gumroad.com/l/ai-soundtrack-package">AI Soundtrack Packages</a>. You can find more information about them by clicking on the hyperlinks in this description.</p>
         </li>
         <li>
-          <h4>New Service Released: 3D Holographic VR Experiences</h4>
+          <h4 data-i18n="news-title-2025_08_08-2">New Service Released: 3D Holographic VR Experiences</h4>
           <time datetime="2025-08-08T21:30">August 8, 2025, 9:30 PM</time>
-          <p>We have launched the 3D Holographic Experiences (VR) commission service, providing customized virtual reality modules designed for compelling trainings, event replication, and brand storytelling. Learn more <a href="https://hybroht.gumroad.com/l/3d-holographic-experiences-vr">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_08-2">We have launched the 3D Holographic Experiences (VR) commission service, providing customized virtual reality modules designed for compelling trainings, event replication, and brand storytelling. Learn more <a href="https://hybroht.gumroad.com/l/3d-holographic-experiences-vr">here</a>.</p>
         </li>
         <li>
-          <h4>Launch of MD²-SEED: Metalogic-Driven Consulting</h4>
+          <h4 data-i18n="news-title-2025_08_08-1">Launch of MD²-SEED: Metalogic-Driven Consulting</h4>
           <time datetime="2025-08-08T16:00">August 8, 2025, 4:00 PM</time>
-          <p>Introducing MD²-SEED, a consultation service leveraging metalogic principles to enhance development methodologies. Designed for small to medium enterprises, this service provides recommendations to improve decision-making and processes. Learn more <a href="https://hybroht.gumroad.com/l/metalogic-md2-seed">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_08-1">Introducing MD²-SEED, a consultation service leveraging metalogic principles to enhance development methodologies. Designed for small to medium enterprises, this service provides recommendations to improve decision-making and processes. Learn more <a href="https://hybroht.gumroad.com/l/metalogic-md2-seed">here</a>.</p>
         </li>
         <li>
-          <h4>Official Telegram Channels</h4>
+          <h4 data-i18n="news-title-2025_08_07-2">Official Telegram Channels</h4>
           <time datetime="2025-08-07T20:00">August 7, 2025, 8:00 PM</time>
-          <p>Announcing the launch of our official Telegram <a href="https://t.me/hybroht">chat</a> and a news channel, where you can receive our latest updates directly. Stay connected with us to never miss live updates and top news from Hybroht. Join us today <a href="https://t.me/hybroht_channel">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_07-2">Announcing the launch of our official Telegram <a href="https://t.me/hybroht">chat</a> and a news channel, where you can receive our latest updates directly. Stay connected with us to never miss live updates and top news from Hybroht. Join us today <a href="https://t.me/hybroht_channel">here</a>.</p>
         </li>
         <li>
-          <h4>Introducing the n-ACT Research Service</h4>
+          <h4 data-i18n="news-title-2025_08_07-1">Introducing the n-ACT Research Service</h4>
           <time datetime="2025-08-07T16:00">August 7, 2025, 4:00 PM</time>
-          <p>This service combines Applied Category Theory and Higher Category Theory to provide structured reasoning, methodologies, and solutions for complex problems across various domains. Learn more <a href="https://hybroht.gumroad.com/l/n-act-research-category-theory">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_07-1">This service combines Applied Category Theory and Higher Category Theory to provide structured reasoning, methodologies, and solutions for complex problems across various domains. Learn more <a href="https://hybroht.gumroad.com/l/n-act-research-category-theory">here</a>.</p>
         </li>
         <li>
-          <h4>Our New Service: Hybrid Data Catalysis, SynOptics, and Navigance</h4>
+          <h4 data-i18n="news-title-2025_08_06-1">Our New Service: Hybrid Data Catalysis, SynOptics, and Navigance</h4>
           <time datetime="2025-08-06T11:00">August 6, 2025, 11:00 AM</time>
-          <p>We have launched a Data Science service designed to help businesses unlock the full potential of their data by transforming raw information into insights through smart models, techniques, and customized evaluations. Learn more <a href="https://hybroht.gumroad.com/l/data-catalysis-synoptics-navigance">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_06-1">We have launched a Data Science service designed to help businesses unlock the full potential of their data by transforming raw information into insights through smart models, techniques, and customized evaluations. Learn more <a href="https://hybroht.gumroad.com/l/data-catalysis-synoptics-navigance">here</a>.</p>
         </li>
         <li>
-          <h4>New Service: Polymhioerodal Ontology Protocols</h4>
+          <h4 data-i18n="news-title-2025_08_05-1">New Service: Polymhioerodal Ontology Protocols</h4>
           <time datetime="2025-08-05T17:00">August 5, 2025, 5:00 PM</time>
-          <p>Introducing commissions for POV-MP: A protocol creation enabling seamless interoperability between diverse ontologies without merging, allowing for independent system integration. Learn more <a href="https://hybroht.gumroad.com/l/polymhioerodal-ontology-protocol">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_05-1">Introducing commissions for POV-MP: A protocol creation enabling seamless interoperability between diverse ontologies without merging, allowing for independent system integration. Learn more <a href="https://hybroht.gumroad.com/l/polymhioerodal-ontology-protocol">here</a>.</p>
         </li>
         <li>
-          <h4>New Service: Text Interpretation through Anticausality</h4>
+          <h4 data-i18n="news-title-2025_08_04-1">New Service: Text Interpretation through Anticausality</h4>
           <time datetime="2025-08-04T15:00">August 4, 2025, 3:00 PM</time>
-          <p>Today's released service is our new method for interpreting text through anticausal evaluation. Learn more <a href="https://hybroht.gumroad.com/l/anticausal-text-interpretation">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_04-1">Today's released service is our new method for interpreting text through anticausal evaluation. Learn more <a href="https://hybroht.gumroad.com/l/anticausal-text-interpretation">here</a>.</p>
         </li>
         <li>
-          <h4>New Service: Assessments with Inconsistent Mathematics methods</h4>
+          <h4 data-i18n="news-title-2025_08_01-1">New Service: Assessments with Inconsistent Mathematics methods</h4>
           <time datetime="2025-08-01T19:00">August 1, 2025, 7:00 PM</time>
-          <p>Hybroht released a new assessment service today, dedicated to investigating challenges and data through the lens of inconsistent mathematics. Learn more <a href="https://hybroht.gumroad.com/l/assessments-inconsistent-math-approach">here</a>.</p>
+          <p data-i18n="news-desc-2025_08_01-1">Hybroht released a new assessment service today, dedicated to investigating challenges and data through the lens of inconsistent mathematics. Learn more <a href="https://hybroht.gumroad.com/l/assessments-inconsistent-math-approach">here</a>.</p>
         </li>
         <li>
-          <h4>New Service: Fractal Frameworks</h4>
+          <h4 data-i18n="news-title-2025_07_31-1">New Service: Fractal Frameworks</h4>
           <time datetime="2025-07-31T22:30">July 31, 2025, 10:30 PM</time>
-          <p>We are pleased to announce our new service that delivers fractal frameworks for finance, marketing, and logistics. We fully leverage fractal theory to optimize your business. Learn more <a href="https://hybroht.gumroad.com/l/fractal-frameworks">here</a>.</p>
+          <p data-i18n="news-desc-2025_07_31-1">We are pleased to announce our new service that delivers fractal frameworks for finance, marketing, and logistics. We fully leverage fractal theory to optimize your business. Learn more <a href="https://hybroht.gumroad.com/l/fractal-frameworks">here</a>.</p>
         </li>
         <li>
-          <h4>Video Guide: Multi-Source News Curator Walkthrough</h4>
+          <h4 data-i18n="news-title-2025_07_30-1">Video Guide: Multi-Source News Curator Walkthrough</h4>
           <time datetime="2025-07-30T21:00">July 30, 2025, 9:00 PM</time>
-          <p>We released a video explaining how the Multi-Source News Curator works for our customers. We have added it to the <a href="https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/">n8n</a> and <a href="https://hybroht.gumroad.com/l/flexible-news-curator-ai_automation">Gumroad</a> pages, but you can find it <a href="https://www.youtube.com/watch?v=ajtmTstc6Lo">here</a>.</p>
+          <p data-i18n="news-desc-2025_07_30-1">We released a video explaining how the Multi-Source News Curator works for our customers. We have added it to the <a href="https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/">n8n</a> and <a href="https://hybroht.gumroad.com/l/flexible-news-curator-ai_automation">Gumroad</a> pages, but you can find it <a href="https://www.youtube.com/watch?v=ajtmTstc6Lo">here</a>.</p>
         </li>
         <li>
-          <h4>n8n Workflow Commissions Service Available</h4>
+          <h4 data-i18n="news-title-2025_07_29-1">n8n Workflow Commissions Service Available</h4>
           <time datetime="2025-07-29T18:00">July 29, 2025, 6:00 PM</time>
-          <p>We have recently launched a service that allows standard n8n workflow commissions for our customers, ranging from simple to advanced automations with swarm intelligence capabilities. Check <a href="https://hybroht.gumroad.com/l/custom-workflow-n8n-opt-swarm-intelligence">here</a> to see if you are eligible for any of the tiers.</p>
+          <p data-i18n="news-desc-2025_07_29-1">We have recently launched a service that allows standard n8n workflow commissions for our customers, ranging from simple to advanced automations with swarm intelligence capabilities. Check <a href="https://hybroht.gumroad.com/l/custom-workflow-n8n-opt-swarm-intelligence">here</a> to see if you are eligible for any of the tiers.</p>
         </li>
         <li>
-          <h4>Video Summary: Top 9 Fields Beyond AI & Quantum</h4>
+          <h4 data-i18n="news-title-2025_07_26-1">Video Summary: Top 9 Fields Beyond AI & Quantum</h4>
           <time datetime="2025-07-26T21:00">July 26, 2025, 9:55 PM</time>
-          <p>We've created a concise video summarizing our latest <a href="https://medium.com/@hybroht/top-9-fields-for-future-breakthroughs-beyond-ai-and-quantum-2025-and-onwards-fabe90c80307">article</a>, which explores the top 9 domains poised for breakthroughs beyond AI and quantum technologies. Watch the <a href="https://youtu.be/m2baCpoJ6io">video</a> to get a quick overview of these exciting fields.</p>
+          <p data-i18n="news-desc-2025_07_26-1">We've created a concise video summarizing our latest <a href="https://medium.com/@hybroht/top-9-fields-for-future-breakthroughs-beyond-ai-and-quantum-2025-and-onwards-fabe90c80307">article</a>, which explores the top 9 domains poised for breakthroughs beyond AI and quantum technologies. Watch the <a href="https://youtu.be/m2baCpoJ6io">video</a> to get a quick overview of these exciting fields.</p>
         </li>
         <li>
-          <h4>New Article: Top 9 Fields for Breakthrough Beyond AI and Quantum</h4>
+          <h4 data-i18n="news-title-2025_07_22-1">New Article: Top 9 Fields for Breakthrough Beyond AI and Quantum</h4>
           <time datetime="2025-07-22T21:00">July 22, 2025, 9:00 PM</time>
-          <p>We've published a new article on Medium, exploring the top 9 fields poised for future breakthroughs beyond AI and quantum technologies. Learn more <a href="https://medium.com/@hybroht/top-9-fields-for-future-breakthroughs-beyond-ai-and-quantum-2025-and-onwards-fabe90c80307">here</a>.</p>
+          <p data-i18n="news-desc-2025_07_22-1">We've published a new article on Medium, exploring the top 9 fields poised for future breakthroughs beyond AI and quantum technologies. Learn more <a href="https://medium.com/@hybroht/top-9-fields-for-future-breakthroughs-beyond-ai-and-quantum-2025-and-onwards-fabe90c80307">here</a>.</p>
         </li>
         <li>
-          <h4>Multi-Source News Curator released</h4>
+          <h4 data-i18n="news-title-2025_07_21-1">Multi-Source News Curator released</h4>
           <time datetime="2025-07-21T10:00">July 21, 2025, 10:00 AM</time>
-          <p>Last week, Hybroht became a verified creator at n8n! We also released our first paid n8n workflow, a tool to automate the curation of your preferred multiple news sources through AI agents. Learn more <a href="https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/">here</a>.</p>
+          <p data-i18n="news-desc-2025_07_21-1">Last week, Hybroht became a verified creator at n8n! We also released our first paid n8n workflow, a tool to automate the curation of your preferred multiple news sources through AI agents. Learn more <a href="https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/">here</a>.</p>
         </li>
         <li>
-          <h4>Hybroht approved as a n8n verified creator</h4>
+          <h4 data-i18n="news-title-2025_07_17-1">Hybroht approved as a n8n verified creator</h4>
           <time datetime="2025-07-17T11:00">July 17, 2025, 11:00 AM</time>
-          <p>We're thrilled to announce that we've been accepted as a verified <a href="https://n8n.io/creators/hybroht/">creator</a> at n8n! It is an exciting open-source tool that enables users to automate workflows effortlessly. Learn more <a href="https://n8n.io/features/">here</a>.</p>
+          <p data-i18n="news-desc-2025_07_17-1">We're thrilled to announce that we've been accepted as a verified <a href="https://n8n.io/creators/hybroht/">creator</a> at n8n! It is an exciting open-source tool that enables users to automate workflows effortlessly. Learn more <a href="https://n8n.io/features/">here</a>.</p>
         </li>
         <li>
-          <h4>Dynamic JSON Output Workflow released</h4>
+          <h4 data-i18n="news-title-2025_07_15-1">Dynamic JSON Output Workflow released</h4>
           <time datetime="2025-07-15T13:00">July 15, 2025, 1:00 PM</time>
-          <p>The JSON Architect Workflow instructs AI agents on JSON structure and creates a validated output format. Learn more <a href="https://n8n.io/workflows/5829-generate-dynamic-json-output-formats-for-ai-agents-with-mistral/">here</a>.</p>
+          <p data-i18n="news-desc-2025_07_15-1">The JSON Architect Workflow instructs AI agents on JSON structure and creates a validated output format. Learn more <a href="https://n8n.io/workflows/5829-generate-dynamic-json-output-formats-for-ai-agents-with-mistral/">here</a>.</p>
         </li>
         <li>
-          <h4>AI Arena Workflow released</h4>
+          <h4 data-i18n="news-title-2025_07_10-1">AI Arena Workflow released</h4>
           <time datetime="2025-07-10T10:00">July 10, 2025, 10:00 AM</time>
-          <p>Our free AI Arena Workflow has been published and approved in n8n. This workflow simulates debates between any number of configurable AI agents. Learn more <a href="https://n8n.io/workflows/5682-simulate-debates-between-ai-agents-using-mistral-to-optimize-answers/">here</a>.</p>
+          <p data-i18n="news-desc-2025_07_10-1">Our free AI Arena Workflow has been published and approved in n8n. This workflow simulates debates between any number of configurable AI agents. Learn more <a href="https://n8n.io/workflows/5682-simulate-debates-between-ai-agents-using-mistral-to-optimize-answers/">here</a>.</p>
         </li>
         <li>
-          <h4>Fractal codes available</h4>
+          <h4 data-i18n="news-title-2025_07_04-1">Fractal codes available</h4>
           <time datetime="2025-07-04T18:00">July 04, 2025, 6:00 PM</time>
-          <p>We've released the code used in our latest Medium article: 'Endless Growing Decision Tree Animation' and 'Rule-Based Fractal Maker.' Learn more <a href="https://hybroht.gumroad.com/">here</a>.</p>
+          <p data-i18n="news-desc-2025_07_04-1">We've released the code used in our latest Medium article: 'Endless Growing Decision Tree Animation' and 'Rule-Based Fractal Maker.' Learn more <a href="https://hybroht.gumroad.com/">here</a>.</p>
         </li>
         <li>
-          <h4>Hybroht's first published article</h4>
+          <h4 data-i18n="news-title-2025_06_30-1">Hybroht's first published article</h4>
           <time datetime="2025-06-30T19:30">June 30, 2025, 7:30 PM</time>
-          <p>We've published our first article on Medium, exploring the fascinating relationship between fractals and choices. Learn more <a href="https://medium.com/@hybroht/self-similar-choices-mandelbrots-angel-of-fractals-necessity-5e7256414eb2">here</a>.</p>
+          <p data-i18n="news-desc-2025_06_30-1">We've published our first article on Medium, exploring the fascinating relationship between fractals and choices. Learn more <a href="https://medium.com/@hybroht/self-similar-choices-mandelbrots-angel-of-fractals-necessity-5e7256414eb2">here</a>.</p>
         </li>
         <li>
-        <h4>News Curator: Our First AI Workflow Product</h4>
+        <h4 data-i18n="news-title-2025_06_27-1">News Curator: Our First AI Workflow Product</h4>
           <time datetime="2025-06-27T09:00">June 27, 2025, 9:00 AM</time>
-          <p>We are pleased to announce the release of our first n8n AI Workflow: "News Curator," a product that analyzes daily news and sends highlights via email. Available <a href="https://hybroht.gumroad.com/l/news-curator-ai-automation">here</a>.</p>
+          <p data-i18n="news-desc-2025_06_27-1">We are pleased to announce the release of our first n8n AI Workflow: "News Curator," a product that analyzes daily news and sends highlights via email. Available <a href="https://hybroht.gumroad.com/l/news-curator-ai-automation">here</a>.</p>
         </li>
         <li>
-          <h4>Live Updates Feed Online</h4>
+          <h4 data-i18n="news-title-2025_06_26-1">Live Updates Feed Online</h4>
           <time datetime="2025-06-26T09:00">June 26, 2025, 9:00 AM</time>
-          <p>We have launched a Live Updates Feed on Bluesky, offering daily updates on significant technological and scientific news from various reputable sources.</p>
+          <p data-i18n="news-desc-2025_06_26-1">We have launched a Live Updates Feed on Bluesky, offering daily updates on significant technological and scientific news from various reputable sources.</p>
         </li>
         <li>
-          <h4>WhatsApp Channel Now Available</h4>
+          <h4 data-i18n="news-title-2025_06_16-1">WhatsApp Channel Now Available</h4>
           <time datetime="2025-06-16T09:00">June 16, 2025, 9:00 AM</time>
-          <p>We have launched a WhatsApp channel, enabling potential customers to communicate with us during business hours.</p>
+          <p data-i18n="news-desc-2025_06_16-1">We have launched a WhatsApp channel, enabling potential customers to communicate with us during business hours.</p>
         </li>
         <li>
-          <h4>Hilbert's Sixth Problem Solved, Grounding Physics in Rigorous Math and Unlocking the Secrets of Time</h4>
+          <h4 data-i18n="news-title-2025_06_09-2">Hilbert's Sixth Problem Solved, Grounding Physics in Rigorous Math and Unlocking the Secrets of Time</h4>
           <time datetime="2025-06-09T14:30">June 9, 2025, 2:30 PM</time>
-          <p>Breakthroughs in quantum computing, advanced gene editing, and innovative renewable energy technologies shaping the future.</p>
+          <p data-i18n="news-desc-2025_06_09-2">Breakthroughs in quantum computing, advanced gene editing, and innovative renewable energy technologies shaping the future.</p>
         </li>
         <li>
-          <h4>Unlocking New Possibilities</h4>
+          <h4 data-i18n="news-title-2025_06_09-1">Unlocking New Possibilities</h4>
           <time datetime="2025-06-10T09:00">June 9, 2025, 9:00 AM</time>
-          <p>We are thrilled to announce our online launch, offering a range of services including research, technological solutions, data science, and more.</p>
+          <p data-i18n="news-desc-2025_06_09-1">We are thrilled to announce our online launch, offering a range of services including research, technological solutions, data science, and more.</p>
         </li>
         <!-- Add more archived news items here -->
       </ul>
 
       <nav class="archive-navigation" aria-label="Navigation">
-        <a href="/" class="back-to-home">← Back to Home</a>
+        <a href="/" class="back-to-home" data-i18n="back-to-home">← Back to Home</a>
       </nav>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Hybroht. All rights reserved.
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
   </footer>
 
 
   <script src="/js/theme-toggle.js"></script>
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
 </body>
 </html>

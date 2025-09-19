@@ -10,6 +10,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+function getFilenameWithoutExtension(path) {
+  // Get last part of path after last slash
+  const lastSegment = path.substring(path.lastIndexOf('/') + 1);
+
+  if (!lastSegment) {
+    // Path ends with '/' (homepage or folder)
+    return 'index';
+  }
+
+  // Find last dot index in last segment
+  const lastDotIndex = lastSegment.lastIndexOf('.');
+
+  if (lastDotIndex === -1) {
+    // No extension found, return whole segment
+    return lastSegment;
+  }
+
+  // Return filename without extension
+  return lastSegment.substring(0, lastDotIndex);
+}
+
+
 i18next
   .use(i18nextHttpBackend)
   .use(i18nextBrowserLanguageDetector)
@@ -22,11 +44,8 @@ i18next
         loadPath: function(lngs, namespaces) {
           // Get current HTML filename, e.g., 'page.html'
           const path = window.location.pathname;
-          const filenameWithExt = path.substring(path.lastIndexOf('/') + 1); // e.g. "page.html"
-          
-          // Remove the extension from filename
-          const filename = filenameWithExt.split('.').slice(0, -1).join('.') || 'index';
-          
+          const filename = getFilenameWithoutExtension(path);
+
           // Map language similarly, including your pt/pt-br to br mapping
           const lng = Array.isArray(lngs) ? lngs[0] : lngs;
           if (typeof lng !== 'string') return '';

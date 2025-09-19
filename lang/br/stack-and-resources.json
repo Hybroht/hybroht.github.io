@@ -1,0 +1,69 @@
+{
+  "title": "Stack & Recursos - Hybroht Enterprise",
+
+  "intro-title": "Stack & Recursos",
+
+  "intro-description": "Nesta página, compartilhamos algumas das tecnologias, ferramentas e plataformas que aprimoram nossos esforços de desenvolvimento e pesquisa.",
+
+  "intro-note-1": "Esta não é uma lista completa.",
+
+  "intro-note-2": "Salvo indicação expressa, não temos afiliação com nenhuma das entidades e ferramentas listadas.",
+
+  "stack-heading": "Stack",
+
+  "stack-os": "Sistemas Operacionais",
+  "stack-os-desc": "Linux, Windows",
+
+  "stack-programming-langs": "Linguagens de Programação",
+  "stack-programming-langs-desc": "Python, C/C++, Common LISP, JavaScript",
+
+  "stack-frameworks": "Frameworks & Bibliotecas",
+  "stack-frameworks-desc": "PyTorch, Scikit-learn, Flask, NumPy, SciPy, Pandas, Kivy",
+
+  "stack-containers-dbs": "Containerização & Bancos de Dados",
+  "stack-containers-dbs-desc": "Podman, PostgreSQL, SQLite",
+
+  "stack-dev-tools": "Ferramentas para Desenvolvimento de Programação",
+  "stack-dev-tools-desc": "VSCodium, Geany, Notepad++",
+
+  "stack-rd-envs": "Ambientes de Pesquisa & Desenvolvimento",
+  "stack-rd-envs-desc": "JupyterLab",
+
+  "stack-browser": "Navegador Web",
+  "stack-browser-desc": "Mozilla Firefox",
+
+  "stack-graphics-tools": "Ferramentas Gráficas & Multimídia",
+  "stack-graphics-tools-desc": "GIMP, Krita, Inkscape, Blender, Audacity, Kdenlive, draw.io",
+
+  "stack-office": "Produtividade",
+  "stack-office-desc": "LibreOffice, Focalboard",
+
+  "resources-heading": "Recursos",
+
+  "resources-knowledge-platforms": "Plataformas de Conhecimento & Aprendizado",
+  "resources-knowledge-platforms-desc": "arXiv, Hugging Face, Lobste.rs, Stack Overflow, Wikipedia",
+
+  "resources-search-engines": "Mecanismos de Busca",
+  "resources-search-engines-desc": "DuckDuckGo, Startpage",
+
+  "resources-apis": "APIs",
+  "resources-apis-desc": "(Diversas)",
+
+  "resources-local-llms": "LLMs Locais",
+  "resources-local-llms-desc": "(Diversos)",
+
+  "resources-image-video-tools": "Ferramentas de Geração de Imagem & Vídeo",
+  "resources-image-video-tools-desc": "(Diversas)",
+
+  "resources-version-control": "Controle de Versão & Colaboração",
+  "resources-version-control-desc": "GitHub",
+
+  "resources-messenger-apps": "Aplicativos de Mensagens",
+  "resources-messenger-apps-desc": "Telegram, WhatsApp, Signal",
+
+  "resources-software-licenses": "Licenças de Software (Inglês)",
+
+  "back-to-home": "← Voltar para Home",
+
+  "footer": "2025 Hybroht. Todos Direitos Reservados."
+}

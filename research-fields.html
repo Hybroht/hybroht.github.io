@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Research Fields - Hybroht Enterprise</title>
+  <title data-i18n="title">Research Fields - Hybroht Enterprise</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
   <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
@@ -28,23 +32,37 @@
     <section id="intro">
       <h1>
       <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      Research Fields&nbsp;&nbsp;&nbsp;
+      <text data-i18n="intro-title">Research Fields</text>&nbsp;&nbsp;&nbsp;
       <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
         <i class="fas fa-moon"></i> Dark Mode
       </button></h1>
-      <time class="update-date" datetime="2025-09-12T10:30">September 12, 2025, 10:30 AM</time>
+      <time class="update-date" datetime="2025-09-19T10:30">
+          <!-- Language selector in your HTML -->
+          <div id="language-menu" class="language-menu">
+            <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span id="language-current">en</span>
+              <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+            </button>
+            <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+              <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+              <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+            </ul>
+          </div>
+           &nbsp; September 19, 2025, 10:30 AM
+      </time>
       <br>
-      <p>
+      <p data-i18n="intro-description">
       Our research fields cover diverse specialized domains where systematic inquiry drives knowledge advancement and innovation. This page highlights the core themes that shape our scientific and practical efforts.      </p>
       </p>
       <p>
-        <strong>Please note this is not an exhaustive list.</strong>
+        <strong data-i18n="intro-note">Please note this is not an exhaustive list.</strong>
       </p>
       <br>
     </section>
 
     <section class="research-section" aria-labelledby="research-heading">
-      <h2 id="research-heading">Information</h2>
+      <h2 id="research-heading" data-i18n="research-heading">Information</h2>
       <div class="responsive-iframe-container">
         <iframe src="https://gamma.app/embed/v28jum7djs80ybw" 
                 allow="fullscreen" 
@@ -58,24 +76,25 @@
       <h2></h2>
       <p style="text-align: center;">
         <br>
-        <i>If you cannot see a presentation, please reload the page.</i>
+        <i data-i18n="presentation-fallback-line">If you cannot see a presentation, please reload the page.</i>
         <br>
-        <i style='color: var(--color-button-hover)'>If the problem persists, contact us.</i>
+        <i style='color: var(--color-button-hover)' data-i18n="presentation-fallback-line-2">If the problem persists, contact us.</i>
       </p>
 
       <br>
       <br>
       <nav class="archive-navigation" aria-label="Navigation">
-        <a href="/" class="back-to-home">← Back to Home</a>
+        <a href="/" class="back-to-home" data-i18n="back-to-home">← Back to Home</a>
       </nav>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Hybroht. All rights reserved.
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
   </footer>
 
 
   <script src="/js/theme-toggle.js"></script>
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
 </body>
 </html>
