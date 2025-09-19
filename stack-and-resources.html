@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stack & Resources - Hybroht Enterprise</title>
+  <title data-i18n="title">Stack & Resources - Hybroht Enterprise</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
   <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
@@ -28,133 +32,147 @@
     <section id="intro">
       <h1>
       <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      Stack & Resources&nbsp;&nbsp;&nbsp;
+      <text data-i18n="intro-title">Stack & Resources</text>&nbsp;&nbsp;&nbsp;
       <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
         <i class="fas fa-moon"></i> Dark Mode
       </button></h1>
-      <time class="update-date" datetime="2025-09-08T11:30">September 08, 2025, 11:30 AM</time>
+      <time class="update-date" datetime="2025-09-19T10:30">
+          <!-- Language selector in your HTML -->
+          <div id="language-menu" class="language-menu">
+            <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span id="language-current">en</span>
+              <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+            </button>
+            <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+              <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+              <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+            </ul>
+          </div>
+           &nbsp; September 19, 2025, 10:30 AM
+      </time>
       <br>
-      <p>
+      <p data-i18n="intro-description">
       On this page, we share some of the technologies, tools, and platforms that enhance our development and research efforts.
       </p>
       <p>
-        <strong>Please note this is not an exhaustive list.</strong>
+        <strong data-i18n="intro-note-1">Please note this is not an exhaustive list.</strong>
       </p>
       <p>
-        <strong>Unless explicitely stated, we are not affiliated with any of the listed entities and tools.</strong>
+        <strong data-i18n="intro-note-2">Unless explicitely stated, we are not affiliated with any of the listed entities and tools.</strong>
       </p>
       <br>
     </section>
 
     <section class="faq-section" aria-labelledby="stack-heading">
-      <h2 id="stack-heading">Stack</h2>
+      <h2 id="stack-heading" data-i18n="stack-heading">Stack</h2>
       <div class="faq-list" role="list">
 
         <details class="faq" role="listitem">
           <summary aria-controls="e1" aria-expanded="false">
-            <span>Operating Systems</span>
+            <span data-i18n="stack-os">Operating Systems</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e1" class="content" role="region" aria-label="Operating Systems">
-            <p>Linux, Windows</p>
+            <p data-i18n="stack-os-desc">Linux, Windows</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="e2" aria-expanded="false">
-            <span>Programming Languages</span>
+            <span data-i18n="stack-programming-langs">Programming Languages</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e2" class="content" role="region" aria-label="Programming Languages">
-            <p>Python, C/C++, Common LISP, JavaScript</p>
+            <p data-i18n="stack-programming-langs-desc">Python, C/C++, Common LISP, JavaScript</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="e3" aria-expanded="false">
-            <span>Frameworks & Libraries</span>
+            <span data-i18n="stack-frameworks">Frameworks & Libraries</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e3" class="content" role="region" aria-label="Frameworks & Libraries">
-            <p>PyTorch, Scikit-learn, Flask, NumPy, SciPy, Pandas, Kivy</p>
+            <p data-i18n="stack-frameworks-desc">PyTorch, Scikit-learn, Flask, NumPy, SciPy, Pandas, Kivy</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="e4" aria-expanded="false">
-            <span>Containerization & Databases</span>
+            <span data-i18n="stack-containers-dbs">Containerization & Databases</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e4" class="content" role="region" aria-label="Containerization & Databases">
-            <p>Podman, PostgreSQL, SQLite</p>
+            <p data-i18n="stack-containers-dbs-desc">Podman, PostgreSQL, SQLite</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="e5" aria-expanded="false">
-            <span>Development Tools</span>
+            <span data-i18n="stack-dev-tools">Development Tools</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e5" class="content" role="region" aria-label="Development Tools">
-            <p>VSCodium, Geany, Notepad++</p>
+            <p data-i18n="stack-dev-tools-desc">VSCodium, Geany, Notepad++</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="e6" aria-expanded="false">
-            <span>Research & Development Environments</span>
+            <span data-i18n="stack-rd-envs">Research & Development Environments</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e6" class="content" role="region" aria-label="Research & Development Environments">
-            <p>JupyterLab</p>
+            <p data-i18n="stack-rd-envs-desc">JupyterLab</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="e7" aria-expanded="false">
-            <span>Web Browser</span>
+            <span data-i18n="stack-browser">Web Browser</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e7" class="content" role="region" aria-label="Web Browser">
-            <p>Mozilla Firefox</p>
+            <p data-i18n="stack-browser-desc">Mozilla Firefox</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="e8" aria-expanded="false">
-            <span>Graphics & Multimedia Tools</span>
+            <span data-i18n="stack-graphics-tools">Graphics & Multimedia Tools</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e8" class="content" role="region" aria-label="Graphics & Multimedia Tools">
-            <p>GIMP, Krita, Inkscape, Blender, Audacity, Kdenlive, draw.io</p>
+            <p data-i18n="stack-graphics-tools-desc">GIMP, Krita, Inkscape, Blender, Audacity, Kdenlive, draw.io</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="e9" aria-expanded="false">
-            <span>Office Productivity</span>
+            <span data-i18n="stack-office">Office Productivity</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="e9" class="content" role="region" aria-label="Office Productivity">
-            <p>LibreOffice, Focalboard</p>
+            <p data-i18n="stack-office-desc">LibreOffice, Focalboard</p>
           </div>
         </details>
 
@@ -162,96 +180,96 @@
     </section>
 
     <section class="faq-section" aria-labelledby="resources-heading">
-      <h2 id="resources-heading">Resources</h2>
+      <h2 id="resources-heading" data-i18n="resources-heading">Resources</h2>
       <div class="faq-list" role="list">
 
         <details class="faq" role="listitem">
           <summary aria-controls="r1" aria-expanded="false">
-            <span>Knowledge & Learning Platforms</span>
+            <span data-i18n="resources-knowledge-platforms">Knowledge & Learning Platforms</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="r1" class="content" role="region" aria-label="Knowledge & Learning Platforms">
-            <p>arXiv, Hugging Face, Lobste.rs, Stack Overflow, Wikipedia</p>
+            <p data-i18n="resources-knowledge-platforms-desc">arXiv, Hugging Face, Lobste.rs, Stack Overflow, Wikipedia</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="r2" aria-expanded="false">
-            <span>Search Engines</span>
+            <span data-i18n="resources-search-engines">Search Engines</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="r2" class="content" role="region" aria-label="Web Search">
-            <p>DuckDuckGo, Startpage</p>
+            <p data-i18n="resources-search-engines-desc">DuckDuckGo, Startpage</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="r3" aria-expanded="false">
-            <span>APIs</span>
+            <span data-i18n="resources-apis">APIs</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="r3" class="content" role="region" aria-label="APIs">
-            <p>(Various)</p>
+            <p data-i18n="resources-apis-desc">(Various)</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="r4" aria-expanded="false">
-            <span>Local LLMs</span>
+            <span data-i18n="resources-local-llms">Local LLMs</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="r4" class="content" role="region" aria-label="Local LLMs">
-            <p>(Various)</p>
+            <p data-i18n="resources-local-llms-desc">(Various)</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="r5" aria-expanded="false">
-            <span>Image & Video Generation Tools</span>
+            <span data-i18n="resources-image-video-tools">Image & Video Generation Tools</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="r5" class="content" role="region" aria-label="Image & Video Generation Tools">
-            <p>(Various)</p>
+            <p data-i18n="resources-image-video-tools-desc">(Various)</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="r6" aria-expanded="false">
-            <span>Version Control & Collaboration</span>
+            <span data-i18n="resources-version-control">Version Control & Collaboration</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="r6" class="content" role="region" aria-label="Version Control & Collaboration">
-            <p>GitHub</p>
+            <p data-i18n="resources-version-control-desc">GitHub</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="r7" aria-expanded="false">
-            <span>Messenger Apps</span>
+            <span data-i18n="resources-messenger-apps">Messenger Apps</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="r7" class="content" role="region" aria-label="Messenger Apps">
-            <p>Telegram, WhatsApp, Signal</p>
+            <p data-i18n="resources-messenger-apps-desc">Telegram, WhatsApp, Signal</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="r8" aria-expanded="false">
-            <span>Software Licenses</span>
+            <span data-i18n="resources-software-licenses">Software Licenses</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
@@ -275,16 +293,17 @@
       <br>
       <br>
       <nav class="archive-navigation" aria-label="Navigation">
-        <a href="/" class="back-to-home">← Back to Home</a>
+        <a href="/" class="back-to-home" data-i18n="back-to-home">← Back to Home</a>
       </nav>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Hybroht. All rights reserved.
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
   </footer>
 
 
   <script src="/js/theme-toggle.js"></script>
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
 </body>
 </html>

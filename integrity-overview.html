@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Integrity Overview - Hybroht Enterprise</title>
+  <title data-i18n="title">Integrity Overview - Hybroht Enterprise</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
   <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
@@ -27,148 +31,165 @@
     <section id="intro">
       <h1>
       <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      Integrity Overview&nbsp;&nbsp;&nbsp;
+      <text data-i18n="intro-title">Integrity Overview</text>&nbsp;&nbsp;&nbsp;
       <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
         <i class="fas fa-moon"></i> Dark Mode
       </button></h1>
-      <time class="update-date" datetime="2025-08-25T13:00">August 25, 2025, 1:00 PM</time>
+      <time class="update-date" datetime="2025-09-19T10:30">
+          <!-- Language selector in your HTML -->
+          <div id="language-menu" class="language-menu">
+            <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span id="language-current">en</span>
+              <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+            </button>
+            <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+              <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+              <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+            </ul>
+          </div>
+           &nbsp; September 19, 2025, 10:30 AM
+      </time>
       <br>
-      <p>
+      <p data-i18n="intro-description">
         As per our belief and commitment to transparency and ethical conduct, we are disclosing the following data to provide a clear understanding and facilitate an informed evaluation of our operations. 
       </p>
       <br>
     </section>
+
     <section id="general-info" class="integrity-overview">
-      <h2>General Information</h2>
+      <h2 data-i18n="general-info-heading">General Information</h2>
       <br>
       <ul>
-        <li><b>Foundation Date</b> <br>2025-05-12</li><br>
-        <li><b>Enterprise Size</b> <br>2-10 Associates </li><br>
-        <li><b>Industry Sector(s) Served</b> <br>Research & Development, Mathematics, Technology, Data Science, and Software </li><br>
-        <li><b>Geographic Scope of Operations</b> <br>Worldwide (Remote) </li><br>
-        <li><b>Supported Languages</b> <br>English, Portuguese </li><br>
+        <li data-i18n="general-info-foundation-date"><b>Foundation Date</b> <br>2025-05-12</li><br>
+        <li data-i18n="general-info-size"><b>Enterprise Size</b> <br>2-10 Associates </li><br>
+        <li data-i18n="general-info-industries"><b>Industry Sector(s) Served</b> <br>Research & Development, Mathematics, Technology, Data Science, and Software </li><br>
+        <li data-i18n="general-info-geographic"><b>Geographic Scope of Operations</b> <br>Worldwide (Remote) </li><br>
+        <li data-i18n="general-info-languages"><b>Supported Languages</b> <br>English, Portuguese </li><br>
       </ul>
     </section>
+
     <section id="disclosure-transparency" class="integrity-overview">
-      <h2>Disclosure & Transparency</h2>
+      <h2 data-i18n="disclosure-heading">Disclosure & Transparency</h2>
       <br>
-      <p>Transparency and ethics are fundamental principles that guide our interactions. We believe that communication must be conducted in an honest manner.</p>
-      <p>While we cannot provide certain sensitive or confidential information, such as our budget or details about future projects, we are always committed to maintaining openness. This overview provides comprehensive insights into our business, including but not limited to:</p>
+      <p data-i18n="disclosure-desc-1">Transparency and ethics are fundamental principles that guide our interactions. We believe that communication must be conducted in an honest manner.</p>
+      <p data-i18n="disclosure-desc-2">While we cannot provide certain sensitive or confidential information, such as our budget or details about future projects, we are always committed to maintaining openness. This overview provides comprehensive insights into our business, including but not limited to:</p>
       <ul>
-        <li>Our Core Mission and Values</li>
-        <li>General Corporate Structure</li>
-        <li>Compliance with Relevant Laws and Regulations</li>
-        <li>General Insights on Accountability, Partnerships, and Excluded Entities</li>
-        <li>Information on Due Diligence in Partner Relationships</li>
+        <li data-i18n="disclosure-list-item-1">Our Core Mission and Values</li>
+        <li data-i18n="disclosure-list-item-2">General Corporate Structure</li>
+        <li data-i18n="disclosure-list-item-3">Compliance with Relevant Laws and Regulations</li>
+        <li data-i18n="disclosure-list-item-4">General Insights on Accountability, Partnerships, and Excluded Entities</li>
+        <li data-i18n="disclosure-list-item-5">Information on Due Diligence in Partner Relationships</li>
       </ul>
-      <p>It is a balanced approach, seeking to share meaningful information to foster trust while safeguarding critical strategic information essential to our business.</p>
+      <p data-i18n="disclosure-desc-3">It is a balanced approach, seeking to share meaningful information to foster trust while safeguarding critical strategic information essential to our business.</p>
       <br>
     </section>
+
     <section id="vision-standards" class="integrity-overview">
-      <h2>Vision, Policies, and Ethical Standards</h2>
+      <h2 data-i18n="vision-heading">Vision, Policies, and Ethical Standards</h2>
       <br>
-      <h3>Constitution Summation</h3>
-      <p>At Hybroht, our constitution defines who we are and what drives us. We are a research-focused company committed to advancing science, technology, philosophy, logic, and mathematics. Our dual mission guides everything we do: generating sustainable profit to fund ongoing research, while aiming to deliver products and services that push beyond current limits.</p>
-      <p>Our values emphasize ethics, transparency, and encouraging intellectual impact. Hybroht fully complies with laws and holds every associate to a strict code of conduct centered on confidentiality, honesty, and respect. We set short-term and long-term goals to keep us on track. </p>
-      <h3>Business Policies: Key Principles and Provisions</h3>
+      <h3 data-i18n="vision-constitution-heading">Constitution Summation</h3>
+      <p data-i18n="vision-constitution-desc-1">At Hybroht, our constitution defines who we are and what drives us. We are a research-focused company committed to advancing science, technology, philosophy, logic, and mathematics. Our dual mission guides everything we do: generating sustainable profit to fund ongoing research, while aiming to deliver products and services that push beyond current limits.</p>
+      <p data-i18n="vision-constitution-desc-2">Our values emphasize ethics, transparency, and encouraging intellectual impact. Hybroht fully complies with laws and holds every associate to a strict code of conduct centered on confidentiality, honesty, and respect. We set short-term and long-term goals to keep us on track. </p>
+      <h3 data-i18n="vision-policies-heading">Business Policies: Key Principles and Provisions</h3>
       <ul>
-        <li>Assign clear responsibility roles for licensing, R&D, compliance, and support functions.</li>
-        <li>Respect intellectual property and protect confidential info from unauthorized disclosure.</li>
-        <li>Enforce documented, approved licenses with regular evaluations and strict adherence.</li>
-        <li>Compliant research and high-quality development.</li>
-        <li>Ensure full legal and regulatory compliance.</li>
-        <li>Apply to all operations and staff involved.</li>
-        <li>Maintain data security.</li>
-        <li>Uphold ethics, promoting integrity and respect.</li>
-        <li>Review and update policies annually, incorporating feedback.</li>
+        <li data-i18n="vision-policies-list-1">Assign clear responsibility roles for licensing, R&D, compliance, and support functions.</li>
+        <li data-i18n="vision-policies-list-2">Respect intellectual property and protect confidential info from unauthorized disclosure.</li>
+        <li data-i18n="vision-policies-list-3">Enforce documented, approved licenses with regular evaluations and strict adherence.</li>
+        <li data-i18n="vision-policies-list-4">Compliant research and high-quality development.</li>
+        <li data-i18n="vision-policies-list-5">Ensure full legal and regulatory compliance.</li>
+        <li data-i18n="vision-policies-list-6">Apply to all operations and staff involved.</li>
+        <li data-i18n="vision-policies-list-7">Maintain data security.</li>
+        <li data-i18n="vision-policies-list-8">Uphold ethics, promoting integrity and respect.</li>
+        <li data-i18n="vision-policies-list-9">Review and update policies annually, incorporating feedback.</li>
       </ul>
-      <h3>Corporate Structure</h3>
-      <p>Adequate to our small size, all current members hold the position of Executive Consultants, distinct from their specific operational roles. Members collaborate closely, but final business decisions rest with the Founder, who is accessible to ensure bureaucracy does not get in the way.</p>
-      <h3>Ethical Standards</h3>
+      <h3 data-i18n="vision-corporate-structure-heading">Corporate Structure</h3>
+      <p data-i18n="vision-corporate-structure-desc">Adequate to our small size, all current members hold the position of Executive Consultants, distinct from their specific operational roles. Members collaborate closely, but final business decisions rest with the Founder, who is accessible to ensure bureaucracy does not get in the way.</p>
+      <h3 data-i18n="vision-ethical-standards-heading">Ethical Standards</h3>
       <ul>
-        <li>Act with integrity in all interactions.</li>
-        <li>Respect the rights and dignity of all individuals.</li>
-        <li>Protect confidentiality and respect proprietary information.</li>
-        <li>Comply fully with all laws, regulations, and policies.</li>
-        <li>Ensure fair and ethical dealings with clients, partners, and associates.</li>
-        <li>Foster a culture of accountability and trust.</li>
+        <li data-i18n="vision-ethical-standards-list-1">Act with integrity in all interactions.</li>
+        <li data-i18n="vision-ethical-standards-list-2">Respect the rights and dignity of all individuals.</li>
+        <li data-i18n="vision-ethical-standards-list-3">Protect confidentiality and respect proprietary information.</li>
+        <li data-i18n="vision-ethical-standards-list-4">Comply fully with all laws, regulations, and policies.</li>
+        <li data-i18n="vision-ethical-standards-list-5">Ensure fair and ethical dealings with clients, partners, and associates.</li>
+        <li data-i18n="vision-ethical-standards-list-6">Foster a culture of accountability and trust.</li>
       </ul>
-       <h3>Founder Commitment</h3>
-       <p>Hybroht is not meant to be an AI startup. This enterprise is a long-term vision of the founder beyond the tool named Artificial Intelligence.</p>
-       <p>While fully embracing technological innovations, it is my belief and focus that the true power rests within the drive to research and development. New tools can enhance us and bring us closer to our objectives, but they cannot replace ourselves. With that said, one should be careful to not mistake the work for the dream.</p>
-       <p>My aspiration is to seek new knowledge, for as long as I live. With Hybroht, we will go forth now and seek it.</p>
+       <h3 data-i18n="vision-founder-commitment-heading">Founder Commitment</h3>
+       <p data-i18n="vision-founder-commitment-desc-1">Hybroht is not meant to be an AI startup. This enterprise is a long-term vision of the founder beyond the tool named Artificial Intelligence.</p>
+       <p data-i18n="vision-founder-commitment-desc-2">While fully embracing technological innovations, it is my belief and focus that the true power rests within the drive to research and development. New tools can enhance us and bring us closer to our objectives, but they cannot replace ourselves. With that said, one should be careful to not mistake the work for the dream.</p>
+       <p data-i18n="vision-founder-commitment-desc-3">My aspiration is to seek new knowledge, for as long as I live. With Hybroht, we will go forth now and seek it.</p>
        <br>
     </section>
 
     <section id="accountability-reporting" class="integrity-overview">
-      <h2>Accountability & Reporting</h2>
+      <h2 data-i18n="accountability-heading">Accountability & Reporting</h2>
       <br>
-      <h3>Served Countries and Regions</h3>
-      <p>Our products and services are designed for remote delivery, allowing us to serve multiple countries and regions. As of this page’s writing, most of our operations (sales of products and services) are concentrated in two countries: the United States, and Brazil. In line with our business ethics, we respect the laws of our clients' countries and regions. We uphold their rights when providing our offerings.</p>
-      <h3>Registry of Integrity Breaches</h3>
-      <p> As of the update date, we do not hold any record of integrity breaches within our operations. If you wish to report misconduct by one of our associates, please contact us via our contact email.</p>
-      <p><b>The Founder will personally ensure that such reports are addressed and appropriate action is taken, prioritizing handling of issues upon contact.</b></p>
+      <h3 data-i18n="accountability-served-regions-heading">Served Countries and Regions</h3>
+      <p data-i18n="accountability-served-regions-desc">Our products and services are designed for remote delivery, allowing us to serve multiple countries and regions. As of this page’s writing, most of our operations (sales of products and services) are concentrated in two countries: the United States, and Brazil. In line with our business ethics, we respect the laws of our clients' countries and regions. We uphold their rights when providing our offerings.</p>
+      <h3 data-i18n="accountability-integrity-breaches-heading">Registry of Integrity Breaches</h3>
+      <p data-i18n="accountability-integrity-breaches-desc-1"> As of the update date, we do not hold any record of integrity breaches within our operations. If you wish to report misconduct by one of our associates, please contact us via our contact email.</p>
+      <p><b data-i18n="accountability-integrity-breaches-desc-2">The Founder will personally ensure that such reports are addressed and appropriate action is taken, prioritizing handling of issues upon contact.</b></p>
       <br>
     </section>
 
     <section id="partners" class="integrity-overview">
-      <h2>Partnerships: Process and Statistics</h2>
+      <h2 data-i18n="partners-heading">Partnerships: Process and Statistics</h2>
       <br>
-      <h3>Due Diligence Procedures</h3>
-      <p>
+      <h3 data-i18n="partners-due-diligence-heading">Due Diligence Procedures</h3>
+      <p data-i18n="partners-due-diligence-desc">
         Prior to establishing partnerships of any nature, we conduct a thorough examination to ensure alignment with ethical standards, legal requirements, and our strategic objectives. This process includes verifying the partner’s legal status, reputation, and current operations. We periodically review any potential risks to maintain transparency and accountability throughout the partnership lifecycle.
       </p>
-      <h3>Partnership Types</h3>
-      <p>Partnerships are entities, companies or individuals, divided into two types: Supporters and Affiliates.</p>
-      <p>Supporters assist our research and development through activities like testing new products and providing feedback. They also offer counsel on current and future projects. In return, they receive early access. <i>Customers who purchase our products and services are not included in these statistics.</i></p>
-      <p>Affiliates are partners contributing directly to our growth through granting us additional resources or receiving our services as part of a deeper, joint venture.</p>
-      <h3>Partnership Statistics</h3>
+      <h3 data-i18n="partners-types-heading">Partnership Types</h3>
+      <p data-i18n="partners-types-desc-1">Partnerships are entities, companies or individuals, divided into two types: Supporters and Affiliates.</p>
+      <p data-i18n="partners-types-desc-2">Supporters assist our research and development through activities like testing new products and providing feedback. They also offer counsel on current and future projects. In return, they receive early access. <i>Customers who purchase our products and services are not included in these statistics.</i></p>
+      <p data-i18n="partners-types-desc-3">Affiliates are partners contributing directly to our growth through granting us additional resources or receiving our services as part of a deeper, joint venture.</p>
+      <h3 data-i18n="partners-statistics-heading">Partnership Statistics</h3>
       <ul>
-        <li><b>3</b> SUPPORTERS</li>
-        <li><b>2</b> AFFILIATES</li>
+        <li><b>3</b data-i18n="partners-statistics-supporters"> SUPPORTERS</li>
+        <li><b>2</b data-i18n="partners-statistics-affiliates"> AFFILIATES</li>
       </ul>
       <br>
-      <p class="small-observation"><i>*By default, we do not disclose partner names unless they expressly request it or authorize us.</i></p>
+      <p class="small-observation"><i data-i18n="partners-note">*By default, we do not disclose partner names unless they expressly request it or authorize us.</i></p>
       <br>
     </section>
 
     <section id="excluded-entities" class="integrity-overview">
-      <h2>Insights on Excluded Entities</h2>
+      <h2 data-i18n="excluded-entities-heading">Insights on Excluded Entities</h2>
       <br>
-      <h3>Methodology</h3>
-      <p>To safeguard our current and future operational effectiveness, we employ both a proactive and reactive approach to vetting entities unsuitable for any form of relationship with our enterprise. This evaluation applies to all clients, supporting platforms, channels, or partners. Upholding our values as the guiding principles of our operations, we keep this record to enforce a persistent refusal to collaborate, directly or indirectly, with the excluded entities for the foreseeable future.</p>
-      <p>Paths for remediation or review, depending on the reason(s), include contacting us to explain a possible misunderstanding, changing the current course of action, or issuing an apology statement.</p>
-      <h3>Reasons for Exclusion</h3>
+      <h3 data-i18n="excluded-entities-methodology-heading">Methodology</h3>
+      <p data-i18n="excluded-entities-methodology-desc">To safeguard our current and future operational effectiveness, we employ both a proactive and reactive approach to vetting entities unsuitable for any form of relationship with our enterprise. This evaluation applies to all clients, supporting platforms, channels, or partners. Upholding our values as the guiding principles of our operations, we keep this record to enforce a persistent refusal to collaborate, directly or indirectly, with the excluded entities for the foreseeable future.</p>
+      <p data-i18n="excluded-entities-methodology-desc-2">Paths for remediation or review, depending on the reason(s), include contacting us to explain a possible misunderstanding, changing the current course of action, or issuing an apology statement.</p>
+      <h3 data-i18n="excluded-entities-reasons-heading">Reasons for Exclusion</h3>
       <ul>
-        <li>Engaging in Fraudulent Actions</li>
-        <li>Unfair Treatment</li>
-        <li>Lack of Transparency</li>
-        <li>Violation of Service Agreements</li>
-        <li>Breach of Privacy / Data Security</li>
-        <li>Ethical Concerns</li>
-        <li>Noncompliance with Company or Regulatory Policies</li>
-        <li>Poor Customer Support</li>
-        <li>Leadership Association</li>
+        <li data-i18n="excluded-entities-reasons-list-1">Engaging in Fraudulent Actions</li>
+        <li data-i18n="excluded-entities-reasons-list-2">Unfair Treatment</li>
+        <li data-i18n="excluded-entities-reasons-list-3">Lack of Transparency</li>
+        <li data-i18n="excluded-entities-reasons-list-4">Violation of Service Agreements</li>
+        <li data-i18n="excluded-entities-reasons-list-5">Breach of Privacy / Data Security</li>
+        <li data-i18n="excluded-entities-reasons-list-6">Ethical Concerns</li>
+        <li data-i18n="excluded-entities-reasons-list-7">Noncompliance with Company or Regulatory Policies</li>
+        <li data-i18n="excluded-entities-reasons-list-8">Poor Customer Support</li>
+        <li data-i18n="excluded-entities-reasons-list-9">Leadership Association</li>
       </ul>
-      <p class="small-observation"><i>*This list is not exhaustive but provides a general overview of typical exclusion reasons.</i></p>
-      <h3>Statistics of Excluded Entities</h3>
-      <p>Despite the small stature of our initiative, we have unfortunately already encountered altercations with entities deemed ineligible for future interactions, motivating the creation of this section. In addition, we take a proactive stance to future-proof ourselves by including entities in this list even if they have never directly engaged with us before.</p>
+      <p class="small-observation"><i data-i18n="excluded-entities-note">*This list is not exhaustive but provides a general overview of typical exclusion reasons.</i></p>
+      <h3 data-i18n="excluded-entities-statistics-heading">Statistics of Excluded Entities</h3>
+      <p data-i18n="excluded-entities-statistics-desc">Despite the small stature of our initiative, we have unfortunately already encountered altercations with entities deemed ineligible for future interactions, motivating the creation of this section. In addition, we take a proactive stance to future-proof ourselves by including entities in this list even if they have never directly engaged with us before.</p>
       <ul>
-        <li>1 Platform</li>
-        <li>2 Companies</li>
-        <li>2 Individuals</li>
+        <li data-i18n="excluded-entities-statistics-list-1">1 Platform</li>
+        <li data-i18n="excluded-entities-statistics-list-2">2 Companies</li>
+        <li data-i18n="excluded-entities-statistics-list-3">2 Individuals</li>
       </ul>
       <br>
     </section>
 
     <section id="improvement" class="integrity-overview">
-      <h2>Continuous Improvement</h2>
+      <h2 data-i18n="improvement-heading">Continuous Improvement</h2>
       <br>
-      <p>Our approach encompasses several key areas:</p>
-      <p><b>Business Analysis</b>: We periodically evaluate ongoing operations to track project progress, identify valuable insights, and determine whether to maintain or redirect our focus.</p>
-      <p><b>Revision Planning</b>: Regular assessments of our planning processes ensure that our methods of project development follow the best possible practices, helping us adapt and optimize performance.</p>
-      <p><b>Auditing</b>: Continuous revision of our current statements, processes, and data to guarantee accuracy and compliance.</p>
-      <p><b>Opportunities & Updates</b>: Keeping our enterprise agile and forward-looking, we conduct periodic investigations into new technologies and business opportunities to identify potential future projects or necessary updates to our systems and tools.</p>
+      <p data-i18n="improvement-desc-1">Our approach encompasses several key areas:</p>
+      <p data-i18n="improvement-business-analysis"><b>Business Analysis</b>: We periodically evaluate ongoing operations to track project progress, identify valuable insights, and determine whether to maintain or redirect our focus.</p>
+      <p data-i18n="improvement-revision-planning"><b>Revision Planning</b>: Regular assessments of our planning processes ensure that our methods of project development follow the best possible practices, helping us adapt and optimize performance.</p>
+      <p data-i18n="improvement-auditing"><b>Auditing</b>: Continuous revision of our current statements, processes, and data to guarantee accuracy and compliance.</p>
+      <p data-i18n="improvement-opportunities-updates"><b>Opportunities & Updates</b>: Keeping our enterprise agile and forward-looking, we conduct periodic investigations into new technologies and business opportunities to identify potential future projects or necessary updates to our systems and tools.</p>
       <br>
       <br>
     </section>
@@ -178,16 +199,17 @@
       <br>
       <br>
       <nav class="archive-navigation" aria-label="Navigation">
-        <a href="/" class="back-to-home">← Back to Home</a>
+        <a href="/" class="back-to-home" data-i18n="back-to-home">← Back to Home</a>
       </nav>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Hybroht. All rights reserved.
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
   </footer>
 
 
   <script src="/js/theme-toggle.js"></script>
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
 </body>
 </html>

@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Frequently Asked Questions - Hybroht Enterprise</title>
+  <title data-i18n="title">Frequently Asked Questions - Hybroht Enterprise</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
   <!-- Font Awesome for icons -->
   <link
     rel="stylesheet"
@@ -27,11 +31,25 @@
     <section id="intro">
       <h1>
       <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      Frequently Asked Questions&nbsp;&nbsp;&nbsp;
+      <text data-i18n="intro-title">Frequently Asked Questions</text>&nbsp;&nbsp;&nbsp;
       <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
         <i class="fas fa-moon"></i> Dark Mode
       </button></h1>
-      <time class="update-date" datetime="2025-09-02T15:30">September 02, 2025, 3:30 PM</time>
+      <time class="update-date" datetime="2025-09-19T10:30">
+          <!-- Language selector in your HTML -->
+          <div id="language-menu" class="language-menu">
+            <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span id="language-current">en</span>
+              <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+            </button>
+            <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+              <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+              <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+            </ul>
+          </div>
+           &nbsp; September 19, 2025, 10:30 AM
+      </time>
       <br>
       <!--p>
       (Description text here.)
@@ -39,143 +57,143 @@
       <br>
     </section>
     <section class="faq-section" aria-labelledby="about-heading">
-      <h2 id="about-heading">About the Enterprise</h2>
+      <h2 id="about-heading" data-i18n="about-heading">About the Enterprise</h2>
       <div class="faq-list" role="list">
         <details class="faq" role="listitem">
           <summary aria-controls="q1" aria-expanded="false">
-            <span>What is Hybroht?</span>
+            <span data-i18n="about-q1-question">What is Hybroht?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q1" class="content" role="region" aria-label="What is Hybroht?">
-            <p>Hybroht is an R&D enterprise developing digital offerings: products and services that integrate technology, data science, intelligent automation, and mathematics. Our approach combines research with practical applications.</p>
+            <p data-i18n="about-q1-answer">Hybroht is an R&D enterprise developing digital offerings: products and services that integrate technology, data science, intelligent automation, and mathematics. Our approach combines research with practical applications.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q2" aria-expanded="false">
-            <span>Where does the name "Hybroht" come from?</span>
+            <span data-i18n="about-q2-question">Where does the name "Hybroht" come from?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q2" class="content" role="region" aria-label="Origin of the name Hybroht">
-            <p>The name "<strong>Hybroht</strong>" is derived from the word "<em>Hybrid</em>," a reflection of our devotion to integrate different methodologies and technologies. The suffix "<em>-brot</em>" is commonly associated with fractals, inspired by the father of fractal theory: Benoît Mandelbrot. It symbolizes the understanding of self-similarity and complex structures at various scales. The "h" in the middle was incorporated as an intentional design element to create a distinctive brand identity and as a reference to the Old English word "<em>broht</em>," meaning "brought." </p>
-            <p>The idea behind the name is "<strong>to bring understanding to complexity through the synthesis of frameworks</strong>."</p>
+            <p data-i18n="about-q2-answer-1">The name "<strong>Hybroht</strong>" is derived from the word "<em>Hybrid</em>," a reflection of our devotion to integrate different methodologies and technologies. The suffix "<em>-brot</em>" is commonly associated with fractals, inspired by the father of fractal theory: Benoît Mandelbrot. It symbolizes the understanding of self-similarity and complex structures at various scales. The "h" in the middle was incorporated as an intentional design element to create a distinctive brand identity and as a reference to the Old English word "<em>broht</em>," meaning "brought." </p>
+            <p data-i18n="about-q2-answer-2">The idea behind the name is "<strong>to bring understanding to complexity through the synthesis of frameworks</strong>."</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q3" aria-expanded="false">
-            <span>Where is Hybroht located? Do you have an official address?</span>
+            <span data-i18n="about-q3-question">Where is Hybroht located? Do you have an official address?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q3" class="content" role="region" aria-label="Hybroht location and address">
-            <p>Hybroht operates exclusively as a remote enterprise, without a fixed physical office at this time. All communications are handled digitally to maintain global reach and agility. We are currently in the process of establishing a postal address to facilitate official correspondence and administrative needs.</p>
+            <p data-i18n="about-q3-answer">Hybroht operates exclusively as a remote enterprise, without a fixed physical office at this time. All communications are handled digitally to maintain global reach and agility. We are currently in the process of establishing a postal address to facilitate official correspondence and administrative needs.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q4" aria-expanded="false">
-            <span>What industries does Hybroht serve?</span>
+            <span data-i18n="about-q4-question">What industries does Hybroht serve?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q4" class="content" role="region" aria-label="Industries served by Hybroht">
-            <p>Hybroht serves any industries that benefit from the development and implementation of digital solutions.</p>
+            <p data-i18n="about-q4-answer">Hybroht serves any industries that benefit from the development and implementation of digital solutions.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q5" aria-expanded="false">
-            <span>What makes Hybroht's R&D different from those of typical tech companies?</span>
+            <span data-i18n="about-q5-question">What makes Hybroht's R&D different from those of typical tech companies?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q5" class="content" role="region" aria-label="The difference of Hybroht's R&D">
-            <p>Unlike many tech companies that are primarily product/service-driven, we are fundamentally research-driven. Our research forms the core of our enterprise, guiding the development of all products and services. We maintain a strong focus on delivering high-quality offerings, while our solutions are aligned with seeking and advancing knowledge.</p>
+            <p data-i18n="about-q5-answer">Unlike many tech companies that are primarily product/service-driven, we are fundamentally research-driven. Our research forms the core of our enterprise, guiding the development of all products and services. We maintain a strong focus on delivering high-quality offerings, while our solutions are aligned with seeking and advancing knowledge.</p>
           </div>
         </details>
         
         <details class="faq" role="listitem">
           <summary aria-controls="q6" aria-expanded="false">
-            <span>You are a relatively new company. How can clients or partners assure themselves of your trustworthiness?</span>
+            <span data-i18n="about-q6-question">You are a relatively new company. How can clients or partners assure themselves of your trustworthiness?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q6" class="content" role="region" aria-label="Our commitment to your trust">
-            <p>We understand the importance of trust in business. We encourage all interested readers to review our "Integrity Overview" and "Showcases" pages available on our website. We transparently present our values, commitments, and examples of projects in these resources. That can help you make an informed decision.</p>
+            <p data-i18n="about-q6-answer">We understand the importance of trust in business. We encourage all interested readers to review our "Integrity Overview" and "Showcases" pages available on our website. We transparently present our values, commitments, and examples of projects in these resources. That can help you make an informed decision.</p>
           </div>
         </details>
       </div>
     </section>
 
     <section class="faq-section" aria-labelledby="products-heading">
-      <h2 id="products-heading">Products, Services & Access</h2>
+      <h2 id="products-heading" data-i18n="products-heading">Products, Services & Access</h2>
       <div class="faq-list" role="list">
         <details class="faq" role="listitem">
           <summary aria-controls="q7" aria-expanded="false">
-            <span>Is Hybroht utilizing Artificial Intelligence in its offerings?</span>
+            <span data-i18n="products-q7-question">Is Hybroht utilizing Artificial Intelligence in its offerings?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q7" class="content" role="region" aria-label="Hybroht and Artificial Intelligence">
-            <p>Yes, for some of them. We incorporate Artificial Intelligence as one of the tools in our portfolio. While AI plays a role in enhancing our work, it is just one component within a broader suite that we employ. Our focus remains not on AI itself, but on pursuing scientific and technological approaches to meet both our research and business needs.</p>
+            <p data-i18n="products-q7-answer">Yes, for some of them. We incorporate Artificial Intelligence as one of the tools in our portfolio. While AI plays a role in enhancing our work, it is just one component within a broader suite that we employ. Our focus remains not on AI itself, but on pursuing scientific and technological approaches to meet both our research and business needs.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q8" aria-expanded="false">
-            <span>We know Hybroht released free products before. Why is that?</span>
+            <span data-i18n="products-q8-question">We know Hybroht released free products before. Why is that?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q8" class="content" role="region" aria-label="Hybroht's free products">
-            <p>While our services are never free, Hybroht does offer a mix of free and paid products. Hybroht takes full benefit from free and open-source software, so one of our initiatives is to give back to the broader community when appropriate. This balanced approach allows us to support open access to valuable resources while maintaining a sustainable business model.</p>
+            <p data-i18n="products-q8-answer">While our services are never free, Hybroht does offer a mix of free and paid products. Hybroht takes full benefit from free and open-source software, so one of our initiatives is to give back to the broader community when appropriate. This balanced approach allows us to support open access to valuable resources while maintaining a sustainable business model.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q9" aria-expanded="false">
-            <span>What types of research does Hybroht conduct?</span>
+            <span data-i18n="products-q9-question">What types of research does Hybroht conduct?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q9" class="content" role="region" aria-label="Hybroht's Research Fields">
-            <p>We conduct multidisciplinary research focusing on an open mixture of mathematics, technology, science, philosophy, and logic theory. Our associates are free to decide what they wish to study, provided it relates to our core fields. For more details, please visit our "Research Fields" page. You can also follow our News section, where we share current projects and findings of interest.</p>
+            <p data-i18n="products-q9-answer">We conduct multidisciplinary research focusing on an open mixture of mathematics, technology, science, philosophy, and logic theory. Our associates are free to decide what they wish to study, provided it relates to our core fields. For more details, please visit our "Research Fields" page. You can also follow our News section, where we share current projects and findings of interest.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q10" aria-expanded="false">
-            <span>What documentation is provided with products or services?</span>
+            <span data-i18n="products-q10-question">What documentation is provided with products or services?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q10" class="content" role="region" aria-label="Hybroht and Documentation">
-            <p>Typically, it includes user manuals, setup guides, licensing information, and overview documents designed to facilitate a smooth experience. The type of documentation varies depending on the product or service.  Also, we remain available to address any additional questions that may arise beyond the provided documentation.</p>
+            <p data-i18n="products-q10-answer">Typically, it includes user manuals, setup guides, licensing information, and overview documents designed to facilitate a smooth experience. The type of documentation varies depending on the product or service.  Also, we remain available to address any additional questions that may arise beyond the provided documentation.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q11" aria-expanded="false">
-            <span>Is Gumroad the only way to access your services?</span>
+            <span data-i18n="products-q11-question">Is Gumroad the only way to access your services?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q11" class="content" role="region" aria-label="Access to Hybroht's services">
-            <p>No, Gumroad is primarily used for distributing our standard digital products and services. For clients requiring specialized solutions, we encourage direct contact via our official email or messenger applications.</p>
+            <p data-i18n="products-q11-answer">No, Gumroad is primarily used for distributing our standard digital products and services. For clients requiring specialized solutions, we encourage direct contact via our official email or messenger applications.</p>
           </div>
         </details>
 
@@ -183,41 +201,41 @@
     </section>
 
     <section class="faq-section" aria-labelledby="partnerships-heading">
-      <h2 id="partnerships-heading">Partnerships & Employment</h2>
+      <h2 id="partnerships-heading" data-i18n="partnerships-heading">Partnerships & Employment</h2>
       <div class="faq-list" role="list">
         <details class="faq" role="listitem">
           <summary aria-controls="q12" aria-expanded="false">
-            <span>We are interested in establishing a partnership. Is Hybroht open to collaboration?</span>
+            <span data-i18n="partnerships-q12-question">We are interested in establishing a partnership. Is Hybroht open to collaboration?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q12" class="content" role="region" aria-label="Interest in partnership">
-            <p>Yes, we welcome partnership inquiries. To ensure efficient and proper engagement, please direct all proposals exclusively through our official contact email. We kindly ask that you do not contact individual associates directly for such discussions.</p>
+            <p data-i18n="partnerships-q12-answer">Yes, we welcome partnership inquiries. To ensure efficient and proper engagement, please direct all proposals exclusively through our official contact email. We kindly ask that you do not contact individual associates directly for such discussions.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q13" aria-expanded="false">
-            <span>I was contacted by someone claiming to be a Hybroht associate regarding a job or partnership opportunity. How can I verify their authenticity?</span>
+            <span data-i18n="partnerships-q13-question">I was contacted by someone claiming to be a Hybroht associate regarding a job or partnership opportunity. How can I verify their authenticity?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q13" class="content" role="region" aria-label="Verifying a Hybroht associate">
-            <p>All legitimate Hybroht associates use email addresses that end with the official domain <strong>@hybroht.com</strong> and only that domain. Also, it is important to note that initiating such contacts via email is not our common practice. Help prevent scams and protect others: if you receive suspicious communications, please report them immediately to the authorities and to us through our official contact channels.</p>
+            <p data-i18n="partnerships-q13-answer">All legitimate Hybroht associates use email addresses that end with the official domain <strong>@hybroht.com</strong> and only that domain. Also, it is important to note that initiating such contacts via email is not our common practice. Help prevent scams and protect others: if you receive suspicious communications, please report them immediately to the authorities and to us through our official contact channels.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q14" aria-expanded="false">
-            <span>I am interested in joining Hybroht. May I submit my CV for consideration?</span>
+            <span data-i18n="partnerships-q14-question">I am interested in joining Hybroht. May I submit my CV for consideration?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q14" class="content" role="region" aria-label="Joining Hybroht">
-            <p>Hybroht operates an invite-only recruitment approach. We are sorry, but we do not accept unsolicited applications.</p>
+            <p data-i18n="partnerships-q14-answer">Hybroht operates an invite-only recruitment approach. We are sorry, but we do not accept unsolicited applications.</p>
           </div>
         </details>
 
@@ -225,54 +243,54 @@
     </section>
 
     <section class="faq-section" aria-labelledby="communication-heading">
-      <h2 id="communication-heading">Communication & Marketing</h2>
+      <h2 id="communication-heading" data-i18n="communication-heading">Communication & Marketing</h2>
       <div class="faq-list" role="list">
 
         <details class="faq" role="listitem">
           <summary aria-controls="q15" aria-expanded="false">
-            <span>Is Hybroht currently interested in engaging in a marketing campaign?</span>
+            <span data-i18n="communication-q15-question">Is Hybroht currently interested in engaging in a marketing campaign?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q15" class="content" role="region" aria-label="Hybroht and Marketing Campaigns">
-            <p>At present, Hybroht is satisfied with our existing marketing arrangements and we are not pursuing additional campaigns.</p>
+            <p data-i18n="communication-q15-answer">At present, Hybroht is satisfied with our existing marketing arrangements and we are not pursuing additional campaigns.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q16" aria-expanded="false">
-            <span>Why does Hybroht conduct polls?</span>
+            <span data-i18n="communication-q16-question">Why does Hybroht conduct polls?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q16" class="content" role="region" aria-label="Hybroht's polls">
-            <p>Hybroht runs polls to collect valuable feedback regarding potential digital offerings and services that may be of interest. Additionally, these polls serve research purposes by helping us understand emerging needs and preferences.</p>
+            <p data-i18n="communication-q16-answer">Hybroht runs polls to collect valuable feedback regarding potential digital offerings and services that may be of interest. Additionally, these polls serve research purposes by helping us understand emerging needs and preferences.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q17" aria-expanded="false">
-            <span>Is there a newsletter? How can we stay updated on Hybroht's latest news?</span>
+            <span data-i18n="communication-q17-question">Is there a newsletter? How can we stay updated on Hybroht's latest news?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q17" class="content" role="region" aria-label="Hybroht's latest news">
-            <p>You can stay informed about Hybroht's developments by following us through the various channels and social media profiles listed in the Contact section on our main website.</p>
+            <p data-i18n="communication-q17-answer">You can stay informed about Hybroht's developments by following us through the various channels and social media profiles listed in the Contact section on our main website.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q18" aria-expanded="false">
-            <span>I have a revolutionary idea after discussing with an AI model. I want to share it. How can we communicate?</span>
+            <span data-i18n="communication-q18-question">I have a revolutionary idea after discussing with an AI model. I want to share it. How can we communicate?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q18" class="content" role="region" aria-label="I want to share a revolutionary idea from an AI">
-            <p>We truly venerate the deep drive toward creativity and curiosity. However, Hybroht collaborates exclusively with our affiliate partners on research initiatives. As such, we do not begin R&D processes for unsolicited proposals or ideas from individuals not affiliated with our organization. We encourage you to continue developing your ideas, following the best practices of the scientific method, and wish you the very best in your endeavors.</p>
+            <p data-i18n="communication-q18-answer">We truly venerate the deep drive toward creativity and curiosity. However, Hybroht collaborates exclusively with our affiliate partners on research initiatives. As such, we do not begin R&D processes for unsolicited proposals or ideas from individuals not affiliated with our organization. We encourage you to continue developing your ideas, following the best practices of the scientific method, and wish you the very best in your endeavors.</p>
           </div>
         </details>
 
@@ -280,30 +298,30 @@
     </section>
 
     <section class="faq-section" aria-labelledby="data-privacy-heading">
-      <h2 id="data-privacy-heading">Data & Privacy</h2>
+      <h2 id="data-privacy-heading" data-i18n="data-privacy-heading">Data & Privacy</h2>
       <div class="faq-list" role="list">
 
         <details class="faq" role="listitem">
           <summary aria-controls="q19" aria-expanded="false">
-            <span>Is Hybroht collecting data to train or fine-tune AI models?</span>
+            <span data-i18n="data-privacy-q19-question">Is Hybroht collecting data to train or fine-tune AI models?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q19" class="content" role="region" aria-label="Hybroht and Data Collection">
-            <p>We do not operate a business model centered on collecting large volumes of data to train or fine-tune Artificial Intelligence models. While we develop workflows that utilize existing AI models, our focus remains on applying these technologies rather than on data accumulation for training purposes.</p>
+            <p data-i18n="data-privacy-q19-answer">We do not operate a business model centered on collecting large volumes of data to train or fine-tune Artificial Intelligence models. While we develop workflows that utilize existing AI models, our focus remains on applying these technologies rather than on data accumulation for training purposes.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q20" aria-expanded="false">
-            <span>What databases does Hybroht have? Are these databases available for purchase?</span>
+            <span data-i18n="data-privacy-q20-question">What databases does Hybroht have? Are these databases available for purchase?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q20" class="content" role="region" aria-label="Hybroht's databases">
-            <p>This information is strictly confidential, only made available to affiliate partners. However, these databases are not available for purchase. Access is limited to closely aligned collaborators to ensure integrity and security for our research assets.</p>
+            <p data-i18n="data-privacy-q20-answer">This information is strictly confidential, only made available to affiliate partners. However, these databases are not available for purchase. Access is limited to closely aligned collaborators to ensure integrity and security for our research assets.</p>
           </div>
         </details>
 
@@ -311,54 +329,54 @@
     </section>
 
     <section class="faq-section" aria-labelledby="operational-heading">
-      <h2 id="operational-heading">Operational Information</h2>
+      <h2 id="operational-heading" data-i18n="operational-heading">Operational Information</h2>
       <div class="faq-list" role="list">
 
         <details class="faq" role="listitem">
           <summary aria-controls="q21" aria-expanded="false">
-            <span>What are Hybroht's official working hours during the day?</span>
+            <span data-i18n="operational-q21-question">What are Hybroht's official working hours during the day?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q21" class="content" role="region" aria-label="Official working hours">
-            <p>Our official working hours are from 09:00 to 19:00 (UTC-4) on weekdays. We generally do not respond to calls during weekends, except from our partners.</p>
+            <p data-i18n="operational-q21-answer">Our official working hours are from 09:00 to 19:00 (UTC-4) on weekdays. We generally do not respond to calls during weekends, except from our partners.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q22" aria-expanded="false">
-            <span>Is there a schedule for maintenance or downtime at Hybroht?</span>
+            <span data-i18n="operational-q22-question">Is there a schedule for maintenance or downtime at Hybroht?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q22" class="content" role="region" aria-label="Maintenance schedule">
-            <p>When maintenance is necessary, we typically inform our partners and customers in advance through our available communication channels such as email and messenger apps.</p>
+            <p data-i18n="operational-q22-answer">When maintenance is necessary, we typically inform our partners and customers in advance through our available communication channels such as email and messenger apps.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q23" aria-expanded="false">
-            <span>Does Hybroht accept cryptocurrency as a payment method?</span>
+            <span data-i18n="operational-q23-question">Does Hybroht accept cryptocurrency as a payment method?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q23" class="content" role="region" aria-label="Hybroht and cryptocurrencies">
-            <p>Currently, we do not accept cryptocurrency payments.</p>
+            <p data-i18n="operational-q23-answer">Currently, we do not accept cryptocurrency payments.</p>
           </div>
         </details>
 
         <details class="faq" role="listitem">
           <summary aria-controls="q24" aria-expanded="false">
-            <span>We did not find an answer to our question here. What should we do?</span>
+            <span data-i18n="operational-q24-question">We did not find an answer to our question here. What should we do?</span>
             <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="var(--color-primary)"/>
             </svg>
           </summary>
           <div id="q24" class="content" role="region" aria-label="Other questions">
-            <p>If your question is not addressed in our FAQ, please reach out to us through any of the contact options provided on our website.</p>
+            <p data-i18n="operational-q24-answer">If your question is not addressed in our FAQ, please reach out to us through any of the contact options provided on our website.</p>
           </div>
         </details>
 
@@ -370,16 +388,17 @@
       <br>
       <br>
       <nav class="archive-navigation" aria-label="Navigation">
-        <a href="/" class="back-to-home">← Back to Home</a>
+        <a href="/" class="back-to-home" data-i18n="back-to-home">← Back to Home</a>
       </nav>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Hybroht. All rights reserved.
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
   </footer>
 
 
   <script src="/js/theme-toggle.js"></script>
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
 </body>
 </html>

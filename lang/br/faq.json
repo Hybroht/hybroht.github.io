@@ -1,0 +1,88 @@
+{
+  "title": "Perguntas Frequentes - Hybroht Enterprise",
+
+  "intro-title": "Perguntas Frequentes",
+
+  "about-heading": "Sobre a Empresa",
+  "about-q1-question": "O que é a Hybroht?",
+  "about-q1-answer": "Hybroht é uma empresa de P&D que desenvolve ofertas digitais: produtos e serviços que integram tecnologia, ciência de dados, automação inteligente e matemática. Nossa abordagem combina pesquisa com aplicações práticas.",
+
+  "about-q2-question": "De onde vem o nome \"Hybroht\"?",
+  "about-q2-answer-1": "O nome \"<strong>Hybroht</strong>\" deriva da palavra \"<em>Hybrid</em>\", refletindo nossa devoção em integrar diferentes metodologias e tecnologias. O sufixo \"<em>-brot</em>\" está associado a fractais, inspirado pelo pai da Teoria de Fractais: Benoît Mandelbrot. Simboliza a compreensão de estruturas complexas e auto-similares em várias escalas. A letra 'h' no meio foi incorporado como elemento de design para criar uma identidade única e como referência à antiga palavra inglesa \"<em>broht</em>\", que significa \"trouxe\".",
+  "about-q2-answer-2": "A ideia por trás do nome é \"<strong>trazer compreensão à complexidade por meio da síntese de frameworks</strong>\".",
+
+  "about-q3-question": "Onde a Hybroht está localizada? Existe um endereço oficial?",
+  "about-q3-answer": "A Hybroht opera exclusivamente como uma empresa remota, sem escritório físico fixo no momento. Toda comunicação é digital para manter alcance global e agilidade. Estamos estabelecendo um endereço postal para facilitar correspondências oficiais.",
+
+  "about-q4-question": "Quais setores a Hybroht atende?",
+  "about-q4-answer": "A Hybroht atende a qualquer setor que se beneficie do desenvolvimento e implementação de soluções digitais.",
+
+  "about-q5-question": "O que diferencia a P&D da Hybroht das empresas de tecnologia típicas?",
+  "about-q5-answer": "Ao contrário de muitas empresas tecnológicas focadas em produtos/serviços, somos fundamentalmente orientados pela pesquisa. Nossa pesquisa é o núcleo da empresa, guiando todos os desenvolvimentos. Mantemos foco forte em qualidade, alinhados à busca e avanço do conhecimento.",
+
+  "about-q6-question": "Vocês são uma empresa relativamente nova. Como clientes e parceiros podem confiar em vocês?",
+  "about-q6-answer": "Entendemos a importância da confiabilidade nos negócios. Encorajamos todos a revisarem nossas páginas \"Quadro Geral de Integridade\" e \"Showcases\" disponíveis em nosso site, onde apresentamos nossos valores, compromissos e exemplos de projetos. Isso poderá auxiliar na tomada de uma decisão informada.",
+
+  "products-heading": "Produtos, Serviços & Acesso",
+  "products-q7-question": "A Hybroht utiliza Inteligência Artificial em suas ofertas?",
+  "products-q7-answer": "Sim, em algumas delas. Incorporamos Inteligência Artificial como uma das ferramentas em nosso portfólio. Embora a IA desempenhe papel no aprimoramento do nosso trabalho, é apenas um componente dentro de um conjunto mais amplo de tecnologias. Nosso foco está na abordagem científica e tecnológica para atender nossos objetivos de pesquisa e negócios.",
+
+  "products-q8-question": "Sabemos que a Hybroht lançou produtos gratuitos antes. Por que isso?",
+  "products-q8-answer": "Embora nossos serviços nunca sejam gratuitos, oferecemos uma mistura de produtos gratuitos e pagos. Aproveitamos software livre e de código aberto e buscamos retribuir à comunidade quando apropriado. Essa abordagem equilibrada apoia o acesso aberto a recursos valiosos e mantém um modelo de negócio sustentável.",
+
+  "products-q9-question": "Quais tipos de pesquisa a Hybroht realiza?",
+  "products-q9-answer": "Realizamos pesquisa multidisciplinar focada em uma mistura aberta de matemática, tecnologia, ciência, filosofia e lógica. Nossos associados têm liberdade para escolher os temas relacionados a nossos campos essenciais. Para mais detalhes, visite nossa página \"Áreas de Pesquisa\" e acompanhe nossa seção de notícias.",
+
+  "products-q10-question": "Que documentação é fornecida com produtos ou serviços?",
+  "products-q10-answer": "Normalmente inclui manuais do usuário, guias de instalação, informações sobre licenças e documentos de visão geral para facilitar o uso. O tipo de documentação varia conforme o produto ou serviço. Estamos disponíveis para esclarecer dúvidas além do material fornecido.",
+
+  "products-q11-question": "O Gumroad é a única forma de acessar seus serviços?",
+  "products-q11-answer": "Não. O Gumroad é usado principalmente para distribuição de produtos e serviços digitais padrão. Para clientes com necessidades específicas, recomendamos contato direto via email oficial ou aplicativos de mensageria.",
+
+  "partnerships-heading": "Parcerias & Recrutamento",
+  "partnerships-q12-question": "Estamos interessados em estabelecer parceria. A Hybroht está aberta à colaboração?",
+  "partnerships-q12-answer": "Sim, aceitamos consultas de parceria. Para garantir eficiência, solicitamos que todas as propostas sejam enviadas exclusivamente pelo email oficial. Pedimos que não contactem associados individualmente para esses fins.",
+
+  "partnerships-q13-question": "Fui contactado por alguém que se diz associado da Hybroht sobre vaga ou parceria. Como verificar?",
+  "partnerships-q13-answer": "Todos os nossos associados legítimos usam email oficial terminando com <strong>@hybroht.com</strong>. Além disso, importante sinalizar que não costumamos iniciar contatos por email para essas questões. Para evitar golpes, denuncie comunicações suspeitas às autoridades e a nós pelos canais oficiais.",
+
+  "partnerships-q14-question": "Gostaria de ingressar na Hybroht. Posso enviar meu currículo?",
+  "partnerships-q14-answer": "Adotamos recrutamento por convite. No momento, não aceitamos candidaturas não solicitadas.",
+
+  "communication-heading": "Comunicação & Marketing",
+  "communication-q15-question": "A Hybroht está interessada em campanhas de marketing no momento?",
+  "communication-q15-answer": "Atualmente, estamos satisfeitos com os arranjos de marketing existentes e não buscamos campanhas adicionais.",
+
+  "communication-q16-question": "Por que a Hybroht faz enquetes?",
+  "communication-q16-answer": "Realizamos enquetes para coletar feedback valioso sobre potenciais ofertas digitais e serviços de interesse. Além disso, as enquetes auxiliam pesquisas para compreender demandas e preferências emergentes.",
+
+  "communication-q17-question": "Existe newsletter? Como ficar informado das novidades da Hybroht?",
+  "communication-q17-answer": "Mantenha-se informado sobre as novidades da Hybroht seguindo nossos canais e perfis sociais listados na seção Contato do site.",
+
+  "communication-q18-question": "Tenho uma ideia revolucionária após conversar com uma IA. Quero compartilhar com vocês. Como podemos nos comunicar?",
+  "communication-q18-answer": "Valorizamos muito a criatividade e a curiosidade. No entanto, a Hybroht colabora exclusivamente com parceiros afiliados para iniciativas de pesquisa. Não iniciamos processos de P&D para propostas não solicitadas de pessoas não afiliadas. Encorajamos o desenvolvimento de ideias conforme o método científico e desejamos sucesso em seus esforços.",
+
+  "data-privacy-heading": "Dados & Privacidade",
+  "data-privacy-q19-question": "A Hybroht coleta dados para treinar ou ajustar modelos de IA?",
+  "data-privacy-q19-answer": "Não operamos um modelo de negócio baseado na coleta massiva de dados para treinar ou realizar fine-tuning em modelos de Inteligência Artificial. Desenvolvemos fluxos de trabalho que utilizam modelos existentes, focando na aplicação, não em acumular dados para treinamento.",
+
+  "data-privacy-q20-question": "Quais bases de dados a Hybroht possui? Estão disponíveis para venda?",
+  "data-privacy-q20-answer": "Esta informação é estritamente confidencial e disponível somente para parceiros afiliados. As bases não estão à venda. O acesso é restrito a colaboradores alinhados para garantir integridade e segurança das pesquisas.",
+
+  "operational-heading": "Informação Operacional",
+  "operational-q21-question": "Qual o horário oficial de trabalho da Hybroht durante o dia?",
+  "operational-q21-answer": "Nosso horário oficial é das 09h00 às 19h00 (UTC-4) em dias úteis. Geralmente não atendemos chamadas nos finais de semana, exceto para nossos parceiros.",
+
+  "operational-q22-question": "Existe cronograma de manutenção ou downtime na Hybroht?",
+  "operational-q22-answer": "Quando a manutenção é necessária, informamos parceiros e clientes com antecedência via nossos canais de comunicação, como email e aplicativos de mensagens.",
+
+  "operational-q23-question": "A Hybroht aceita criptomoedas como forma de pagamento?",
+  "operational-q23-answer": "Atualmente, não aceitamos pagamentos com criptomoedas.",
+
+  "operational-q24-question": "Não encontramos resposta para nossa pergunta aqui. O que fazer?",
+  "operational-q24-answer": "Se sua pergunta não estiver nas FAQ, contate-nos por qualquer canal listado na nossa seção de contato.",
+
+  "back-to-home": "← Voltar para Home",
+
+  "footer": "2025 Hybroht. Todos Direitos Reservados."
+}
