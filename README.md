@@ -21,7 +21,7 @@ TO-DO:
 - [X] Add a 404 Page
 - [X] Reorganize the Repository
 - [X] Add language translations options
-
+- [X] Add a Research Automation description page
 
 ## Software License
 

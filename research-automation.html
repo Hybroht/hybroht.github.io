@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About the HybrohtResearcher Bot</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            line-height: 1.8;
+            margin: 40px 60px;
+            max-width: 730px;
+            background-color: #1a1a1a; /* Very dark grey/black */
+            color: #c0c0c0; /* Soft forest green for text */
+            border: 1px solid #5a8f5a; /* Forest green border */
+            padding: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        h1, h2 {
+            color: #3a6b3a;  /* Forest green */
+            font-family: "Garamond", serif;
+            text-shadow: 1px 1px 2px #182a18; /* Darker green shadow */
+        }
+        code {
+            font-family: "Courier New", monospace;
+            background: #222722; /* Forest green background */
+            padding: 4px 8px;
+            border: 1px solid #5a8f5a;
+            border-radius: 3px;
+            color: #5a8f5a; /* Light forest green text */
+        }
+        a {
+            color: #b0d29b; /* Darker forest green */
+            text-decoration: underline;
+            font-style: italic;
+        }
+        a:hover {
+            color: #2e6f22; /* Lighter forest green */
+            text-decoration: none;
+        }
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+            list-style-type: square;
+        }
+        .opt-out{
+            margin-top: 0;
+            list-style-type: square;
+            /* color: #5a8f5a; */ /* Muted forest green */
+        }
+        pre {
+            overflow-x: auto;       /* Adds horizontal scrollbar if needed */
+        }
+        time {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--color-muted, #666666);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <time datetime="2025-10-07T15:30">October 07, 2025, 3:30 PM</time>
+    <h2>User-Agent String</h2>
+    <pre><code>HybrohtResearcher/1.0 (Bot; +http://hybroht.com/research-automation.html)</code></pre>
+
+    <br>
+
+    <h2>Purpose and Goals</h2>
+    <p><b>HybrohtResearcher</b> is an automation bot designed for research purposes.
+    <br> Its main goal is to find relevant content for our research projects.
+    <br> Secondary goals include integrating information found in other platforms with our own, such as providing content previews or enabling indexing of websites in our internal search engine.</p>
+ 
+    <br>
+
+    <p>Our Automations may access your website to:</p>
+    <ul>
+    <li>Analyze content for relevance within specific research areas (e.g., Academic, Trends).</li>
+    <li>Generate content previews for links to your website.</li>
+    <li>Check your site's availability for monitoring tasks.</li>
+    <li>Index your website in a Search Engine.</li>
+    </ul>
+
+    <br>
+
+    <p>Our Automations do not:</p>
+    <ul>
+    <li>Harvest your website's data to sell it.</li>
+    <li>Collect website data to train AI models.</li>
+    <li>Ignore robots.txt directives or opt-out requests.</li>
+    </ul>
+
+    <br>
+
+    <h2>Security Measures</h2>
+    <ul>
+        <li>The automation only uses IP addresses associated with the <a href="hybroht.com">hybroht.com</a> domain.</li>
+        <li>It uses programmatic methods alongside LLM-based interpretation of robots.txt for dynamic compliance.</li>
+        <li>Operations are scheduled to run at most once daily per task to avoid excessive or repetitive access.</li>
+    </ul>
+
+    <br>
+
+    <h2>Capabilities</h2>
+    <ul>
+        <li>Before fetching any content, the bot checks the site's robots.txt file and uses a combination of parsing techniques and large language model (LLM) tools to ensure full compliance, even if the robots.txt file is poorly formatted or contains extra specifications.</li>
+        <li>Supports allowlists and blocklists to avoid researching undesired content and to honor opt-out requests.</li>
+        <li>Fetches website content preferably via RSS feeds or official APIs; does not crawl links but rather performs GET requests on specified web links for content analysis.</li>
+        <li>Re-checks robots.txt for updates every 3 days.</li>
+    </ul>
+
+    <br>
+
+    <h2>Limitations</h2>
+    <ul>
+        <li>The bot does not keep track of whether it has accessed your website earlier the same day in other tasks. Therefore, it may access the same URL again in a different task.</li>
+        <li>The bot is designed not to circumvent any blocks or restrictions; if it is blocked, it will respect this and cease attempts after one failed try.</li>
+        <li>Currently, the information provided on this page is only available in English.</li>
+
+    </ul>
+
+    <br>
+
+    <h2>Technical Details</h2>
+    <p>The automation runs using workflow orchestration on a Linux environment. It interacts with target systems mainly through APIs and RSS feeds.</p>
+
+    <h3>Data Sources</h3>
+    <p>The bot primarily collects data from Knowledge Bases and News Websites. Sometimes, it also gather public Social Media posts relevant to ongoing research. This data is limited to news-related content pertinent to our research projects, such as breaking news. It does not directly collect or focus on personal user data.</p>
+
+    <h3>Operation Schedule</h3>
+    <p>HybrohtResearcher operates on a daily schedule, mostly during regular business hours but may run outside these times as well.</p>
+
+    <br>
+
+    <h2>Access and Usage Policies</h2>
+    <p>The bot is programmed to honor robots.txt directives, even when the file is incorrectly formatted or contains unsupported rules. The preferred methods for fetching are through RSS feeds and APIs, but HTTP GET requests of website URLs may occur for certain tasks. <br> If content retrieval fails after one attempt, the bot will not retry to respect site preferences and conserve resources. Opt-out requests from website owners will be respected fully without requiring a reason.</p>
+
+    <h3>Privacy and Compliance</h3>
+    <p>We do not design this bot to actively collect personal user data. Any incidental data of this kind is neither targeted nor retained. It is either discarded or anonymized promptly to mitigate security and legal risks. <br> Our separate business partnerships may require the handling of their sensitive data, but such projects are unrelated to this automated research process.</p>
+
+    <h3>Opt-Out Mechanism</h3>
+    <div class="opt-out">
+        <p>If you wish to opt out of being researched by our bot, please email us at <a href="mailto:contact@hybroht.com">contact@hybroht.com</a>.
+        <br>Include <b>"[Opt-Out]"</b> at the beginning of the subject line and add your website in the email body.
+        <br>You may also provide a reason, but this is optional.
+        <br>
+        <br>
+        Please note: For operational safety, we cannot remove entries from our domain blocklists without an explanation for why they were added. Although providing a reason is optional, if you do not provide one when opting out, you will not be able to opt back in later. </p>
+    </div>
+
+    <br>
+
+    <h2>Troubleshooting and Support</h2>
+    <p>For any issues or concerns related to the automation (and outside of an opt-out mechanism), please reach out to us via one of our contact channels at <a href="https://hybroht.com/#contact">https://hybroht.com/#contact</a>.</p>
+
+</body>
+</html>
