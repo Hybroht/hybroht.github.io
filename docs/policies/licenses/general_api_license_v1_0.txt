@@ -1,0 +1,103 @@
+HYBROHT'S GENERAL API LICENSE v1.0
+Copyright © 2025 HYBROHT
+
+This License governs your right to use the Hybroht API and related Affiliate
+Partner APIs solely for authorized system integration purposes. It grants
+limited, non-transferable access to Hybroht’s API and Affiliate APIs for system
+integration, allowing commercial use only under separate agreements. It ensures
+data from Hybroht-controlled sources is accurate while disclaiming external
+data, and requires Licensee-provided data to be valid. It forbids unauthorized
+modifications, redistribution, and assigns liability for misuse to Licensee.
+Dependencies on third parties may change without liability to Hybroht.
+Compliance with laws and attribution to Hybroht is required. Updates and
+upgrades to the API are provided without direct support obligations. Licensee
+must provision the necessary infrastructure for their systems. This license
+requires that the parties first mutually accept on a jurisdiction for dispute
+resolution within 90 days; if no agreement is reached, disputes will be governed
+and resolved under the jurisdiction of Singapore.
+
+
+*The above summary is for convenience only. The full terms below govern your use
+of the API.*  
+
+
+I. LICENSE SCOPE AND USAGE RIGHTS
+
+  Hybroht ("Licensor") hereby grants you ("Licensee") a limited, non-exclusive,
+non-transferable, and non-sublicensable license to access and use a Hybroht API,
+which may connect either solely to Hybroht’s systems or to Hybroht’s systems
+alongside those of its Affiliate Partners (e.g., Dr. Infinitto). Licensee
+accepts this License by using the API. Hybroht may update the API or this
+License’s terms; continued use signifies acceptance of such updates.
+
+  Licensee shall only use the API to the extent necessary to fulfill authorized
+system integration objectives. Commercial use of the API is permitted only
+pursuant to a separate, explicit agreement with Hybroht and its Affiliate
+Partners. Any use beyond this scope is prohibited unless expressly authorized in
+writing, including: reselling, redistribution, sublicensing, or granting
+third-party access.
+
+  Hybroht reserves the right to enforce call rate limits, feature availability,
+data volume quotas, or other usage constraints to maintain service stability.
+Licensee agrees to comply with such restrictions. Hybroht may modify these
+limits with reasonable prior notice.
+
+
+II. DATA, COMPLIANCE, AND LEGAL RESPONSIBILITIES
+
+  Hybroht commits to providing API data that is accurate and reliable to the 
+best of its reasonable ability, including any data originating from
+Hybroht-controlled systems. Data sourced from external third-party APIs or
+Affiliates is provided “as is.” Licensee is responsible for ensuring the
+accuracy of any data they submit or provide to Hybroht through the API.
+Submission of invalid or false data by Licensee may result in suspension or
+revocation of access rights.
+
+  Licensee shall not reverse engineer, decompile, disassemble, sublicense, 
+modify, redistribute, or create derivative works from the API. Licensee assumes
+all responsibility for compliance with applicable laws and regulations and any 
+misuse of the API.
+
+  API functionality may depend on third-party or Affiliate Partner technologies
+which may change or be discontinued without notice. Hybroht disclaims liability
+for any such external changes or failures. Licensee agrees to indemnify Hybroht
+against any claims arising from Licensee’s misuse or breaches of this License.
+
+  Licensee shall comply with all applicable laws, including privacy, data
+protection, and export control requirements. Appropriate attribution to Hybroht
+and its Affiliates is required unless otherwise agreed.
+
+  Hybroht shall not be liable for any failure or delay in performance caused by
+circumstances beyond its reasonable control, including but not limited to
+natural disasters, cyberattacks, acts of governmental authority, or labor
+disputes.
+
+
+III. MAINTENANCE, SUPPORT, AND UPDATES
+
+  Hybroht will provide API updates and upgrades at its sole discretion. However,
+Hybroht is under no obligation to provide direct technical support for the
+Licensee’s implementation or use of the API in their internal systems. Licensee
+is solely responsible for provisioning and maintaining any necessary agents or
+systems required to implement API usage. Hybroht will provide technical
+documentation and may answer non-binding questions but reserves the right to
+suspend updates or support services at any time.
+
+
+IV. CONTRACTUAL AND MISCELLANEOUS PROVISIONS
+
+  This License represents the entire agreement between Licensor and Licensee
+governing use of the API. Any amendments must be in writing and signed by both
+parties. Both parties agree to cooperate to select a mutually agreeable
+jurisdiction to resolve any disputes; in absence of such agreement under 90
+days, the governing law shall default to that of Singapore. Termination occurs
+upon material breach after notice or mutual agreement. Upon termination,
+Licensee shall cease all API use and destroy related materials.
+
+
+V. INTELLECTUAL PROPERTY AND OWNERSHIP
+
+  Hybroht retains all intellectual property rights in the API. For specific APIs
+co-developed or belonging jointly to Hybroht and an Affiliate Partner (e.g., Dr.
+Infinitto), intellectual property rights shall be held jointly by the respective
+parties. No ownership rights are transferred under this License.
