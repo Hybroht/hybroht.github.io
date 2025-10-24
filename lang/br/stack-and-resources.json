@@ -18,7 +18,7 @@
   "stack-programming-langs-desc": "Python, C/C++, Common LISP, JavaScript",
 
   "stack-frameworks": "Frameworks & Bibliotecas",
-  "stack-frameworks-desc": "PyTorch, Scikit-learn, Flask, NumPy, SciPy, Pandas, Kivy",
+  "stack-frameworks-desc": "PyTorch, Scikit-learn, Flask, NumPy, SciPy, Pandas, Kivy, FastAPI, SQLModel",
 
   "stack-containers-dbs": "Containerização & Bancos de Dados",
   "stack-containers-dbs-desc": "Podman, PostgreSQL, SQLite",
