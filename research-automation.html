@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About the HybrohtResearcher Bot</title>
+    <title>About the HybrohtResearcher</title>
     <style>
         body {
             font-family: "Georgia", serif;
@@ -69,7 +69,7 @@
     <br>
 
     <h2>Purpose and Goals</h2>
-    <p><b>HybrohtResearcher</b> is an automation bot designed for research purposes.
+    <p><b>HybrohtResearcher</b> is a cluster of automations designed for research purposes.
     <br> Its main goal is to find relevant content for our research projects.
     <br> Secondary goals include utilities connected with other platforms, such as providing thumbnail previews or enabling indexing of websites in our internal search engine.</p>
  
@@ -98,16 +98,16 @@
     <ul>
         <li>The automation only uses IP addresses associated with the <a href="hybroht.com">hybroht.com</a> domain.</li>
         <li>It uses programmatic methods alongside LLM-based interpretation of robots.txt for dynamic compliance.</li>
-        <li>Operations are scheduled to avoid excessive access.</li>
+        <li>Operations are scheduled to avoid excessive access. (e.g. many requests per second) </li>
     </ul>
 
     <br>
 
     <h2>Capabilities</h2>
     <ul>
-        <li>Before fetching any content, the bot checks the site's robots.txt file and uses a combination of parsing techniques and large language model (LLM) tools to ensure full compliance, even if the robots.txt file is poorly formatted or contains extra specifications.</li>
-        <li>Supports allowlists and blocklists to avoid researching undesired content and to honor opt-out requests.</li>
-        <li>Fetches website content preferably via RSS feeds or official APIs; does not crawl links but rather performs GET requests on specified web links for content analysis.</li>
+        <li>Before fetching any content, our automations will check the site's robots.txt file and use a combination of parsing techniques with large language model (LLM) tools to ensure full compliance, even if the robots.txt file is poorly formatted or contains extra specifications.</li>
+        <li>Allowlists and blocklists to avoid researching undesired content and to honor opt-out requests.</li>
+        <li>Fetching website content preferably via RSS feeds or official APIs; does not crawl links but rather performs GET requests on specified web links for content analysis.</li>
         <li>Re-checks robots.txt for updates every 3 days.</li>
     </ul>
 
@@ -115,8 +115,9 @@
 
     <h2>Limitations</h2>
     <ul>
-        <li>The bot does not keep track of whether it has accessed your website earlier the same day in other tasks. Therefore, it may access the same URL again in a different task.</li>
-        <li>The bot is designed not to circumvent any blocks or restrictions; if it is blocked, it will respect this and cease attempts after one failed try.</li>
+        <li>HybrohtResearcher does not keep track of whether it has accessed your website earlier the same day in other tasks. Therefore, it may access the same URL again in a different task.</li>
+        <li>Our automations respect blocks or restrictions; if they are blocked by your platform, then they will move on and never attempt to circumvent the block.</li>
+        <li>We do not verify robots.txt when calling methods that only fetch metadata about a resource, such as HTTP HEAD.</li>
         <li>Currently, the information provided on this page is only available in English.</li>
 
     </ul>
@@ -124,10 +125,10 @@
     <br>
 
     <h2>Technical Details</h2>
-    <p>The automation runs using workflow orchestration on a Linux environment. It interacts with target systems mainly through APIs and RSS feeds.</p>
+    <p>The automations are running using workflow orchestration on a Linux environment. They interact with target systems mainly through APIs and RSS feeds.</p>
 
     <h3>Data Sources</h3>
-    <p>The bot primarily collects data from Knowledge Bases and News Websites. Sometimes, it also gather public Social Media posts relevant to ongoing research. This data is limited to news-related content pertinent to our research projects, such as breaking news. It does not directly collect or focus on personal user data.</p>
+    <p>The HybrohtResearch primarily collects data from Knowledge Bases and News Websites. Sometimes, it will also gather public Social Media posts relevant to ongoing research. Gathered data is limited to news-related content pertinent to our research projects, such as breaking news. HybrohtResearch does not directly collect or focus on personal user data.</p>
 
     <h3>Operation Schedule</h3>
     <p>HybrohtResearcher operates on a daily schedule, mostly during regular business hours but may run outside these times as well.</p>
@@ -135,14 +136,14 @@
     <br>
 
     <h2>Access and Usage Policies</h2>
-    <p>The bot is programmed to honor robots.txt directives, even when the file is incorrectly formatted or contains unsupported rules. The preferred methods for fetching are through RSS feeds and APIs, but HTTP GET requests of website URLs may occur for certain tasks. <br> If content retrieval fails after one attempt, the bot will not retry to respect site preferences and conserve resources. Opt-out requests from website owners will be respected fully without requiring a reason.</p>
+    <p>HybrohtResearcher is programmed to honor robots.txt directives, even when the file is incorrectly formatted or contains unsupported rules. The preferred methods for fetching are through RSS feeds and APIs, but HTTP GET requests of website URLs may occur for certain tasks. <br> If content retrieval fails after one attempt, the automations will not retry to respect site preferences and conserve resources. Opt-out requests from website owners will be respected fully without requiring a reason.</p>
 
     <h3>Privacy and Compliance</h3>
-    <p>We do not design this bot to actively collect personal user data. Any incidental data of this kind is neither targeted nor retained. It is either discarded or anonymized promptly to mitigate security and legal risks. <br> Our separate business partnerships may require the handling of their sensitive data, but such projects are unrelated to this automated research process.</p>
+    <p>The HybrohtResearcher series is not designed to actively collect personal user data. Any incidental data of this kind is neither targeted nor retained. It is either discarded or anonymized promptly to mitigate security and legal risks. <br> Our separate business partnerships may require the handling of their sensitive data, but such projects are not directly involved with this automated research process.</p>
 
     <h3>Opt-Out Mechanism</h3>
     <div class="opt-out">
-        <p>If you wish to opt out of being researched by our bot, please email us at <a href="mailto:contact@hybroht.com">contact@hybroht.com</a>.
+        <p>If you wish to opt out of being researched by our automations, please email us at <a href="mailto:contact@hybroht.com">contact@hybroht.com</a>.
         <br>Include <b>"[Opt-Out]"</b> at the beginning of the subject line and add your website in the email body.
         <br>You may also provide a reason, but this is optional.
         <br>
@@ -153,7 +154,7 @@
     <br>
 
     <h2>Troubleshooting and Support</h2>
-    <p>For any issues or concerns related to the automation (and outside of an opt-out mechanism), please reach out to us via one of our contact channels at <a href="https://hybroht.com/#contact">https://hybroht.com/#contact</a>.</p>
+    <p>For any issues or concerns related to our automations (and unrelated to the opt-out mechanism described above), please reach out to us via one of our contact channels at <a href="https://hybroht.com/#contact">https://hybroht.com/#contact</a>.</p>
 
 </body>
 </html>
