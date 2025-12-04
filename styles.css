@@ -1265,3 +1265,11 @@ section.research-section > h2{
   color: white;
   outline: none;
 }
+
+/* Contact Info */
+.contact-info {
+    font-size: 0.89rem;
+    color: var(--color-muted, #666666);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
