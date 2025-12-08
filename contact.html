@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="title">Contact - Hybroht Enterprise</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <!-- Language Selector Handler-->
+  <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <!-- Header with menu and enterprise name -->
+  <header>
+  <div class="logo-container">
+    <img src="assets/banner_v3_6.png" alt="Enterprise Logo" class="logo" />
+  </div>
+  </header>
+
+
+  <main class="container" id="main">
+
+    <section id="intro">
+      <h1>
+      <span class="archive-adjustment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <text data-i18n="intro-title">Contact</text>&nbsp;&nbsp;&nbsp;
+      <button class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
+        <i class="fas fa-moon"></i> Dark Mode
+      </button></h1>
+      <time class="update-date" datetime="2025-09-19T10:30">
+          <!-- Language selector in your HTML -->
+          <div id="language-menu" class="language-menu">
+            <button id="language-button" aria-haspopup="listbox" aria-expanded="false" class="language-button">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span id="language-current">en</span>
+              <!--i class="fas fa-caret-down" aria-hidden="true"></i-->
+            </button>
+            <ul id="language-dropdown" role="listbox" tabindex="-1" class="language-dropdown">
+              <li role="option" data-lang="en" tabindex="0" class="language-option">en: English</li>
+              <li role="option" data-lang="pt" tabindex="0" class="language-option">pt: Português</li>
+            </ul>
+          </div>
+           &nbsp; September 19, 2025, 10:30 AM
+      </time>
+      <br>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="margin-top: 3rem;">
+      <h2 data-i18n="contact">Contact</h2>
+      <p data-i18n="contact-message">Let's connect to explore how we can help you achieve your business goals.</p>
+      <!--p>To Add: Partnership Enrollment Page</p-->
+      <div class="contact-buttons" aria-label="Contact links">
+        <p>
+            <span style="margin-right: 9px;" >
+              <i class="fas fa-envelope"></i> <text class="contact-info">Email: <br>contact@hybroht.com</text>
+            </span>
+            <button aria-label="WhatsApp" onclick="window.open('https://wa.me/message/C5375ZLSCRAZN1', '_blank')" class="social-btn icon-btn">
+              <i class="fab fa-whatsapp"></i>
+            </button>
+            <button aria-label="Telegram" onclick="window.open('https://t.me/hybroht', '_blank')" class="social-btn icon-btn">
+              <i class="fab fa-telegram-plane"></i>
+            </button>
+            
+        </p>
+      </div>
+      <p><i class="fas fa-map-marker-alt"></i> <text class="contact-info" data-i18n="contact-address">Address:<br> 5930 Av Giovanni Gronchi PMB 80021, Sao Paulo, SP 05724972, Brazil <br>*Mail Only<br></text></p>
+    </section>
+
+    <section id="end" class="faq">
+      <h2></h2>
+
+      <br>
+      <br>
+      <nav class="archive-navigation" aria-label="Navigation">
+        <a href="/" class="back-to-home" data-i18n="back-to-home">← Back to Home</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <text data-i18n="footer">2025 Hybroht. All rights reserved.</text>
+  </footer>
+
+
+  <script src="/js/theme-toggle.js"></script>
+  <script src="/js/language-handler.js"></script> <!-- Language Selector Handler-->
+</body>
+</html>
