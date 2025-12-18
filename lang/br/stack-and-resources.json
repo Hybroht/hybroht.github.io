@@ -61,8 +61,8 @@
   "resources-messenger-apps": "Aplicativos de Mensagens",
   "resources-messenger-apps-desc": "Telegram, WhatsApp, Signal",
 
-  "resources-network-solutions": "Soluções de Rede",
-  "resources-network-solutions-desc": "Fail2ban, iptables, Nginx, WireGuard",
+  "resources-network-solutions": "Soluções de Rede & Sistemas Distribuídos",
+  "resources-network-solutions-desc": "Fail2ban, iptables, Nginx, RabbitMQ, WireGuard",
 
   "resources-software-licenses": "Licenças de Software (Inglês)",
 
