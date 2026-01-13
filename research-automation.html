@@ -62,99 +62,100 @@
     </style>
 </head>
 <body>
-    <time datetime="2025-11-24T17:30">November 24, 2025, 5:30 PM</time>
+    <time datetime="2026-01-09T17:30">January 09, 2026, 5:30 PM</time>
     <h2>User-Agent String</h2>
-    <pre><code>HybrohtResearcher/1.0 (Bot; +http://hybroht.com/research-automation.html)</code></pre>
+    <pre><code>HybrohtResearcher/1.0 (+https://hybroht.com/research-automation; contact@hybroht.com)</code></pre>
 
     <br>
 
     <h2>Purpose and Goals</h2>
-    <p><b>HybrohtResearcher</b> is a cluster of automations designed for research purposes.
-    <br> Its main goal is to find relevant content for our research projects.
-    <br> Secondary goals include utilities connected with other platforms, such as providing thumbnail previews or enabling indexing of websites in our internal search engine.</p>
+    <p><b>HybrohtResearcher</b> is a cluster of different tools designed for research purposes.
+    <br> Its main goal is to automate the discovery of relevant content for our projects.
+    <br> Secondary objectives include connecting our utilities with other platforms, such as providing thumbnail previews or enabling indexing of websites in our internal search engine.</p>
  
     <br>
 
-    <p>Our Automations may access your website to:</p>
+    <p>We may access your platforms to:</p>
     <ul>
-    <li>Analyze content for relevance within specific fields (e.g., Academic, Trends).</li>
-    <li>Generate thumbnail previews or one-sentence calls for pages in your website. (e.g. Bluesky posts)</li>
-    <li>Monitoring tasks checking your platform's availability, mostly on behalf of our partners.</li>
-    <li>Index your website in a Search Engine.</li>
+    <li>Analyze content for relevance within specific fields (e.g., academic trends).</li>
+    <li>Generate thumbnail previews or one-sentence calls for pages on your website. (e.g., Bluesky posts).</li>
+    <li>Monitoring tasks, checking your platform's availability, mostly on behalf of our partners.</li>
+    <li>Index your website in a search engine.</li>
     </ul>
 
     <br>
 
-    <p>Our Automations do not:</p>
+    <p>We do not:</p>
     <ul>
     <li>Harvest your website's data to sell it.</li>
-    <li>Collect website data to train AI models.</li>
-    <li>Ignore robots.txt directives or opt-out requests.</li>
+    <li>Collect website data to train generative models.</li>
+    <li>Ignore robots.txt directives when they are applicable.
+    <li>Ignore opt-out requests.</li>
     </ul>
 
     <br>
 
     <h2>Security Measures</h2>
     <ul>
-        <li>The automation only uses IP addresses associated with the <a href="hybroht.com">hybroht.com</a> domain.</li>
-        <li>It uses programmatic methods alongside LLM-based interpretation of robots.txt for dynamic compliance.</li>
-        <li>Operations are scheduled to avoid excessive access. (e.g. many requests per second) </li>
+        <li>Static IP addresses associated with <a href="hybroht.com">hybroht.com</a> subdomains.</li>
+        <li>Operation schedule, rate limiting, and related measures to prevent excessive access (e.g., a high number of requests per second). </li>
+        <li>Programming methods combined with LLM-based interpretation of robots.txt for dynamic compliance.</li>
     </ul>
 
     <br>
 
     <h2>Capabilities</h2>
     <ul>
-        <li>Before fetching any content, our automations will check the site's robots.txt file and use a combination of parsing techniques with large language model (LLM) tools to ensure full compliance, even if the robots.txt file is poorly formatted or contains extra specifications.</li>
-        <li>Allowlists and blocklists to avoid researching undesired content and to honor opt-out requests.</li>
-        <li>Fetching website content preferably via RSS feeds or official APIs; does not crawl links but rather performs GET requests on specified web links for content analysis.</li>
-        <li>Re-checks robots.txt for updates every 3 days.</li>
+        <li>Allowlists and blocklists to honor opt-out requests and avoid undesired content in our research.</li>
+        <li>Fetching website content preferably via official APIs or RSS feeds. HybrohtResearcher can perform GET requests on pre-specified web links for content analysis but will not follow new links that appear in a response.</li>
+        <li>Our tools check a platform's robots.txt file before fetching any content. We use a combination of parsing techniques and large language model (LLM) tools to ensure full compliance, even if your robots.txt is poorly formatted or contains extra specifications.</li>
+        <li>Re-checks the robots.txt file for updates every 3 days.</li>
     </ul>
 
     <br>
 
     <h2>Limitations</h2>
     <ul>
-        <li>HybrohtResearcher does not keep track of whether it has accessed your website earlier the same day in other tasks. Therefore, it may access the same URL again in a different task.</li>
-        <li>Our automations respect blocks or restrictions; if they are blocked by your platform, then they will move on and never attempt to circumvent the block.</li>
-        <li>We do not verify robots.txt when calling methods that only fetch metadata about a resource, such as HTTP HEAD.</li>
-        <li>Currently, the information provided on this page is only available in English.</li>
+        <li>As a cluster of tools, it does not track whether it has accessed your website earlier the same day during other tasks. Therefore, it may access the same URL again in a different task.</li>
+        <li>Our tools respect restrictions: if they are blocked by your platform, they will move on and will not attempt to circumvent the block.</li>
+        <li>The tools do not verify robots.txt when calling methods that only fetch metadata about a resource, such as HTTP HEAD requests.</li>
+        <li>As of this date, the information provided on this page is available only in English.</li>
 
     </ul>
 
     <br>
 
     <h2>Technical Details</h2>
-    <p>The automations are running using workflow orchestration on a Linux environment. They interact with target systems mainly through APIs and RSS feeds.</p>
+    <p>The tools operate using workflow orchestration in a Linux environment. They interact with target systems primarily through APIs and RSS feeds.</p>
 
     <h3>Data Sources</h3>
-    <p>The HybrohtResearch primarily collects data from Knowledge Bases and News Websites. Sometimes, it will also gather public Social Media posts relevant to ongoing research. Gathered data is limited to news-related content pertinent to our research projects, such as breaking news. HybrohtResearch does not directly collect or focus on personal user data.</p>
+    <p>The tools primarily collect data from knowledge bases and news platforms. Occasionally, they may also gather relevant public social media posts for ongoing research. Collected data is restricted to news-related content suitable for our research projects, such as breaking news. Our tools do not directly collect or focus on personal user data.</p>
 
     <h3>Operation Schedule</h3>
-    <p>HybrohtResearcher operates on a daily schedule, mostly during regular business hours but may run outside these times as well.</p>
+    <p>The tools operate on a daily schedule, preferably during regular business hours, but they may also run outside these times.</p>
 
     <br>
 
     <h2>Access and Usage Policies</h2>
-    <p>HybrohtResearcher is programmed to honor robots.txt directives, even when the file is incorrectly formatted or contains unsupported rules. The preferred methods for fetching are through RSS feeds and APIs, but HTTP GET requests of website URLs may occur for certain tasks. <br> If content retrieval fails after one attempt, the automations will not retry to respect site preferences and conserve resources. Opt-out requests from website owners will be respected fully without requiring a reason.</p>
+    <p>HybrohtResearcher is programmed to honor robots.txt directives, even if the file is incorrectly formatted or contains unsupported rules. The preferred methods for fetching content are through APIs or RSS feeds; however, HTTP GET requests to website URLs may occur for certain tasks. <br> If content retrieval fails after one attempt, our tools will not retry to conserve resources and respect your site preferences. Opt-out requests from website owners will be fully respected without requiring a reason.</p>
 
     <h3>Privacy and Compliance</h3>
-    <p>The HybrohtResearcher series is not designed to actively collect personal user data. Any incidental data of this kind is neither targeted nor retained. It is either discarded or anonymized promptly to mitigate security and legal risks. <br> Our separate business partnerships may require the handling of their sensitive data, but such projects are not directly involved with this automated research process.</p>
+    <p>No part of HybrohtResearcher is designed to actively collect personal user data. Any incidental data of this kind is neither targeted nor retained; it is promptly discarded or anonymized to mitigate security and legal risks. <br> While our separate business partnerships may require handling their sensitive data, such projects are not directly involved in our own research process.</p>
 
     <h3>Opt-Out Mechanism</h3>
     <div class="opt-out">
-        <p>If you wish to opt out of being researched by our automations, please email us at <a href="mailto:contact@hybroht.com">contact@hybroht.com</a>.
+        <p>If you wish to opt out of being researched by this system, please email us at <a href="mailto:contact@hybroht.com">contact@hybroht.com</a> with your request.
         <br>Include <b>"[Opt-Out]"</b> at the beginning of the subject line and add your website in the email body.
-        <br>You may also provide a reason, but this is optional.
+        <br>Optionally, you may also provide a reason.
         <br>
         <br>
-        Please note: For operational safety, we cannot remove entries from our domain blocklists without an explanation for why they were added. Although providing a reason is optional, if you do not provide one when opting out, you will not be able to opt back in later. </p>
+        Please note: although providing a motive is optional, any eventual opt-back will not be allowed without a reason. For operational safety, entries in our domain blocklists will not be removed if their registry lacks a motive.</p>
     </div>
 
     <br>
 
     <h2>Troubleshooting and Support</h2>
-    <p>For any issues or concerns related to our automations (and unrelated to the opt-out mechanism described above), please reach out to us via one of our contact channels at <a href="https://hybroht.com/#contact">https://hybroht.com/#contact</a>.</p>
+    <p>For any issues or concerns related to HybrohtResearcher (not including the opt-out mechanism described above), please contact us through one of our channels at <a href="https://hybroht.com/contact">https://hybroht.com/contact</a>.</p>
 
 </body>
 </html>
